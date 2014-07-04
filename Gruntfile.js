@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        loadPath: 'bower_components',
-        precision: 10
+        precision: 10,
+        importPath: 'bower_components'
       },
       dist: {
         files: {
