@@ -1,0 +1,32 @@
+.panel {
+    border: none;
+}
+
+.panel-heading {
+    font-size: $panel-heading-font-size;
+}
+
+.panel-featured {
+    border-left: 3px solid $brand-primary;
+    font-size: 36px;
+
+    > .panel-body {
+        padding: 5px 10px 10px 80px;
+
+        > i {
+            position: absolute;
+            left: 35px;
+            line-height: 70px;
+        }
+
+        > .highlight {
+            font-family: $font-family-serif;
+        }
+
+        > .caption {
+            font-size: $font-size-base;
+            font-weight: 500;
+            margin-top: -5px;
+        }
+    }
+}

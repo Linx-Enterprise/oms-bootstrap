@@ -1,0 +1,28 @@
+// use .fa-fw by default
+.fa {
+    width: (18em / 14);
+    text-align: center;
+}
+
+// user .fa-vw for variable width
+.fa-vw {
+    width: auto;
+    text-align: inherit;
+}
+
+// for styled select inline
+.form-control.inline {
+    display: inline;
+    width: auto;
+    margin-left: 10px;
+}
+
+// remove margins for p's inside tables
+.table p {
+    margin: 0;
+}
+
+// remove bottom margin for table inside panel
+.panel-body > .table:last-child {
+    margin-bottom: 0;
+}

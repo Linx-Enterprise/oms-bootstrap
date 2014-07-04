@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chaordic Search Dashboard</title>
+    <link rel="stylesheet" href="../css/chaordic-bootstrap.css">
+    <style>
+        .fake-chart {
+            background: #ccc;
+            border: 1px solid #aaa;
+            height: 250px;
+            line-height: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="has-sidebar">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a class="sidebar-brand" href="#">
+                <img src="assets/logo-demo.png" alt="Chaordic Search">
+            </a>
+        </div>
+        <ul class="nav sidebar-nav">
+            <li class="active">
+                <a href="#dashboard" data-toggle="tab"><i class="fa fa-home"></i>Visão Geral</a>
+            </li>
+            <li>
+                <a href="#optimizations" data-toggle="tab"><i class="fa fa-wrench"></i>Otimizações</a>
+            </li>
+            <li>
+                <a href="#settings" data-toggle="tab"><i class="fa fa-cogs"></i>Configurações</a>
+            </li>
+        </ul>
+        <div class="user">
+            <div class="user-info">
+                <img class="img-circle" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=30" alt="Guilherme Pacheco">
+                Guilherme Pacheco
+            </div>
+            <a href="#" class="user-logout"><i class="fa fa-sign-out"></i></a>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="dashboard">
+            <div class="page-header">
+                <h1>Visão Geral</h1>
+            </div>
+            <div class="page-content">
+                <h2>DESEMPENHO NOS ÚLTIMOS 7 DIAS</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-featured">
+                            <div class="panel-body">
+                                <i class="fa fa-filter"></i>
+                                <div class="highlight">22,6%</div>
+                                <div class="caption">CTR</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-featured">
+                            <div class="panel-body">
+                                <i class="fa fa-search"></i>
+                                <div class="highlight">58.544</div>
+                                <div class="caption">TOTAL DE BUSCAS</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-featured">
+                            <div class="panel-body">
+                                <i class="fa fa-hand-o-up"></i>
+                                <div class="highlight">13.241</div>
+                                <div class="caption">TOTAL DE CLIQUES</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-heading">CTR</div>
+                            <div class="panel-body">
+                                <div class="fake-chart">chart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-heading">TOTAL DE BUSCAS</div>
+                            <div class="panel-body">
+                                <div class="fake-chart">chart</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel">
+                            <div class="panel-heading">BUSCAS POPULARES</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ol class="table-list" start="1">
+                                            <li>
+                                                retrato
+                                                <strong class="pull-right">2889</strong>
+                                            </li>
+                                            <li>
+                                                almofada
+                                                <strong class="pull-right">1565</strong>
+                                            </li>
+                                            <li>
+                                                cofre
+                                                <strong class="pull-right">924</strong>
+                                            </li>
+                                            <li>
+                                                luminaria
+                                                <strong class="pull-right">847</strong>
+                                            </li>
+                                            <li>
+                                                almofadas
+                                                <strong class="pull-right">737</strong>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ol class="table-list" start="6">
+                                            <li>
+                                                bolsa
+                                                <strong class="pull-right">726</strong>
+                                            </li>
+                                            <li>
+                                                mochila
+                                                <strong class="pull-right">708</strong>
+                                            </li>
+                                            <li>
+                                                bolsas
+                                                <strong class="pull-right">632</strong>
+                                            </li>
+                                            <li>
+                                                caneca
+                                                <strong class="pull-right">525</strong>
+                                            </li>
+                                            <li>
+                                                abajur
+                                                <strong class="pull-right">483</strong>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ol class="table-list" start="11">
+                                            <li>
+                                                caneta
+                                                <strong class="pull-right">483</strong>
+                                            </li>
+                                            <li>
+                                                carteira
+                                                <strong class="pull-right">453</strong>
+                                            </li>
+                                            <li>
+                                                moringa
+                                                <strong class="pull-right">411</strong>
+                                            </li>
+                                            <li>
+                                                case
+                                                <strong class="pull-right">243</strong>
+                                            </li>
+                                            <li>
+                                                luminária
+                                                <strong class="pull-right">196</strong>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="optimizations">
+            <div class="page-header">
+                <h1>Otimizações</h1>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#synonyms" data-toggle="tab">Sinônimos</a></li>
+                    <li><a href="#redirects" data-toggle="tab">Redirecionamentos</a></li>
+                </ul>
+            </div>
+            <div class="page-content tab-content">
+                <div class="tab-pane active" id="synonyms">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Adicionar">
+                                            <span class="input-group-btn">
+                                                <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i></a>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pull-right">
+                                        <span class="toolbar-text">Filtrar:</span>
+                                        <select class="form-control inline">
+                                            <option>Todos</option>
+                                            <option>Ativos</option>
+                                            <option>Inativos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Buscar">
+                                            <span class="input-group-btn">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Sinônimos</th>
+                                        <th>Status</th>
+                                        <th>Atualizado em</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="label label-primary">pato</span>
+                                            <span class="label label-primary">duck</span>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" class="toggle" id="toggleSynonym0" checked="checked">
+                                            <label for="toggleSynonym0">
+                                                <span class="on">On</span>
+                                                <span class="off">Off</span>
+                                            </label>
+                                        </td>
+                                        <td>segundos atrás</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="label label-primary">alarme</span>
+                                            <span class="label label-primary">despertador</span>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" class="toggle" id="toggleSynonym1">
+                                            <label for="toggleSynonym1">
+                                                <span class="on">On</span>
+                                                <span class="off">Off</span>
+                                            </label>
+                                        </td>
+                                        <td>22 dias atrás</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="redirects">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#createRedirectModal">Adicionar</a>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pull-right">
+                                        <span class="toolbar-text">Filtrar:</span>
+                                        <select class="form-control inline">
+                                            <option>Todos</option>
+                                            <option>Ativos</option>
+                                            <option>Inativos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Buscar">
+                                            <span class="input-group-btn">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-search"></i></a>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Redirecionamento</th>
+                                        <th>Status</th>
+                                        <th>Atualizado em</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p><span class="text-muted">Busca por </span>troca, devolução</p>
+                                            <p><small><span class="text-muted">Rediciona para </span>http://loja.imaginarium.com.br/troca-e-devolucao</small></p>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" class="toggle" id="toggleSynonym0" checked="checked">
+                                            <label for="toggleSynonym0">
+                                                <span class="on">On</span>
+                                                <span class="off">Off</span>
+                                            </label>
+                                        </td>
+                                        <td>segundos atrás</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-pencil"></i></a>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="settings">
+            <div class="page-header">
+                <h1>Configurações</h1>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#general" data-toggle="tab">Geral</a></li>
+                    <li><a href="#widget" data-toggle="tab">Widget</a></li>
+                    <li><a href="#product" data-toggle="tab">Produto</a></li>
+                </ul>
+            </div>
+            <div class="page-content tab-content">
+                <div class="tab-pane active" id="general">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            Template base
+                            <a href="#" class="btn btn-primary pull-right">Salvar</a>
+                        </div>
+                        <div class="panel-body">
+                            <p>Por favor, certifique-se de que sua página tem o texto ###CHAORDIC### onde você deseja que a nossa busca apareça.</p>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="htmlInput" class="col-md-3 control-label">HTML da página de busca</label>
+                                    <div class="col-md-9">
+                                        <textarea id="htmlInput" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cssInput" class="col-md-3 control-label">CSS da página de busca</label>
+                                    <div class="col-md-9">
+                                        <textarea id="cssInput" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="titleWithResultInput" class="col-md-3 control-label">Título da busca</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="titleWithResultInput" class="form-control">
+                                        <small class="help-block">Título com resultados de busca</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="titleWithoutResultInput" class="col-md-3 control-label">Título padrão</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="titleWithoutResultInput" class="form-control">
+                                        <small class="help-block">Título sem resultados de busca</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="domainInput" class="col-md-3 control-label">Domínio do site</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="domainInput" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="widget">
+                    Ble
+                </div>
+                <div class="tab-pane" id="product">
+                    Bli
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="createRedirectModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Novo redirecionamento</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="termsInput">Termos buscados</label>
+                            <input type="text" class="form-control" id="termsInput">
+                            <small class="help-block">
+                                Pressione ENTER para adicionar um novo termo.
+                                <br>
+                                Informe os termos que correspondem ao seu redirecionamento.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="urlInput">Endereço de destino</label>
+                            <input type="text" class="form-control" id="urlInput">
+                            <small class="help-block">Insira o endereço de destino que você deseja encaminhar o usuário.</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Salvar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.has-sidebar {
+    padding-left: 250px;
+
+    .sidebar {
+        left: 0;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: $nav-sidebar-bg-color;
+}
+
+.sidebar-brand {
+    display: block;
+    padding: $nav-sidebar-brand-padding;
+    border-bottom: 1px solid $nav-sidebar-link-border-bottom-color;
+}
+
+.sidebar-nav {
+    > li {
+        border-top: 1px solid $nav-sidebar-link-border-top-color;
+        border-bottom: 1px solid $nav-sidebar-link-border-bottom-color;
+
+        > a {
+            border-left: 3px solid transparent;
+            color: $nav-sidebar-link-color;
+
+            > i {
+                font-size: 16px;
+                margin-right: 15px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: $nav-sidebar-link-hover-bg;
+                color: $nav-sidebar-link-hover-color;
+            }
+        }
+
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                border-left: 3px solid $brand-primary;
+                background-color: $nav-sidebar-active-link-bg;
+                color: $nav-sidebar-active-link-color;
+                cursor: default;
+            }
+        }
+    }
+}

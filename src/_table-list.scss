@@ -1,0 +1,8 @@
+.table-list > li {
+    padding: 12px 15px;
+    border-bottom: 1px solid $table-list-item-border;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
