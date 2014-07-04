@@ -9,7 +9,7 @@ Download
 You can either clone the repo or install with Bower:
 
 -   `git clone git@github.com:chaordic/bootstrap`
--   `bower install git@github.com:chaordic/bootstrap`
+-   `bower install git@github.com:chaordic/bootstrap --save`
 
 There should be an option to share the same file for everybody, but not now.
 

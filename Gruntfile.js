@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/styles/chaordic-bootstrap.css': 'src/main.scss'
+          'dist/styles/chaordic-bootstrap.css': 'src/chaordic-bootstrap.scss'
         }
       }
     },
