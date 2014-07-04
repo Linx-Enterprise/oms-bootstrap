@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/css/chaordic-bootstrap.css': 'src/main.scss'
+          'dist/styles/chaordic-bootstrap.css': 'src/main.scss'
         }
       }
     },
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'bower_components/font-awesome/fonts/',
-            src: ['**'],
+            src: ['*'],
             dest: 'dist/fonts/'
           }
         ]
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'bower_components/jquery/dist/',
-            src: ['jquery.js'],
+            src: ['jquery.js', 'jquery.min.js'],
             dest: 'dist/scripts/'
           }
         ]
@@ -41,10 +41,8 @@ module.exports = function(grunt) {
       bootstrap: {
         files: [
           {
-            expand: true,
-            cwd: 'bower_components/bootstrap-sass-official/assets/javascripts/',
-            src: ['bootstrap.js'],
-            dest: 'dist/scripts/'
+            src: 'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+            dest: 'dist/scripts/chaordic-bootstrap.js'
           }
         ]
       },
@@ -57,6 +55,25 @@ module.exports = function(grunt) {
             dest: 'dist/demo/'
           }
         ]
+      }
+    },
+
+    cssmin: {
+      options: {
+        keepSpecialComments: 0
+      },
+      dist: {
+        files: {
+          'dist/styles/chaordic-bootstrap.min.css': 'dist/styles/chaordic-bootstrap.css'
+        }
+      }
+    },
+
+    uglify: {
+      dist: {
+        files: {
+          'dist/scripts/chaordic-bootstrap.min.js': 'dist/scripts/chaordic-bootstrap.js'
+        }
       }
     },
 
@@ -78,9 +95,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('dist', ['clean', 'sass', 'copy']);
+  grunt.registerTask('dist', ['clean', 'sass', 'copy', 'cssmin', 'uglify']);
 
   grunt.registerTask('default', 'dist');
 

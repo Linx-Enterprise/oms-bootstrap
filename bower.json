@@ -1,6 +1,6 @@
 {
   "name": "chaordic-bootstrap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
     "Guilherme Pacheco <guilherme.pacheco@chaordicsystems.com>"
   ],
@@ -11,10 +11,12 @@
   ],
   "license": "MIT",
   "private": true,
+  "main": "dist/chaordic-bootstrap.css",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "demo"
   ],
   "devDependencies": {
     "jquery": ">=1.9.0",

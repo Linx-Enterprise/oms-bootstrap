@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chaordic Search Dashboard</title>
-    <link rel="stylesheet" href="../css/chaordic-bootstrap.css">
+    <link rel="stylesheet" href="../styles/chaordic-bootstrap.css">
     <style>
         .fake-chart {
             background: #ccc;
@@ -400,10 +402,48 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="widget">
-                    Ble
+                    <div class="panel">
+                        <div class="panel-heading">
+                            Widget
+                            <a href="#" class="btn btn-primary pull-right">Salvar</a>
+                        </div>
+                        <div class="panel-body">
+                            <p>I’m a small area of text explaining what you need to do and how to do it. Some text, some more text. But pay attention this is important stuff.</p>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="htmlInput" class="col-md-3 control-label">CSS</label>
+                                    <div class="col-md-9">
+                                        <textarea id="htmlInput" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cssInput" class="col-md-3 control-label">Configuração do widget</label>
+                                    <div class="col-md-9">
+                                        <textarea id="cssInput" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane" id="product">
-                    Bli
+                    <div class="panel">
+                        <div class="panel-heading">
+                            Produto
+                            <a href="#" class="btn btn-primary pull-right">Salvar</a>
+                        </div>
+                        <div class="panel-body">
+                            <p>I’m a small area of text explaining what you need to do and how to do it. Some text, some more text. But pay attention this is important stuff.</p>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="htmlInput" class="col-md-3 control-label">HTML</label>
+                                    <div class="col-md-9">
+                                        <textarea id="htmlInput" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -437,10 +477,10 @@
                     <button type="button" class="btn" data-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-success">Salvar</button>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>
     <script src="../scripts/jquery.js"></script>
-    <script src="../scripts/bootstrap.js"></script>
+    <script src="../scripts/chaordic-bootstrap.js"></script>
 </body>
 </html>
