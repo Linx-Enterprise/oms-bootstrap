@@ -16,7 +16,9 @@
 
 .sidebar-brand {
     display: block;
-    padding: $nav-sidebar-brand-padding;
+    height: 84px;
+    text-indent: -99999px;
+    background: transparent $nav-sidebar-logo center no-repeat;
     border-bottom: 1px solid $nav-sidebar-link-border-bottom-color;
 }
 

@@ -6903,7 +6903,9 @@ button.close {
     bottom: 0; } }
 .sidebar-brand {
   display: block;
-  padding: 21px 15px;
+  height: 84px;
+  text-indent: -99999px;
+  background: transparent url("../demo/assets/logo-demo.png") center no-repeat;
   border-bottom: 1px solid black; }
 
 .sidebar .nav > li {
