@@ -53,9 +53,9 @@ $font-weight-h6:                500 !default;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$border-radius-small:           0 !default;
-$border-radius-base:            0 !default;
-$border-radius-large:           0 !default;
+$border-radius-small:           2px !default;
+$border-radius-base:            3px !default;
+$border-radius-large:           4px !default;
 
 
 //== Navs
@@ -67,7 +67,9 @@ $nav-link-hover-bg:                         transparent !default;
 $nav-link-hover-color:                      inherit !default;
 
 //== Sidebar
+$nav-sidebar-collapsed-width:               56px;
 $nav-sidebar-logo:                          url('../demo/assets/logo-demo.png') !default;
+$nav-sidebar-collapsed-logo:                url('../demo/assets/logo-demo-collapsed.png') !default;
 $nav-sidebar-bg-color:                      $gray-darker !default;
 $nav-sidebar-border-color:                  #000 !default;
 
