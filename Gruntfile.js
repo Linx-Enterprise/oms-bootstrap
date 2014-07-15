@@ -18,43 +18,10 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      fontawesome: {
-        files: [
-          {
-            expand: true,
-            cwd: 'bower_components/font-awesome/fonts/',
-            src: ['*'],
-            dest: 'dist/fonts/'
-          }
-        ]
-      },
-      jquery: {
-        files: [
-          {
-            expand: true,
-            cwd: 'bower_components/jquery/dist/',
-            src: ['jquery.js', 'jquery.min.js'],
-            dest: 'dist/scripts/'
-          }
-        ]
-      },
-      bootstrap: {
-        files: [
-          {
-            src: 'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-            dest: 'dist/scripts/chaordic-bootstrap.js'
-          }
-        ]
-      },
-      demo: {
-        files: [
-          {
-            expand: true,
-            cwd: 'demo/',
-            src: ['**'],
-            dest: 'dist/demo/'
-          }
-        ]
+      dist: {
+        files: {
+          'dist/scripts/chaordic-bootstrap.js': 'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js'
+        }
       }
     },
 

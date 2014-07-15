@@ -4,7 +4,7 @@
   "authors": [
     "Guilherme Pacheco <guilherme.pacheco@chaordicsystems.com>"
   ],
-  "description": "A modified version of bootstrap only changing variables to be used in Chaordic projects",
+  "description": "A modified version of bootstrap to be used in Chaordic projects",
   "keywords": [
     "bootstrap",
     "chaordic"
@@ -20,7 +20,9 @@
   ],
   "dependencies": {
     "jquery": ">=1.9.0",
-    "bootstrap-sass-official": "~3.2.0",
-    "font-awesome": "~4.1.0"
+    "bootstrap-sass-official": "~3.2.0"
+  },
+  "devDependencies": {
+    "font-awesome": ">=4.0.0"
   }
 }
