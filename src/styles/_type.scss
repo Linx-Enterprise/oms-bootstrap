@@ -12,6 +12,12 @@ h6, .h6 { font-weight: $font-weight-h6; }
 
     > h1 {
         margin-bottom: 23px;
+
+        > select {
+            @extend .form-control;
+            @extend .inline;
+            @extend .pull-right;
+        }
     }
 }
 

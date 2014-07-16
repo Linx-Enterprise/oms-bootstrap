@@ -2240,7 +2240,7 @@ output {
   line-height: 1.428571429;
   color: #444444; }
 
-.form-control {
+.form-control, .page-header > h1 > select {
   display: block;
   width: 100%;
   height: 34px;
@@ -2257,19 +2257,19 @@ output {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-  .form-control:focus {
+  .form-control:focus, .page-header > h1 > select:focus {
     border-color: #66afe9;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-  .form-control::-moz-placeholder {
+  .form-control::-moz-placeholder, .page-header > h1 > select::-moz-placeholder {
     color: #c8c8c8;
     opacity: 1; }
-  .form-control:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, .page-header > h1 > select:-ms-input-placeholder {
     color: #c8c8c8; }
-  .form-control::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, .page-header > h1 > select::-webkit-input-placeholder {
     color: #c8c8c8; }
-  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  .form-control[disabled], .page-header > h1 > select[disabled], .form-control[readonly], .page-header > h1 > select[readonly], fieldset[disabled] .form-control, fieldset[disabled] .page-header > h1 > select {
     cursor: not-allowed;
     background-color: #eeeeee;
     opacity: 1; }
@@ -2388,15 +2388,15 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0; }
-  .form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .input-group-lg > .form-control-static.form-control,
+  .form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .form-horizontal .form-group-lg .page-header > h1 > select.form-control-static, .input-group-lg > .form-control-static.form-control, .page-header > h1.input-group-lg > select.form-control-static,
   .input-group-lg > .form-control-static.input-group-addon,
-  .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .input-group-sm > .form-control-static.form-control,
+  .input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .form-horizontal .form-group-sm .page-header > h1 > select.form-control-static, .input-group-sm > .form-control-static.form-control, .page-header > h1.input-group-sm > select.form-control-static,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn {
     padding-left: 0;
     padding-right: 0; }
 
-.input-sm, .form-horizontal .form-group-sm .form-control, .input-group-sm > .form-control,
+.input-sm, .form-horizontal .form-group-sm .form-control, .form-horizontal .form-group-sm .page-header > h1 > select, .input-group-sm > .form-control, .page-header > h1.input-group-sm > select,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   height: 30px;
@@ -2405,7 +2405,7 @@ input[type="checkbox"] {
   line-height: 1.5;
   border-radius: 2px; }
 
-select.input-sm, .form-horizontal .form-group-sm select.form-control, .input-group-sm > select.form-control,
+select.input-sm, .form-horizontal .form-group-sm select.form-control, .form-horizontal .form-group-sm .page-header > h1 > select, .input-group-sm > select.form-control, .page-header > h1.input-group-sm > select,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
   height: 30px;
@@ -2416,12 +2416,14 @@ textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control, .input
 .input-group-sm > .input-group-btn > textarea.btn,
 select[multiple].input-sm,
 .form-horizontal .form-group-sm select[multiple].form-control,
+.form-horizontal .form-group-sm .page-header > h1 > select[multiple],
 .input-group-sm > select[multiple].form-control,
+.page-header > h1.input-group-sm > select[multiple],
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn {
   height: auto; }
 
-.input-lg, .form-horizontal .form-group-lg .form-control, .input-group-lg > .form-control,
+.input-lg, .form-horizontal .form-group-lg .form-control, .form-horizontal .form-group-lg .page-header > h1 > select, .input-group-lg > .form-control, .page-header > h1.input-group-lg > select,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   height: 46px;
@@ -2430,7 +2432,7 @@ select[multiple].input-sm,
   line-height: 1.33;
   border-radius: 4px; }
 
-select.input-lg, .form-horizontal .form-group-lg select.form-control, .input-group-lg > select.form-control,
+select.input-lg, .form-horizontal .form-group-lg select.form-control, .form-horizontal .form-group-lg .page-header > h1 > select, .input-group-lg > select.form-control, .page-header > h1.input-group-lg > select,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
   height: 46px;
@@ -2441,14 +2443,16 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control, .input
 .input-group-lg > .input-group-btn > textarea.btn,
 select[multiple].input-lg,
 .form-horizontal .form-group-lg select[multiple].form-control,
+.form-horizontal .form-group-lg .page-header > h1 > select[multiple],
 .input-group-lg > select[multiple].form-control,
+.page-header > h1.input-group-lg > select[multiple],
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn {
   height: auto; }
 
 .has-feedback {
   position: relative; }
-  .has-feedback .form-control {
+  .has-feedback .form-control, .has-feedback .page-header > h1 > select {
     padding-right: 42.5px; }
 
 .form-control-feedback {
@@ -2462,14 +2466,14 @@ select[multiple].input-lg,
   line-height: 34px;
   text-align: center; }
 
-.input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
+.input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback, .form-horizontal .form-group-lg .page-header > h1 > select + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .page-header > h1.input-group-lg > select + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px; }
 
-.input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
+.input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback, .form-horizontal .form-group-sm .page-header > h1 > select + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .page-header > h1.input-group-sm > select + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback {
   width: 30px;
@@ -2483,11 +2487,11 @@ select[multiple].input-lg,
 .has-success .radio-inline,
 .has-success .checkbox-inline {
   color: #3c763d; }
-.has-success .form-control {
+.has-success .form-control, .has-success .page-header > h1 > select {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-success .form-control:focus {
+  .has-success .form-control:focus, .has-success .page-header > h1 > select:focus {
     border-color: #2b542c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -2505,11 +2509,11 @@ select[multiple].input-lg,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline {
   color: #8a6d3b; }
-.has-warning .form-control {
+.has-warning .form-control, .has-warning .page-header > h1 > select {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-warning .form-control:focus {
+  .has-warning .form-control:focus, .has-warning .page-header > h1 > select:focus {
     border-color: #66512c;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -2527,11 +2531,11 @@ select[multiple].input-lg,
 .has-error .radio-inline,
 .has-error .checkbox-inline {
   color: #a94442; }
-.has-error .form-control {
+.has-error .form-control, .has-error .page-header > h1 > select {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-error .form-control:focus {
+  .has-error .form-control:focus, .has-error .page-header > h1 > select:focus {
     border-color: #843534;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
@@ -2556,7 +2560,7 @@ select[multiple].input-lg,
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
-  .form-inline .form-control, .navbar-form .form-control {
+  .form-inline .form-control, .navbar-form .form-control, .form-inline .page-header > h1 > select, .navbar-form .page-header > h1 > select {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -2567,9 +2571,11 @@ select[multiple].input-lg,
     .form-inline .input-group .input-group-btn,
     .navbar-form .input-group .input-group-btn,
     .form-inline .input-group .form-control,
-    .navbar-form .input-group .form-control {
+    .navbar-form .input-group .form-control,
+    .form-inline .input-group .page-header > h1 > select,
+    .navbar-form .input-group .page-header > h1 > select {
       width: auto; }
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control {
+  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline .page-header > h1.input-group > select, .navbar-form .page-header > h1.input-group > select {
     width: 100%; }
   .form-inline .control-label, .navbar-form .control-label {
     margin-bottom: 0;
@@ -2878,7 +2884,7 @@ tbody.collapse.in {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
-  .dropdown-menu.pull-right {
+  .dropdown-menu.pull-right, .page-header > h1 > select.dropdown-menu {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -2945,7 +2951,7 @@ tbody.collapse.in {
   top: 0;
   z-index: 990; }
 
-.pull-right > .dropdown-menu {
+.pull-right > .dropdown-menu, .page-header > h1 > select > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -3139,7 +3145,7 @@ tbody.collapse.in {
     float: none;
     padding-left: 0;
     padding-right: 0; }
-  .input-group .form-control {
+  .input-group .form-control, .input-group .page-header > h1 > select {
     position: relative;
     z-index: 2;
     float: left;
@@ -3148,11 +3154,13 @@ tbody.collapse.in {
 
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control {
+.input-group .form-control,
+.input-group .page-header > h1 > select {
   display: table-cell; }
   .input-group-addon:not(:first-child):not(:last-child),
   .input-group-btn:not(:first-child):not(:last-child),
-  .input-group .form-control:not(:first-child):not(:last-child) {
+  .input-group .form-control:not(:first-child):not(:last-child),
+  .input-group .page-header > h1 > select:not(:first-child):not(:last-child) {
     border-radius: 0; }
 
 .input-group-addon,
@@ -3171,13 +3179,13 @@ tbody.collapse.in {
   background-color: #eeeeee;
   border: 1px solid #cccccc;
   border-radius: 3px; }
-  .input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control,
+  .input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control, .form-horizontal .form-group-sm .page-header > h1 > select.input-group-addon,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 2px; }
-  .input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control,
+  .input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control, .form-horizontal .form-group-lg .page-header > h1 > select.input-group-addon,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
     padding: 10px 16px;
@@ -3187,7 +3195,7 @@ tbody.collapse.in {
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group .form-control:first-child,
+.input-group .form-control:first-child, .input-group .page-header > h1 > select:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .btn-group > .btn,
@@ -3200,7 +3208,7 @@ tbody.collapse.in {
 .input-group-addon:first-child {
   border-right: 0; }
 
-.input-group .form-control:last-child,
+.input-group .form-control:last-child, .input-group .page-header > h1 > select:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group > .btn,
@@ -4145,7 +4153,7 @@ a.thumbnail.active {
 
 .media > .pull-left {
   margin-right: 10px; }
-.media > .pull-right {
+.media > .pull-right, .page-header > h1.media > select {
   margin-left: 10px; }
 
 .media-list {
@@ -5093,7 +5101,7 @@ button.close {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right {
+.pull-right, .page-header > h1 > select {
   float: right !important; }
 
 .pull-left {
@@ -5293,6 +5301,32 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.client-selector {
+  width: 220px; }
+  .client-selector > button {
+    width: 100%;
+    text-align: left; }
+    .client-selector > button > .caret {
+      float: right;
+      margin-top: 8px; }
+  .client-selector .dropdown-menu {
+    min-width: 220px;
+    max-height: 360px;
+    padding: 10px;
+    overflow: auto; }
+    .client-selector .dropdown-menu > li > a {
+      padding: 10px; }
+  .client-selector .form-group {
+    margin-bottom: 0; }
+    .client-selector .form-group > .form-control, .client-selector .page-header > h1.form-group > select {
+      padding-right: 32px; }
+  .client-selector .form-control-feedback {
+    pointer-events: none;
+    top: 0;
+    right: 9px; }
+  .client-selector .divider {
+    margin: 10px 0; }
+
 .main-container {
   padding: 0;
   float: none; }
@@ -5488,7 +5522,7 @@ input[type="checkbox"].toggle {
   width: auto;
   text-align: inherit; }
 
-.form-control.inline {
+.form-control.inline, .page-header > h1 > select {
   display: inline;
   width: auto;
   margin-left: 10px; }

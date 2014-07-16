@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chaordic Bootstrap Demo</title>
-    <link rel="stylesheet" href="../dist/styles/chaordic-bootstrap.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/styles/chaordic-bootstrap.css">
 </head>
 <body>
     <div class="sidebar">
@@ -34,11 +34,48 @@
         <div class="page-header">
             <h1>
                 Demo
-                <select class="form-control inline pull-right">
-                    <option>Imaginarium</option>
-                    <option>Kangoolu</option>
-                    <option>Livrarias Saraiva</option>
-                </select>
+                <div class="client-selector btn-group pull-right">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                        <span id="selectedClientName">Imaginarium</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control">
+                                <span class="fa fa-search form-control-feedback"></span>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="active">
+                            <a href="#">Imaginarium</a>
+                        </li>
+                        <li>
+                            <a href="#">Kangoolu</a>
+                        </li>
+                        <li>
+                            <a href="#">Livrarias Saraiva</a>
+                        </li>
+                        <li>
+                            <a href="#">Kangoolu</a>
+                        </li>
+                        <li>
+                            <a href="#">Livrarias Saraiva</a>
+                        </li>
+                        <li>
+                            <a href="#">Kangoolu</a>
+                        </li>
+                        <li>
+                            <a href="#">Livrarias Saraiva</a>
+                        </li>
+                        <li>
+                            <a href="#">Kangoolu</a>
+                        </li>
+                        <li>
+                            <a href="#">Livrarias Saraiva</a>
+                        </li>
+                    </ul>
+                </div>
             </h1>
         </div>
         <div class="page-content">

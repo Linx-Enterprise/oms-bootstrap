@@ -1,0 +1,44 @@
+.client-selector {
+    width: $client-selector-width;
+
+    > button {
+        width: 100%;
+        text-align: left;
+
+        > .caret {
+            float: right;
+            margin-top: 8px;
+        }
+    }
+
+    .dropdown-menu {
+        min-width: $client-selector-width;
+        max-height: $client-selector-max-height;
+        padding: 10px;
+        overflow: auto;
+
+        > li {
+            > a {
+                padding: 10px;
+            }
+        }
+    }
+
+    .form-group {
+        margin-bottom: 0;
+
+        > .form-control {
+            padding-right: 32px;
+        }
+    }
+
+    .form-control-feedback {
+        pointer-events: none;
+        top: 0;
+        right: 9px;
+    }
+
+    .divider {
+        margin: 10px 0;
+    }
+}
