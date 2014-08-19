@@ -1,24 +1,38 @@
 .sidebar {
     @extend .col-sm-3;
     @extend .col-lg-2;
-    background: $nav-sidebar-bg-color;
-    padding: 0 0 $user-height;
     z-index: 9999;
+    padding: 0;
+    background: $nav-sidebar-bg-color;
+    font-size: $nav-sidebar-font-size;
 }
 
 .sidebar-brand {
     display: block;
-    height: 84px;
-    text-indent: -99999px;
-    background: transparent $nav-sidebar-logo center no-repeat;
-    border-bottom: 1px solid $nav-sidebar-link-border-bottom-color;
+    height: $nav-sidebar-brand-height;
+    line-height: $nav-sidebar-brand-height;
+    text-indent: -9999px;
+    background: $nav-sidebar-brand-bg-color $nav-sidebar-logo no-repeat 20px;
+
+    > i {
+        float: right;
+    }
+}
+
+.sidebar-header {
+    padding: $nav-sidebar-header-padding;
+    color: $nav-sidebar-header-color;
+    border-top: 1px solid $nav-sidebar-header-border-color;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:first-child {
+        border-top: 0;
+    }
 }
 
 .sidebar > .nav {
     > li {
-        border-top: 1px solid $nav-sidebar-link-border-top-color;
-        border-bottom: 1px solid $nav-sidebar-link-border-bottom-color;
-
         > a {
             border-left: 3px solid transparent;
             color: $nav-sidebar-link-color;
@@ -50,80 +64,27 @@
     }
 }
 
-.user {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: $user-height;
-    line-height: $user-height;
-    background-color: $user-bg;
-    border-top: 1px solid $user-border-color;
-    color: $user-color;
-    font-weight: $user-font-weight;
-}
-
-.user-info {
-    margin: 0 ($user-height + 15) 0 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    img {
-        width: 30px;
-        height: 30px;
-        margin-right: 15px;
-    }
-}
-
-.user-logout {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $user-height;
-    height: 100%;
-    border-left: 1px solid $user-border-color;
-    text-align: center;
-    font-size: 18px;
-    color: $user-color;
-
-    &:hover,
-    &:focus {
-        background-color: $user-logout-hover-color;
-        color: $user-color;
-    }
-}
-
 @media (min-width: $screen-sm) {
     .sidebar {
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
-    }
-}
 
-@media (min-width: $screen-sm) and (max-width: $screen-lg) {
-    .sidebar {
-        @include transition(width .15s ease);
-    }
+        > .nav {
+            position: absolute;
+            top: $nav-sidebar-brand-height;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none;
+            padding-bottom: 30px;
 
-    .sidebar:not(:hover) {
-        width: $nav-sidebar-collapsed-width;
-
-        > .nav > li > a > span {
-            opacity: 0;
-        }
-
-        .sidebar-brand {
-            background: transparent $nav-sidebar-collapsed-logo center no-repeat;
-        }
-
-        .user-info {
-            display: none;
-        }
-
-        .user-logout {
-            width: 100%;
+            &::-webkit-scrollbar {
+                width: 0;
+            }
         }
     }
 }

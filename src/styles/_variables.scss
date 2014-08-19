@@ -7,25 +7,25 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:            lighten(#000, 19.6078431%) !default; // #323232
-$gray-dark:              lighten(#000, 26.6666667%) !default; // #444444
-$gray:                   lighten(#000, 63.1372549%) !default; // #a1a1a1
-$gray-light:             lighten(#000, 78.4313725%) !default; // #c8c8c8
-$gray-lighter:           lighten(#000, 93.3333333%) !default; // #eeeeee
+$gray-darker:           #333333 !default; // #323232
+$gray-dark:             #444444 !default; // #444444
+$gray:                  #a1a1a1 !default; // #a1a1a1
+$gray-light:            #dddddd !default; // #c8c8c8
+$gray-lighter:          #eeeeee !default; // #eeeeee
 
-$brand-primary:         #835393 !default;
-$brand-success:         #8cc152 !default;
-$brand-info:            #ccd1d9 !default;
-$brand-warning:         #e99002 !default;
-$brand-danger:          #aa1423 !default;
+$brand-primary:         #7a3091 !default;
+$brand-success:         #9aca40 !default;
+$brand-info:            #3598db !default;
+$brand-warning:         #ffce55 !default;
+$brand-danger:          #d8192b !default;
 
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
-$body-bg:               #f0f0f0 !default;
-
+$body-bg:               #f9f9f9 !default;
+$link-hover-color:      #652878 !default;
 
 //== Typography
 //
@@ -34,14 +34,14 @@ $body-bg:               #f0f0f0 !default;
 $font-family-sans-serif:        "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:             "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
 
-$font-size-h1:                  28px !default;
+$font-size-h1:                  24px !default;
 $font-size-h2:                  21px !default;
 $font-size-h3:                  18px !default;
 $font-size-h4:                  16px !default;
 $font-size-h5:                  16px !default;
 $font-size-h6:                  14px !default;
 
-$font-weight-h1:                300 !default;
+$font-weight-h1:                400 !default;
 $font-weight-h2:                400 !default;
 $font-weight-h3:                300 !default;
 $font-weight-h4:                500 !default;
@@ -53,9 +53,9 @@ $font-weight-h6:                500 !default;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$border-radius-small:           2px !default;
-$border-radius-base:            3px !default;
-$border-radius-large:           4px !default;
+$border-radius-small:           0 !default;
+$border-radius-base:            0 !default;
+$border-radius-large:           0 !default;
 
 
 //== Navs
@@ -63,27 +63,31 @@ $border-radius-large:           4px !default;
 //##
 
 //=== Shared nav styles
+$nav-link-padding:                          12px 15px !default;
 $nav-link-hover-bg:                         transparent !default;
 $nav-link-hover-color:                      inherit !default;
 
 //== Sidebar
-$nav-sidebar-collapsed-width:               56px;
 $nav-sidebar-logo:                          url('../../demo/assets/logo-demo.png') !default;
-$nav-sidebar-collapsed-logo:                url('../../demo/assets/logo-demo-collapsed.png') !default;
 $nav-sidebar-bg-color:                      $gray-darker !default;
 $nav-sidebar-border-color:                  #000 !default;
+$nav-sidebar-font-size:                  12px !default;
 
+$nav-sidebar-brand-height:                  62px !default;
 $nav-sidebar-brand-padding:                 21px 15px !default;
+$nav-sidebar-brand-bg-color:                #2b2b2b !default;
 
 $nav-sidebar-link-color:                    $gray !default;
-$nav-sidebar-link-border-top-color:         $gray-dark !default;
-$nav-sidebar-link-border-bottom-color:      #000 !default;
 
 $nav-sidebar-link-hover-bg:                 $gray-dark !default;
 $nav-sidebar-link-hover-color:              $gray-lighter !default;
 
 $nav-sidebar-active-link-bg:                $gray-dark !default;
 $nav-sidebar-active-link-color:             $gray-lighter !default;
+
+$nav-sidebar-header-padding:                18px 20px !default;
+$nav-sidebar-header-color:                  #666666 !default;
+$nav-sidebar-header-border-color:           $gray-dark !default;
 
 //== Tabs
 $nav-tabs-border-color:                     transparent !default;
@@ -97,34 +101,16 @@ $nav-tabs-active-link-hover-accent-color:   $brand-primary !default;
 $nav-tabs-active-link-hover-font-weight:    500 !default;
 
 
-//== User
-//
-//##
-
-$user-height:                   50px;
-$user-bg:                       rgba(0, 0, 0, .4) !default;
-$user-color:                    $gray-light !default;
-$user-font-weight:              300 !default;
-$user-border-color:             #000 !default;
-
-$user-logout-hover-color:       rgba(255, 255, 255, .1) !default;
-
-
 //== Type
 //
 //##
 
-$page-header-bg:                #fff !default;
-$page-header-border-color:      $gray-light !default;
-$page-header-padding:           10px 20px 0 !default;
+$page-header-bg:                    #fff !default;
+$page-header-border-color:          $gray-light !default;
+$page-header-padding:               14px 20px 13px !default;
 
-
-//== Client selector
-//
-//##
-
-$client-selector-width:         220px !default;
-$client-selector-max-height:    360px !default;
+$page-header-dropdown-width:        220px !default;
+$page-header-dropdown-max-height:   360px !default;
 
 
 //== Panels

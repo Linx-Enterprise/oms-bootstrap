@@ -47,7 +47,7 @@ Basic Template
         <link href="styles/chaordic-bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <!-- see Sidebar component -->
+        <!-- see sidebar component -->
         <script src="scripts/jquery.min.js"></script>
         <script src="scripts/chaordic-bootstrap.min.js"></script>
     </body>
@@ -76,8 +76,8 @@ Components
     </div>
 </div>
 <div class="main-container">
-    <!-- see Page header component -->
-    <!-- see Page content component -->
+    <!-- see page header component -->
+    <!-- see page content component -->
 </div>
 ```
 
@@ -140,6 +140,6 @@ Components
 
 ```HTML
 <div class="page-content">
-    ...
+    <!-- page content goes inside -->
 </div>
 ```

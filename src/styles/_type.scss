@@ -6,17 +6,50 @@ h5, .h5 { font-weight: $font-weight-h5; }
 h6, .h6 { font-weight: $font-weight-h6; }
 
 .page-header {
+    @extend .clearfix;
     margin: 0;
     padding: $page-header-padding;
     background-color: $page-header-bg;
 
     > h1 {
-        margin-bottom: 23px;
+        margin: 0;
+        line-height: 34px;
+        float: left;
+    }
 
-        > select {
-            @extend .form-control;
-            @extend .inline;
-            @extend .pull-right;
+    > div {
+        float: right;
+
+        > * {
+            &:after {
+                position: absolute;
+                display: inline-block;
+                content: '';
+                margin: 10px 0;
+                height: 14px;
+                border-right: 1px solid $gray-lighter;
+            }
+
+            &:last-child:after {
+                display: none;
+            }
+        }
+    }
+
+    .btn-link {
+        color: $gray;
+    }
+
+    .dropdown-menu {
+        min-width: $page-header-dropdown-width;
+        max-height: $page-header-dropdown-max-height;
+        padding: 10px;
+        overflow: auto;
+
+        > li {
+            > a {
+                padding: 10px;
+            }
         }
     }
 }

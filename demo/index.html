@@ -10,36 +10,82 @@
 </head>
 <body>
     <div class="sidebar">
-        <a class="sidebar-brand" href="#">Chaordic Bootstrap Demo</a>
+        <a class="sidebar-brand" href="#"><i class="fa fa-angle-down"></i></a>
         <ul class="nav">
+            <li class="sidebar-header">Advertiser</li>
             <li class="active">
-                <a href="#"><i class="fa fa-home"></i><span>Home</span></a>
+                <a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i><span>Reports</span></a>
+                <a href="#"><i class="fa fa-bar-chart-o"></i><span>Desempenho</span></a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-wrench"></i><span>Settings</span></a>
+                <a href="#"><i class="fa fa-gavel"></i><span>Lances</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-dollar"></i><span>Orçamento</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-cloud"></i><span>Sincronização</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-location-arrow"></i><span>Rastreamento</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-location-arrow"></i><span>Rastreamento</span></a>
+            </li>
+            <li class="sidebar-header">Publisher</li>
+            <li>
+                <a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o"></i><span>Desempenho</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bars"></i><span>Vitrines</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-lock"></i><span>Categorias bloqueadas</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-link"></i><span>Anunciantes bloqueados</span></a>
+            </li>
+            <li class="sidebar-header">Chaordic</li>
+            <li>
+                <a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-align-left"></i><span>Análise de compras</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-compress"></i><span>Associador</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-money"></i><span>Tabela de preços</span></a>
             </li>
         </ul>
-        <div class="user">
-            <div class="user-info">
-                <img class="img-circle" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=30" alt="Guilherme Pacheco">
-                Guilherme Pacheco
-            </div>
-            <a href="#" class="user-logout" title="Logout"><i class="fa fa-sign-out"></i></a>
-        </div>
     </div>
     <div class="main-container">
         <div class="page-header">
-            <h1>
-                Demo
-                <div class="client-selector btn-group pull-right">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-                        <span id="selectedClientName">Imaginarium</span>
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
+            <h1>Demo</h1>
+            <div>
+                <div class="btn-group">
+                    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Ferramentas</span> <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="#">Analytics</a>
+                        </li>
+                        <li>
+                            <a href="#">Billing Admin</a>
+                        </li>
+                        <li>
+                            <a href="#">Playground</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="client-selector btn-group">
+                    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Imaginarium</span> <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
                         <li>
                             <div class="form-group has-feedback">
                                 <input type="text" class="form-control">
@@ -56,27 +102,30 @@
                         <li>
                             <a href="#">Livrarias Saraiva</a>
                         </li>
+                    </ul>
+                </div>
+                <div class="user-area btn-group">
+                    <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
+                    <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Kangoolu</a>
+                            <a href="#"><i class="fa fa-edit"></i>Editar perfil</a>
                         </li>
                         <li>
-                            <a href="#">Livrarias Saraiva</a>
+                            <a href="#"><i class="fa fa-cog"></i>Minha conta</a>
                         </li>
                         <li>
-                            <a href="#">Kangoolu</a>
+                            <a href="#"><i class="fa fa-dollar"></i>Faturas</a>
                         </li>
                         <li>
-                            <a href="#">Livrarias Saraiva</a>
+                            <a href="#"><i class="fa fa-comments"></i>Feedback</a>
                         </li>
+                        <li class="divider"></li>
                         <li>
-                            <a href="#">Kangoolu</a>
-                        </li>
-                        <li>
-                            <a href="#">Livrarias Saraiva</a>
+                            <a href="#"><i class="fa fa-sign-out"></i>Sair</a>
                         </li>
                     </ul>
                 </div>
-            </h1>
+            </div>
         </div>
         <div class="page-content">
             <h2>SUBTITLE</h2>
