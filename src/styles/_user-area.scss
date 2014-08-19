@@ -2,7 +2,7 @@
     line-height: 28px;
     margin-left: 15px;
 
-    img {
+    > img {
         @extend .img-circle;
         width: 34px;
         height: 34px;

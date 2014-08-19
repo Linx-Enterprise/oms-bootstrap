@@ -10,7 +10,27 @@
 </head>
 <body>
     <div class="sidebar">
-        <a class="sidebar-brand" href="#"><i class="fa fa-angle-down"></i></a>
+        <div class="btn-group sidebar-brand">
+            <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
+            <ul>
+                <li>
+                    <a href="#"><img src="assets/logo-product.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/logo-product.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/logo-product.png" alt=""></a>
+                </li>
+                <li class="sidebar-header">Mais</li>
+                <li>
+                    <a href="#"><i class="fa fa-th-large"></i>Hub</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a>
+                </li>
+            </ul>
+        </div>
         <ul class="nav">
             <li class="sidebar-header">Advertiser</li>
             <li class="active">
@@ -70,22 +90,22 @@
             <h1>Demo</h1>
             <div>
                 <div class="btn-group">
-                    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Ferramentas</span> <i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
+                    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">Ferramentas <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Analytics</a>
+                            <a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a>
                         </li>
                         <li>
-                            <a href="#">Billing Admin</a>
+                            <a href="#"><i class="fa fa-money"></i>Billing Admin</a>
                         </li>
                         <li>
-                            <a href="#">Playground</a>
+                            <a href="#"><i class="fa fa-gamepad"></i>Playground</a>
                         </li>
                     </ul>
                 </div>
                 <div class="client-selector btn-group">
                     <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Imaginarium</span> <i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
+                    <ul class="dropdown-menu">
                         <li>
                             <div class="form-group has-feedback">
                                 <input type="text" class="form-control">

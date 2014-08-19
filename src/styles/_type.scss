@@ -41,6 +41,7 @@ h6, .h6 { font-weight: $font-weight-h6; }
     }
 
     .dropdown-menu {
+        @extend .dropdown-menu-right;
         min-width: $page-header-dropdown-width;
         max-height: $page-header-dropdown-max-height;
         padding: 10px;
