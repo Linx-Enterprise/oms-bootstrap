@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chaordic Bootstrap Demo</title>
+    <title>Chaordic Market</title>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../dist/styles/chaordic-bootstrap.css">
 </head>
@@ -12,77 +12,39 @@
     <div class="sidebar">
         <div class="btn-group sidebar-brand">
             <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
-            <ul>
-                <li>
-                    <a href="#"><img src="assets/logo-product.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/logo-product.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/logo-product.png" alt=""></a>
-                </li>
-                <li class="sidebar-header">Mais</li>
-                <li>
-                    <a href="#"><i class="fa fa-th-large"></i>Hub</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
+                <li><a href="#"><img src="assets/logo-product.png" alt="Produto 2"></a></li>
+                <li><a href="#"><img src="assets/logo-product.png" alt="Produto 3"></a></li>
+                <li class="dropdown-submenu">
+                    <a href="#" class="sidebar-header">Mais</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
+                        <li><a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
         <ul class="nav">
             <li class="sidebar-header">Advertiser</li>
-            <li class="active">
-                <a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i><span>Desempenho</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-gavel"></i><span>Lances</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-dollar"></i><span>Orçamento</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-cloud"></i><span>Sincronização</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-location-arrow"></i><span>Rastreamento</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-location-arrow"></i><span>Rastreamento</span></a>
-            </li>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i>Desempenho</a></li>
+            <li><a href="#"><i class="fa fa-gavel"></i>Lances</a></li>
+            <li><a href="#"><i class="fa fa-dollar"></i>Orçamento</a></li>
+            <li><a href="#"><i class="fa fa-cloud"></i>Sincronização</a></li>
+            <li><a href="#"><i class="fa fa-location-arrow"></i>Rastreamento</a></li>
+            <li><a href="#"><i class="fa fa-location-arrow"></i>Rastreamento</a></li>
             <li class="sidebar-header">Publisher</li>
-            <li>
-                <a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i><span>Desempenho</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bars"></i><span>Vitrines</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-lock"></i><span>Categorias bloqueadas</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-link"></i><span>Anunciantes bloqueados</span></a>
-            </li>
+            <li><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i>Desempenho</a></li>
+            <li><a href="#"><i class="fa fa-bars"></i>Vitrines</a></li>
+            <li><a href="#"><i class="fa fa-lock"></i>Categorias bloqueadas</a></li>
+            <li><a href="#"><i class="fa fa-link"></i>Anunciantes bloqueados</a></li>
             <li class="sidebar-header">Chaordic</li>
-            <li>
-                <a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-align-left"></i><span>Análise de compras</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-compress"></i><span>Associador</span></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-money"></i><span>Tabela de preços</span></a>
-            </li>
+            <li><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-align-left"></i>Análise de compras</a></li>
+            <li><a href="#"><i class="fa fa-compress"></i>Associador</a></li>
+            <li><a href="#"><i class="fa fa-money"></i>Tabela de preços</a></li>
         </ul>
     </div>
     <div class="main-container">
@@ -92,19 +54,13 @@
                 <div class="btn-group">
                     <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">Ferramentas <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-money"></i>Billing Admin</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-gamepad"></i>Playground</a>
-                        </li>
+                        <li><a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a></li>
+                        <li><a href="#"><i class="fa fa-money"></i>Billing Admin</a></li>
+                        <li><a href="#"><i class="fa fa-gamepad"></i>Playground</a></li>
                     </ul>
                 </div>
                 <div class="client-selector btn-group">
-                    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Imaginarium</span> <i class="fa fa-angle-down"></i></a>
+                    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="form-group has-feedback">
@@ -113,40 +69,27 @@
                             </div>
                         </li>
                         <li class="divider"></li>
-                        <li class="active">
-                            <a href="#">Imaginarium</a>
-                        </li>
-                        <li>
-                            <a href="#">Kangoolu</a>
-                        </li>
-                        <li>
-                            <a href="#">Livrarias Saraiva</a>
-                        </li>
+                        <li class="active"><a href="#">Livrarias Saraiva</a></li>
+                        <li><a href="#">Imaginarium</a></li>
                     </ul>
                 </div>
                 <div class="user-area btn-group">
                     <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-edit"></i>Editar perfil</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-cog"></i>Minha conta</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dollar"></i>Faturas</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-comments"></i>Feedback</a>
-                        </li>
+                        <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Minha conta</a></li>
+                        <li><a href="#"><i class="fa fa-dollar"></i>Faturas</a></li>
+                        <li><a href="#"><i class="fa fa-comments"></i>Feedback</a></li>
                         <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-sign-out"></i>Sair</a>
-                        </li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i>Sair</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#" data-toggle="tab">Por categoria</a></li>
+            <li><a href="#" data-toggle="tab">Por produto</a></li>
+        </ul>
         <div class="page-content">
             <h2>SUBTITLE</h2>
             <div class="row">

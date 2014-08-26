@@ -1,3 +1,11 @@
 .dropdown-menu > li > a > i:first-child {
     margin-right: 8px;
 }
+
+.dropdown-submenu {
+    position:relative;
+
+    &:hover > .dropdown-menu {
+        display:block;
+    }
+}

@@ -1,16 +1,22 @@
-.nav-tabs > li {
-    > a {
-        border: none;
-        border-bottom: 3px solid transparent;
-    }
+.nav-tabs {
+    padding: $nav-tabs-padding;
+    background-color: $page-header-bg;
+    border-bottom: 1px solid $page-header-border-color;
 
-    &.active > a {
-        &,
-        &:hover,
-        &:focus {
-            font-weight: $nav-tabs-active-link-hover-font-weight;
+    > li {
+        > a {
             border: none;
-            border-bottom: 3px solid $nav-tabs-active-link-hover-accent-color;
+            border-bottom: 3px solid transparent;
+        }
+
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                font-weight: $nav-tabs-active-link-hover-font-weight;
+                border: none;
+                border-bottom: 3px solid $nav-tabs-active-link-hover-accent-color;
+            }
         }
     }
 }

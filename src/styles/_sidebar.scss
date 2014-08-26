@@ -6,6 +6,39 @@
     background: $nav-sidebar-bg-color;
     font-size: $nav-sidebar-font-size;
     overflow: hidden;
+
+    > .nav {
+        > li {
+            > a {
+                border-left: 3px solid transparent;
+                color: $nav-sidebar-link-color;
+                white-space: nowrap;
+                overflow: hidden;
+
+                > i {
+                    font-size: 16px;
+                    margin-right: 15px;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $nav-sidebar-link-hover-bg;
+                    color: $nav-sidebar-link-hover-color;
+                }
+            }
+
+            &.active > a {
+                &,
+                &:hover,
+                &:focus {
+                    border-left: 3px solid $product-color;
+                    background-color: $nav-sidebar-active-link-bg;
+                    color: $nav-sidebar-active-link-color;
+                    cursor: default;
+                }
+            }
+        }
+    }
 }
 
 .sidebar-brand {
@@ -23,8 +56,7 @@
         color: $gray;
     }
 
-    > ul {
-        @extend .dropdown-menu;
+    > ul, ul {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -45,41 +77,8 @@
         }
     }
 
-    .sidebar-header {
+    .dropdown-submenu {
         border-top: 1px solid $gray-darker;
-    }
-}
-
-.sidebar > .nav {
-    > li {
-        > a {
-            border-left: 3px solid transparent;
-            color: $nav-sidebar-link-color;
-            white-space: nowrap;
-            overflow: hidden;
-
-            > i {
-                font-size: 16px;
-                margin-right: 15px;
-            }
-
-            &:hover,
-            &:focus {
-                background-color: $nav-sidebar-link-hover-bg;
-                color: $nav-sidebar-link-hover-color;
-            }
-        }
-
-        &.active > a {
-            &,
-            &:hover,
-            &:focus {
-                border-left: 3px solid $product-color;
-                background-color: $nav-sidebar-active-link-bg;
-                color: $nav-sidebar-active-link-color;
-                cursor: default;
-            }
-        }
     }
 }
 

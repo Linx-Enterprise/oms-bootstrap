@@ -43,11 +43,12 @@ Basic Template
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Chaordic Bootstrap 101 Template</title>
+        <title>Chaordic Market</title>
         <link href="styles/chaordic-bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <!-- see sidebar component -->
+        <!-- see main container component -->
         <script src="scripts/jquery.min.js"></script>
         <script src="scripts/chaordic-bootstrap.min.js"></script>
     </body>
@@ -61,22 +62,31 @@ Components
 
 ```HTML
 <div class="sidebar">
-    <a class="sidebar-brand" href="#">Chaordic Product</a>
-    <ul class="nav">
-        <li class="active"><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
-        <li><a href="#"><i class="fa fa-bar-chart-o"></i><span>Reports</span></a></li>
-        <li><a href="#"><i class="fa fa-wrench"></i><span>Settings</span></a></li>
-    </ul>
-    <div class="user">
-        <div class="user-info">
-            <img class="img-circle" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=30" alt="Guilherme Pacheco">
-            Guilherme Pacheco
-        </div>
-        <a href="#" class="user-logout" title="Logout"><i class="fa fa-sign-out"></i></a>
+    <div class="btn-group sidebar-brand">
+        <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
+        <ul>
+            <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
+            <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
+            <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
+            <li class="sidebar-header">Mais</li>
+            <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
+            <li><a href="#"><i class="fa fa-th-large"></i>Integração</a></li>
+        </ul>
     </div>
+    <ul class="nav">
+        <li class="sidebar-header">Advertiser</li>
+        <li class="active"><a href="#"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
+        <li><a href="#"><i class="fa fa-bar-chart-o"></i><span>Desempenho</span></a></li>
+    </ul>
 </div>
+```
+
+### Main container
+
+```HTML
 <div class="main-container">
     <!-- see page header component -->
+    <!-- see tabs component -->
     <!-- see page content component -->
 </div>
 ```
@@ -86,20 +96,15 @@ Components
 ```HTML
 <div class="page-header">
     <h1>Home</h1>
-</div>
-```
-
-*With client selector*
-
-```HTML
-<div class="page-header">
-    <h1>
-        Home
-        <div class="client-selector btn-group pull-right">
-            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-                <span id="selectedClientName">Imaginarium</span>
-                <span class="caret"></span>
-            </button>
+    <div>
+        <div class="btn-group">
+            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">Ferramentas <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a></li>
+            </ul>
+        </div>
+        <div class="client-selector btn-group">
+            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
                 <li>
                     <div class="form-group has-feedback">
@@ -108,32 +113,29 @@ Components
                     </div>
                 </li>
                 <li class="divider"></li>
-                <li class="active"><a href="#">Imaginarium</a></li>
-                <li><a href="#">Kangoolu</a></li>
-                <li><a href="#">Livrarias Saraiva</a></li>
+                <li class="active"><a href="#">Livrarias Saraiva</a></li>
+                <li><a href="#">Imaginarium</a></li>
             </ul>
         </div>
-    </h1>
+        <div class="user-area btn-group">
+            <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
+            <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i>Sair</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 ```
 
-*With tabs*
+### Tabs
 
 ```HTML
-<div class="page-header">
-    <h1>
-        Home
-        <select>
-            <option>Imaginarium</option>
-            <option>Kangoolu</option>
-            <option>Livrarias Saraiva</option>
-        </select>
-    </h1>
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#synonyms" data-toggle="tab">Sinônimos</a></li>
-        <li><a href="#redirects" data-toggle="tab">Redirecionamentos</a></li>
-    </ul>
-</div>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#" data-toggle="tab">Por categoria</a></li>
+    <li><a href="#" data-toggle="tab">Por produto</a></li>
+</ul>
 ```
 
 ### Page content
