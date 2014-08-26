@@ -11,7 +11,7 @@ You can either clone the repo or install with Bower:
 -   `git clone git@github.com:chaordic/bootstrap`
 -   `bower install git@github.com:chaordic/bootstrap --save`
 
-There should be an option to share the same file for everybody, but not now.
+There should be an option to share the same file with everybody, but not now.
 
 What's included
 ---------------
@@ -36,7 +36,7 @@ In order to have more icon options (while we don't have our own icons font) we r
 Basic Template
 --------------
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -48,7 +48,13 @@ Basic Template
     </head>
     <body>
         <!-- see sidebar component -->
-        <!-- see main container component -->
+        <div class="main-container">
+            <!-- see page header component -->
+            <!-- see tabs component -->
+            <div class="page-content">
+                <!-- page content goes inside -->
+            </div>
+        </div>
         <script src="scripts/jquery.min.js"></script>
         <script src="scripts/chaordic-bootstrap.min.js"></script>
     </body>
@@ -60,7 +66,7 @@ Components
 
 ### Sidebar
 
-```HTML
+```html
 <div class="sidebar">
     <div class="btn-group sidebar-brand">
         <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
@@ -81,67 +87,66 @@ Components
 </div>
 ```
 
-### Main container
+### Page header
 
-```HTML
-<div class="main-container">
-    <!-- see page header component -->
-    <!-- see tabs component -->
-    <!-- see page content component -->
+```html
+<div class="page-header">
+    <h1>Dashboard</h1>
+    <div>
+        <!-- see tool selector component -->
+        <!-- see client selector component -->
+        <!-- see user area component -->
+    </div>
 </div>
 ```
 
-### Page header
+### Tool selector
+```html
+<div class="btn-group">
+    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">Ferramentas <i class="fa fa-angle-down"></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a></li>
+    </ul>
+</div>
+```
 
-```HTML
-<div class="page-header">
-    <h1>Home</h1>
-    <div>
-        <div class="btn-group">
-            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">Ferramentas <i class="fa fa-angle-down"></i></a>
-            <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a></li>
-            </ul>
-        </div>
-        <div class="client-selector btn-group">
-            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
-            <ul class="dropdown-menu">
-                <li>
-                    <div class="form-group has-feedback">
-                        <input type="text" class="form-control">
-                        <span class="fa fa-search form-control-feedback"></span>
-                    </div>
-                </li>
-                <li class="divider"></li>
-                <li class="active"><a href="#">Livrarias Saraiva</a></li>
-                <li><a href="#">Imaginarium</a></li>
-            </ul>
-        </div>
-        <div class="user-area btn-group">
-            <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
-            <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-sign-out"></i>Sair</a></li>
-            </ul>
-        </div>
-    </div>
+### Client selector
+
+```html
+<div class="client-selector btn-group">
+    <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
+    <ul class="dropdown-menu">
+        <li>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control">
+                <span class="fa fa-search form-control-feedback"></span>
+            </div>
+        </li>
+        <li class="divider"></li>
+        <li class="active"><a href="#">Livrarias Saraiva</a></li>
+        <li><a href="#">Imaginarium</a></li>
+    </ul>
+</div>
+```
+
+### User area
+
+```html
+<div class="user-area btn-group">
+    <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
+    <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
+        <li class="divider"></li>
+        <li><a href="#"><i class="fa fa-sign-out"></i>Sair</a></li>
+    </ul>
 </div>
 ```
 
 ### Tabs
 
-```HTML
+```html
 <ul class="nav nav-tabs">
     <li class="active"><a href="#" data-toggle="tab">Por categoria</a></li>
     <li><a href="#" data-toggle="tab">Por produto</a></li>
 </ul>
-```
-
-### Page content
-
-```HTML
-<div class="page-content">
-    <!-- page content goes inside -->
-</div>
 ```
