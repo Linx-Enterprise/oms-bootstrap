@@ -5294,7 +5294,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .client-selector .form-group {
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
   .client-selector .form-group > .form-control {
     padding-right: 32px; }
 .client-selector .form-control-feedback {
@@ -5551,6 +5551,8 @@ h6, .h6 {
       display: none; }
   .page-header .btn-link {
     color: #a1a1a1; }
+    .page-header .btn-link:hover {
+      text-decoration: none; }
   .page-header .dropdown-menu {
     min-width: 220px;
     max-height: 360px;

@@ -38,6 +38,10 @@ h6, .h6 { font-weight: $font-weight-h6; }
 
     .btn-link {
         color: $gray;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .dropdown-menu {

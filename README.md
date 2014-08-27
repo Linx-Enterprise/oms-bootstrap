@@ -118,7 +118,7 @@ Components
     <ul class="dropdown-menu">
         <li>
             <div class="form-group has-feedback">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="Busca">
                 <span class="fa fa-search form-control-feedback"></span>
             </div>
         </li>
