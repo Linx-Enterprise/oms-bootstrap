@@ -6,7 +6,7 @@
     > li {
         > a {
             border: none;
-            border-bottom: 3px solid transparent;
+            border-bottom: 5px solid transparent;
         }
 
         &.active > a {
@@ -15,7 +15,7 @@
             &:focus {
                 font-weight: $nav-tabs-active-link-hover-font-weight;
                 border: none;
-                border-bottom: 3px solid $nav-tabs-active-link-hover-accent-color;
+                border-bottom: 5px solid $nav-tabs-active-link-hover-accent-color;
             }
         }
     }

@@ -5324,16 +5324,16 @@ button.close {
   padding-top: 0; }
 
 .nav-tabs {
-  padding: 6px 15px 0;
+  padding: 4px 15px 0;
   background-color: white;
   border-bottom: 1px solid #dddddd; }
   .nav-tabs > li > a {
     border: none;
-    border-bottom: 3px solid transparent; }
+    border-bottom: 5px solid transparent; }
   .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     font-weight: 500;
     border: none;
-    border-bottom: 3px solid #7a3091; }
+    border-bottom: 5px solid #7a3091; }
 
 .panel {
   border: none; }
@@ -5342,7 +5342,7 @@ button.close {
   font-size: 21px; }
 
 .panel-featured {
-  border-left: 3px solid #7a3091;
+  border-left: 5px solid #7a3091;
   font-size: 36px; }
   .panel-featured > .panel-body {
     padding: 5px 10px 10px 80px; }
@@ -5364,10 +5364,11 @@ button.close {
   font-size: 12px;
   overflow: hidden; }
   .sidebar > .nav > li > a {
-    border-left: 3px solid transparent;
+    border-left: 5px solid transparent;
     color: #a1a1a1;
     white-space: nowrap;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-left: 13px; }
     .sidebar > .nav > li > a > i {
       font-size: 16px;
       margin-right: 15px; }
@@ -5375,7 +5376,7 @@ button.close {
       background-color: #444444;
       color: #eeeeee; }
   .sidebar > .nav > li.active > a, .sidebar > .nav > li.active > a:hover, .sidebar > .nav > li.active > a:focus {
-    border-left: 3px solid #7a3091;
+    border-left: 5px solid #7a3091;
     background-color: #444444;
     color: #eeeeee;
     cursor: default; }
