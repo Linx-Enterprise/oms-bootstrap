@@ -31,6 +31,8 @@ What else you'll need
 
 JavaScript based components require [JQuery](http://jquery.com/) to work, make sure to include it before `chaordic-bootstrap.js` in your page.
 
+If you want to use the daterangepicker component, you'll need [MomentJS](http://momentjs.com/) as well.
+
 In order to have more icon options (while we don't have our own icons font) we recommend you to use [Font Awesome](http://fontawesome.io/).
 
 Basic Template
@@ -149,4 +151,43 @@ Components
     <li class="active"><a href="#" data-toggle="tab">Por categoria</a></li>
     <li><a href="#" data-toggle="tab">Por produto</a></li>
 </ul>
+```
+
+### Date range picker
+
+```html
+<div class="btn btn-default daterangepicker pull-right">
+    <i class="fa fa-calendar space-right"></i> <span id="selectedDateRange">18/03/2013 - 08/07/2015</span> <span class="fa fa-angle-down"></span>
+</div>
+```
+
+```javascript
+// set locale
+moment.locale('pt-br');
+
+// create ranges to be offered in picker
+var todayStart = moment({}),
+    yesterdayEnd = todayStart.clone().subtract(1, 'milliseconds'),
+    ranges = {
+        'Hoje': [todayStart, yesterdayEnd.clone().add(1, 'days')],
+        'Ontem': [todayStart.clone().subtract(1, 'days'), yesterdayEnd],
+        'Última semana': [todayStart.clone().subtract(7, 'days'), yesterdayEnd],
+        'Últimos 30 Dias': [todayStart.clone().subtract(30, 'days'), yesterdayEnd]
+    };
+
+// initialize component
+$('.daterangepicker').daterangepicker({
+    ranges: ranges,
+    maxDate: yesterdayEnd.clone().add(1, 'days'),
+    locale: {
+        applyLabel: 'Salvar',
+        cancelLabel: 'Cancelar',
+        fromLabel: 'De',
+        toLabel: 'Até',
+        customRangeLabel:'Outro intervalo'
+    }
+// listen for changes and update label
+},function(start, end) {
+    $('#selectedDateRange').text(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'))
+});
 ```

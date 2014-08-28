@@ -27,8 +27,8 @@
         </div>
         <ul class="nav">
             <li class="sidebar-header">Advertiser</li>
-            <li class="active"><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
-            <li><a href="#"><i class="fa fa-bar-chart-o"></i>Desempenho</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
+            <li class="active"><a href="#"><i class="fa fa-bar-chart-o"></i>Desempenho</a></li>
             <li><a href="#"><i class="fa fa-gavel"></i>Lances</a></li>
             <li><a href="#"><i class="fa fa-dollar"></i>Orçamento</a></li>
             <li><a href="#"><i class="fa fa-cloud"></i>Sincronização</a></li>
@@ -85,11 +85,14 @@
             </div>
         </div>
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#" data-toggle="tab">Por categoria</a></li>
+            <li class="active"><a href="#" data-toggle="tab">Resumo</a></li>
+            <li><a href="#" data-toggle="tab">Por categoria</a></li>
             <li><a href="#" data-toggle="tab">Por produto</a></li>
+            <div class="btn btn-default daterangepicker pull-right">
+                <i class="fa fa-calendar space-right"></i> <span id="selectedDateRange">18/03/2013 - 08/07/2015</span> <span class="fa fa-angle-down"></span>
+            </div>
         </ul>
         <div class="page-content">
-            <h2>SUBTITLE</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="panel panel-featured">
@@ -136,6 +139,36 @@
         </div>
     </div>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/moment/locale/pt-br.js"></script>
     <script src="../dist/scripts/chaordic-bootstrap.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var todayStart = moment({}),
+                yesterdayEnd = todayStart.clone().subtract(1, 'milliseconds'),
+                ranges = {
+                    'Hoje': [todayStart, yesterdayEnd.clone().add(1, 'days')],
+                    'Ontem': [todayStart.clone().subtract(1, 'days'), yesterdayEnd],
+                    'Última semana': [todayStart.clone().subtract(7, 'days'), yesterdayEnd],
+                    'Últimos 30 Dias': [todayStart.clone().subtract(30, 'days'), yesterdayEnd]
+                };
+
+            moment.locale('pt-br');
+
+            $('.daterangepicker').daterangepicker({
+                ranges: ranges,
+                maxDate: yesterdayEnd.clone().add(1, 'days'),
+                locale: {
+                    applyLabel: 'Salvar',
+                    cancelLabel: 'Cancelar',
+                    fromLabel: 'De',
+                    toLabel: 'Até',
+                    customRangeLabel:'Outro intervalo'
+                }
+            }, function(start, end) {
+                $('#selectedDateRange').text(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'))
+            });
+        });
+    </script>
 </body>
 </html>

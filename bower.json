@@ -23,6 +23,7 @@
     "bootstrap-sass-official": "~3.2.0"
   },
   "devDependencies": {
-    "font-awesome": ">=4.0.0"
+    "font-awesome": ">=4.0.0",
+    "moment": "~2.8.2"
   }
 }
