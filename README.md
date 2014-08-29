@@ -191,3 +191,15 @@ $('.daterangepicker').daterangepicker({
     $('#selectedDateRange').text(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'))
 });
 ```
+
+### Featured panel
+
+```html
+<div class="panel panel-featured">
+    <div class="panel-body">
+        <i class="fa fa-filter"></i>
+        <div class="highlight">2,6%</div>
+        <div class="caption">CTR</div>
+    </div>
+</div>
+```

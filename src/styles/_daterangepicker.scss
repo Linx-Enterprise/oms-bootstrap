@@ -202,6 +202,7 @@
 .daterangepicker button {
     width: 74px;
     margin-right: 11px;
+    padding: $padding-base-vertical 0;
 
     &:last-child {
         margin-right: 0;

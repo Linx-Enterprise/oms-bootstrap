@@ -7,31 +7,42 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:           #333333 !default; // #323232
-$gray-dark:             #444444 !default; // #444444
-$gray:                  #a1a1a1 !default; // #a1a1a1
-$gray-light:            #dddddd !default; // #c8c8c8
-$gray-lighter:          #eeeeee !default; // #eeeeee
+$gray-darker:               #333333 !default;
+$gray-dark:                 #444444 !default;
+$gray-da:                   #888888 !default;
+$gray:                      #a1a1a1 !default;
+$gray-light:                #dddddd !default;
+$gray-lighter:              #f0f0f0 !default;
 
-$brand-primary:         #7a3091 !default;
-$brand-primary-light:   lighten(#7a3091, 55%) !default;
-$brand-primary-dark:    darken(#7a3091, 55%) !default;
+$brand-primary:             #793091 !default;
+$brand-primary-dark:        #642878 !default;
+$brand-primary-light:       #993db7 !default;
+$brand-primary-lighter:     #c284d6 !default;
 
-$brand-success:         #9aca40 !default;
-$brand-success-light:   lighten(#9aca40, 55%) !default;
-$brand-success-dark:    darken(#9aca40, 55%) !default;
+$brand-secondary:           #ff8336 !default;
+$brand-secondary-dark:      #ff6e14 !default;
+$brand-secondary-light:     #ff8d47 !default;
+$brand-secondary-lighter:   #ffb78b !default;
 
-$brand-info:            #3598db !default;
-$brand-info-light:      lighten(#3598db, 55%) !default;
-$brand-info-dark:       darken(#3598db, 55%) !default;
+$brand-success:             #9aca40 !default;
+$brand-success-dark:        #88b632 !default;
+$brand-success-light:       #a8d15b !default;
+$brand-success-lighter:     #cbe49d !default;
 
-$brand-warning:         #ffce55 !default;
-$brand-warning-light:   lighten(#ffce55, 55%) !default;
-$brand-warning-dark:    darken(#ffce55, 55%) !default;
+$brand-info:                #3498db !default;
+$brand-info-dark:           #2487c9 !default;
+$brand-info-light:          #51a7e0 !default;
+$brand-info-lighter:        #99cbed !default;
 
-$brand-danger:          #d8192b !default;
-$brand-danger-light:    lighten(#d8192b, 55%) !default;
-$brand-danger-dark:     darken(#d8192b, 55%) !default;
+$brand-warning:             #ffce54 !default;
+$brand-warning-dark:        #ffc432 !default;
+$brand-warning-light:       #ffd876 !default;
+$brand-warning-lighter:     #ffebba !default;
+
+$brand-danger:              #d8192c !default;
+$brand-danger-dark:         #aa1423 !default;
+$brand-danger-light:        #e83c4d !default;
+$brand-danger-lighter:      #f5a6ae !default;
 
 
 $product-color:         $brand-primary !default;
@@ -42,7 +53,8 @@ $product-color:         $brand-primary !default;
 //## Settings for some of the most global styles.
 
 $body-bg:               #f9f9f9 !default;
-$link-hover-color:      #652878 !default;
+$link-color:            $brand-info !default;
+$link-hover-color:      $brand-info-dark !default;
 
 //== Typography
 //
@@ -51,24 +63,32 @@ $link-hover-color:      #652878 !default;
 $font-family-sans-serif:        "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:             "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
 
-$font-size-h1:                  24px !default;
-$font-size-h2:                  21px !default;
-$font-size-h3:                  18px !default;
-$font-size-h4:                  16px !default;
-$font-size-h5:                  16px !default;
-$font-size-h6:                  14px !default;
+$font-size-h1:                  32px !default;
+$font-size-h2:                  24px !default;
+$font-size-h3:                  21px !default;
+$font-size-h4:                  18px !default;
+$font-size-h5:                  14px !default;
+$font-size-h6:                  12px !default;
 
-$font-weight-h1:                400 !default;
-$font-weight-h2:                400 !default;
-$font-weight-h3:                300 !default;
-$font-weight-h4:                500 !default;
-$font-weight-h5:                400 !default;
-$font-weight-h6:                500 !default;
+$headings-font-weight:          400 !default;
+$headings-color:                $gray-dark !default;
 
 
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:         6px !default;
+$padding-base-horizontal:       24px !default;
+
+$padding-large-vertical:        10px !default;
+$padding-large-horizontal:      32px !default;
+
+$padding-small-vertical:        5px !default;
+$padding-small-horizontal:      20px !default;
+
+$padding-xs-vertical:           1px !default;
+$padding-xs-horizontal:         10px !default;
 
 $border-radius-small:           2px !default;
 $border-radius-base:            2px !default;
@@ -148,7 +168,28 @@ $panel-heading-font-size:       21px !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-shadow:                    inset 0 -3px 0 rgba(0, 0, 0, 0.15) !default;
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 $gray !default;
+$btn-default-border:             $gray !default;
+
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $brand-primary !default;
+
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               $brand-secondary !default;
+$btn-secondary-border:           $brand-secondary !default;
+
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             $brand-success !default;
+
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                $brand-info !default;
+
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             $brand-warning !default;
+
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              $brand-danger !default;
 
 
 //== Table list
