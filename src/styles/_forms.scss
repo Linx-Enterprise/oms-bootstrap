@@ -1,3 +1,10 @@
 .form-control {
     padding: $padding-base-vertical 10px;
+    @include box-shadow(none);
+}
+
+.form-control:focus,
+.has-error .form-control:focus,
+.has-warning .form-control:focus, {
+    @include box-shadow(none);
 }

@@ -127,7 +127,7 @@ $nav-sidebar-header-color:                  #666666 !default;
 $nav-sidebar-header-border-color:           $gray-dark !default;
 
 //== Tabs
-$nav-tabs-padding:                          4px 15px 0 !default;
+$nav-tabs-padding:                          4px 20px 0 !default;
 $nav-tabs-border-color:                     transparent !default;
 
 $nav-tabs-link-hover-border-color:          transparent !default;
@@ -206,6 +206,27 @@ $table-list-item-border:        $gray-lighter !default;
 $jumbotron-bg:                  $gray-light !default;
 
 
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             $brand-success-dark !default;
+$state-success-bg:               $brand-success-lighter !default;
+$state-success-border:           $brand-success-light !default;
+
+$state-info-text:                $brand-info-dark !default;
+$state-info-bg:                  $brand-info-lighter !default;
+$state-info-border:              $brand-info-light !default;
+
+$state-warning-text:             $brand-warning-dark !default;
+$state-warning-bg:               $brand-warning-lighter !default;
+$state-warning-border:           $brand-warning-light !default;
+
+$state-danger-text:              $brand-danger-dark !default;
+$state-danger-bg:                $brand-danger-lighter !default;
+$state-danger-border:            $brand-danger-light !default;
+
+
 //== Wells
 //
 //##
@@ -218,6 +239,12 @@ $well-bg:                       $gray-light !default;
 //##
 
 $input-color:                   $gray-dark !default;
+$input-border:                  $gray !default;
+$input-border-focus:            $brand-primary-dark;
+
+$input-color-placeholder:       $gray-light !default;
+
+$input-group-addon-bg:          $gray !default;
 
 
 //== Toggle
