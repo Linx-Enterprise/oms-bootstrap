@@ -1,0 +1,8 @@
+.close {
+    @include opacity(.5);
+
+    &:hover,
+    &:focus {
+        @include opacity(.7);
+    }
+}

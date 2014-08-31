@@ -1,3 +1,4 @@
+
 h5, .h5 {
     color: $gray-da;
     text-transform: uppercase;
@@ -76,4 +77,12 @@ h6, .h6 {
     .btn-sm {
         margin-bottom: 2px;
     }
+}
+
+h5 + hr, .h5 + hr {
+    margin-top: 8px;
+}
+
+h6 + hr, .h6 + hr {
+    margin-top: 5px;
 }

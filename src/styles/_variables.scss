@@ -92,7 +92,7 @@ $padding-xs-horizontal:         10px !default;
 
 $border-radius-small:           2px !default;
 $border-radius-base:            2px !default;
-$border-radius-large:           4px !default;
+$border-radius-large:           2px !default;
 
 
 //== Navs
@@ -231,20 +231,21 @@ $state-danger-border:            $brand-danger-light !default;
 //
 //##
 
-$well-bg:                       $gray-light !default;
+$well-bg:                           $gray-light !default;
 
 
 //== Forms
 //
 //##
 
-$input-color:                   $gray-dark !default;
-$input-border:                  $gray !default;
-$input-border-focus:            $brand-primary-dark;
+$input-color:                       $gray-dark !default;
+$input-border:                      $gray-light !default;
+$input-border-focus:                $brand-primary-dark;
 
-$input-color-placeholder:       $gray-light !default;
+$input-color-placeholder:           $gray-light !default;
 
-$input-group-addon-bg:          $gray !default;
+$input-group-addon-bg:              $gray !default;
+$input-group-addon-border-color:    $gray !default;
 
 
 //== Toggle
@@ -261,16 +262,20 @@ $toggle-thumb-width:            15px;
 //
 //##
 
-$modal-header-border-color:     none !default;
-$modal-footer-border-color:     none !default;
+$modal-inner-padding:                   20px !default;
 
-$modal-header-bg:               $gray-darker !default;
-$modal-header-color:            $gray-lighter !default;
+$modal-title-padding:                   12px 20px !default;
+$modal-header-border-color:             transparent !default;
+
+$modal-footer-border-color:             $gray-light !default;
+
+$modal-header-bg:                       $gray-darker !default;
+$modal-header-color:                    $gray-lighter !default;
 
 
 //== Close
 //
 //##
 
-$close-color:                   $gray-lighter !default;
-$close-text-shadow:             0 1px 0 $gray !default;
+$close-color:                   #fff !default;
+$close-text-shadow:             0 1px 0 #000 !default;
