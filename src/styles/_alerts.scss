@@ -1,0 +1,10 @@
+.alert-dismissable .close,
+.alert-dismissible .close {
+    @include opacity(.2);
+    color: #000;
+
+    &:hover,
+    &:focus {
+        @include opacity(.5);
+    }
+}

@@ -1,0 +1,34 @@
+table {
+    font-size: $font-size-small;
+}
+
+.table {
+    > thead {
+        border: 1px solid $gray-dark;
+    }
+
+    > tbody {
+        border: 1px solid $table-border-color;
+        border-top: none;
+    }
+
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                border-top: none;
+            }
+        }
+    }
+
+    > thead > tr > th {
+        padding: $table-cell-padding * 0.5 $table-cell-padding;
+        background-color: $gray-dark;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: none;
+    }
+}

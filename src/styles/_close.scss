@@ -1,5 +1,6 @@
 .close {
     @include opacity(.5);
+    text-shadow: none;
 
     &:hover,
     &:focus {

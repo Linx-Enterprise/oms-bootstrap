@@ -192,6 +192,14 @@ $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              $brand-danger !default;
 
 
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:            10px !default;
+$table-border-color:            $gray-light !default;
+
+
 //== Table list
 //
 //##
@@ -211,20 +219,20 @@ $jumbotron-bg:                  $gray-light !default;
 //## Define colors for form feedback states and, by default, alerts.
 
 $state-success-text:             $brand-success-dark !default;
-$state-success-bg:               $brand-success-lighter !default;
-$state-success-border:           $brand-success-light !default;
+$state-success-bg:               $brand-success !default;
+$state-success-border:           $brand-success-dark !default;
 
 $state-info-text:                $brand-info-dark !default;
-$state-info-bg:                  $brand-info-lighter !default;
-$state-info-border:              $brand-info-light !default;
+$state-info-bg:                  $brand-info !default;
+$state-info-border:              $brand-info-dark !default;
 
 $state-warning-text:             $brand-warning-dark !default;
-$state-warning-bg:               $brand-warning-lighter !default;
-$state-warning-border:           $brand-warning-light !default;
+$state-warning-bg:               $brand-warning !default;
+$state-warning-border:           $brand-warning-dark !default;
 
 $state-danger-text:              $brand-danger-dark !default;
-$state-danger-bg:                $brand-danger-lighter !default;
-$state-danger-border:            $brand-danger-light !default;
+$state-danger-bg:                $brand-danger !default;
+$state-danger-border:            $brand-danger-dark !default;
 
 
 //== Wells
@@ -279,3 +287,24 @@ $modal-header-color:                    $gray-lighter !default;
 
 $close-color:                   #fff !default;
 $close-text-shadow:             0 1px 0 #000 !default;
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+$alert-success-bg:            $state-success-bg !default;
+$alert-success-text:          #fff !default;
+$alert-success-border:        $state-success-border !default;
+
+$alert-info-bg:               $state-info-bg !default;
+$alert-info-text:             #fff !default;
+$alert-info-border:           $state-info-border !default;
+
+$alert-warning-bg:            $state-warning-bg !default;
+$alert-warning-text:          #fff !default;
+$alert-warning-border:        $state-warning-border !default;
+
+$alert-danger-bg:             $state-danger-bg !default;
+$alert-danger-text:           #fff !default;
+$alert-danger-border:         $state-danger-border !default;
