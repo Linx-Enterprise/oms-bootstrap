@@ -44,7 +44,6 @@ $brand-danger-dark:         #aa1423 !default;
 $brand-danger-light:        #e83c4d !default;
 $brand-danger-lighter:      #f5a6ae !default;
 
-
 $product-color:         $brand-primary !default;
 
 
@@ -127,16 +126,12 @@ $nav-sidebar-header-color:                  #666666 !default;
 $nav-sidebar-header-border-color:           $gray-dark !default;
 
 //== Tabs
-$nav-tabs-padding:                          4px 20px 0 !default;
-$nav-tabs-border-color:                     transparent !default;
-
-$nav-tabs-link-hover-border-color:          transparent !default;
-
-$nav-tabs-active-link-hover-bg:             transparent !default;
-$nav-tabs-active-link-hover-color:          inherit !default;
-$nav-tabs-active-link-hover-border-color:   transparent !default;
+$nav-tabs-active-link-hover-bg:             #fff !default;
+$nav-tabs-active-link-hover-color:          $gray-dark !default;
 $nav-tabs-active-link-hover-accent-color:   $brand-primary !default;
 $nav-tabs-active-link-hover-font-weight:    500 !default;
+
+$nav-tabs-padding:                          4px 20px 0 !default;
 
 
 //== Type

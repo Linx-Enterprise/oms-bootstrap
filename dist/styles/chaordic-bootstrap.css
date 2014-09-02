@@ -3268,7 +3268,7 @@ tbody.collapse.in {
     max-width: none; }
 
 .nav-tabs {
-  border-bottom: 1px solid transparent; }
+  border-bottom: 1px solid #dddddd; }
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
@@ -3278,11 +3278,11 @@ tbody.collapse.in {
       border: 1px solid transparent;
       border-radius: 2px 2px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: transparent transparent transparent; }
+        border-color: #f0f0f0 #f0f0f0 #dddddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: inherit;
-      background-color: transparent;
-      border: 1px solid transparent;
+      color: #444444;
+      background-color: white;
+      border: 1px solid #dddddd;
       border-bottom-color: transparent;
       cursor: default; }
 
@@ -5549,21 +5549,27 @@ button.close {
     font-size: 14px;
     font-weight: 700; }
 
-.nav > li > a {
-  color: #793091; }
+.nav-tabs > li > a {
+  color: #444444;
+  border-top: 3px solid transparent; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border-top: 3px solid #793091; }
 
-.nav-tabs {
+.page-header + .nav-tabs {
   padding: 4px 20px 0;
   background-color: white;
   border-bottom: 1px solid #dddddd; }
-  .nav-tabs > li > a {
+  .page-header + .nav-tabs > li > a {
     border: none;
     border-bottom: 5px solid transparent; }
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    .page-header + .nav-tabs > li > a:hover {
+      border: none; }
+  .page-header + .nav-tabs > li.active > a, .page-header + .nav-tabs > li.active > a:hover, .page-header + .nav-tabs > li.active > a:focus {
     font-weight: 500;
+    background-color: transparent;
     border: none;
     border-bottom: 5px solid #793091; }
-  .nav-tabs > .btn {
+  .page-header + .nav-tabs > .btn {
     margin-top: 5px; }
 
 .panel {

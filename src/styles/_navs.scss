@@ -1,8 +1,19 @@
-.nav > li > a {
-    color: $brand-primary;
+.nav-tabs > li {
+    > a {
+        color: $nav-tabs-active-link-hover-color;
+        border-top: 3px solid transparent;
+    }
+
+    &.active > a {
+        &,
+        &:hover,
+        &:focus {
+            border-top: 3px solid $nav-tabs-active-link-hover-accent-color;
+        }
+    }
 }
 
-.nav-tabs {
+.page-header + .nav-tabs {
     padding: $nav-tabs-padding;
     background-color: $page-header-bg;
     border-bottom: 1px solid $page-header-border-color;
@@ -11,6 +22,10 @@
         > a {
             border: none;
             border-bottom: 5px solid transparent;
+
+            &:hover {
+                border: none;
+            }
         }
 
         &.active > a {
@@ -18,6 +33,7 @@
             &:hover,
             &:focus {
                 font-weight: $nav-tabs-active-link-hover-font-weight;
+                background-color: transparent;
                 border: none;
                 border-bottom: 5px solid $nav-tabs-active-link-hover-accent-color;
             }
