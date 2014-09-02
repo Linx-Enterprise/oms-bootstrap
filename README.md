@@ -120,8 +120,8 @@ Components
     <ul class="dropdown-menu">
         <li>
             <div class="form-group has-feedback">
+                <i class="fa fa-search"></i>
                 <input type="text" class="form-control" placeholder="Busca">
-                <span class="fa fa-search form-control-feedback"></span>
             </div>
         </li>
         <li class="divider"></li>
