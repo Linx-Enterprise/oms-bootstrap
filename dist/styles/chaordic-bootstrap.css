@@ -5856,6 +5856,38 @@ button.close {
 .pagination > .active > span {
   font-weight: 700; }
 
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px; }
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px; }
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px; }
+.pagination-lg > li > a > i,
+.pagination-lg > li > span > i {
+  font-size: 18px; }
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 10px; }
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px; }
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px; }
+.pagination-sm > li > a > i,
+.pagination-sm > li > span > i {
+  font-size: 12px; }
+
 .panel {
   border: none; }
 

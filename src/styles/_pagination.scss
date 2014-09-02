@@ -18,3 +18,29 @@
         font-weight: 700;
     }
 }
+
+.pagination-lg {
+    @include pagination-size($padding-large-vertical, $padding-large-horizontal * 0.5, $font-size-large, $border-radius-large);
+
+    > li {
+        > a,
+        > span {
+            > i {
+                font-size: $font-size-large;
+            }
+        }
+    }
+}
+
+.pagination-sm {
+    @include pagination-size($padding-small-vertical, $padding-small-horizontal * 0.5, $font-size-small - 2, $border-radius-small);
+
+    > li {
+        > a,
+        > span {
+            > i {
+                font-size: $font-size-small;
+            }
+        }
+    }
+}
