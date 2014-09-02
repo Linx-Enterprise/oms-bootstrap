@@ -183,6 +183,16 @@
                             </div>
                         </div>
                     </form>
+                    <div class="spacer"></div>
+                    <h5>Select</h5>
+                    <hr>
+                    <p>For performance reasons, the Select component are opt-in, meaning you must <a href="http://silviomoreto.github.io/bootstrap-select/3" target="_blank">initialize them yourself</a>.</p>
+                    <select>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+                    <div class="spacer"></div>
                     <h5>Modal</h5>
                     <hr>
                     <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
@@ -225,7 +235,7 @@
                         </div>
                     </div>
                     <div class="spacer"></div>
-                    <h5>Alert</h5>
+                    <h5>Alerts</h5>
                     <hr>
                     <div class="alert alert-success" role="alert"><strong>Well done!</strong> You successfully read this important alert message.</div>
                     <div class="alert alert-info" role="alert"><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</div>
@@ -347,6 +357,7 @@
                 $('#selectedDateRange').text(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'))
             });
 
+            $('select').selectpicker();
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
         });
