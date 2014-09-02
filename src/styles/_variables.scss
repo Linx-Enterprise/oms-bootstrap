@@ -290,19 +290,19 @@ $close-text-shadow:             0 1px 0 #000 !default;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          #fff !default;
-$alert-success-border:        $state-success-border !default;
+$alert-success-border:        $state-success-bg !default;
 
 $alert-info-bg:               $state-info-bg !default;
 $alert-info-text:             #fff !default;
-$alert-info-border:           $state-info-border !default;
+$alert-info-border:           $state-info-bg !default;
 
 $alert-warning-bg:            $state-warning-bg !default;
 $alert-warning-text:          #fff !default;
-$alert-warning-border:        $state-warning-border !default;
+$alert-warning-border:        $state-warning-bg !default;
 
 $alert-danger-bg:             $state-danger-bg !default;
 $alert-danger-text:           #fff !default;
-$alert-danger-border:         $state-danger-border !default;
+$alert-danger-border:         $state-danger-bg !default;
 
 
 //== Popovers
