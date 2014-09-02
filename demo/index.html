@@ -19,6 +19,10 @@
         .spacer {
             height: 20px;
         }
+
+        .pagination {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -187,11 +191,77 @@
                     <h5>Select</h5>
                     <hr>
                     <p>For performance reasons, the Select component are opt-in, meaning you must <a href="http://silviomoreto.github.io/bootstrap-select/3" target="_blank">initialize them yourself</a>.</p>
-                    <select>
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                    </select>
+                    <div>
+                        <select>
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker">
+                            <optgroup label="Picnic">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </optgroup>
+                            <optgroup label="Camping">
+                                <option>Tent</option>
+                                <option disabled="disabled">Flashlight</option>
+                                <option>Toilet Paper</option>
+                            </optgroup>
+                        </select>
+                        <select class="selectpicker" multiple>
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-live-search="true">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="selectpicker" data-style="btn-primary">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-secondary">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-success">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-info">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-warning">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-danger">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-inverse">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="selectpicker" data-style="btn-link">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                    </div>
                     <div class="spacer"></div>
                     <h5>Modal</h5>
                     <hr>

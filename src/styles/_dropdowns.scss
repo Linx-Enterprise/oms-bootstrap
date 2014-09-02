@@ -1,5 +1,25 @@
-.dropdown-menu > li > a > i:first-child {
-    margin-right: 8px;
+.dropdown-menu > li {
+    > a {
+        padding: 6px 15px;
+
+        > i:first-child {
+            margin-right: 8px;
+        }
+    }
+
+    > .form-group {
+        margin: -5px 0px 5px;
+
+        > .form-control {
+            border-width: 0;
+            border-bottom-width: 1px;
+            border-radius: 0;
+
+            &:focus {
+                border-color: $input-border;
+            }
+        }
+    }
 }
 
 .dropdown-submenu {

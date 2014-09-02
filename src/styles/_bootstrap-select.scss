@@ -6,23 +6,30 @@
 .bootstrap-select > .btn {
   width: 100%;
   padding-right: 35px;
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+.bootstrap-select > .btn.btn-default {
+  border-color: $input-border;
+}
+.bootstrap-select > .btn.btn-default:focus {
+  background: #fff;
+  border-color: $input-border-focus;
 }
 .error .bootstrap-select .btn {
-  border: 1px solid #b94a48;
+  border: 1px solid $state-danger-border;
 }
 .control-group.error .bootstrap-select .dropdown-toggle {
-  border-color: #b94a48;
+  border-color: $state-danger-border;
 }
 .bootstrap-select.fit-width {
   width: auto !important;
 }
 .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
   width: 220px;
-}
-.bootstrap-select .btn:focus {
-  outline: thin dotted #333333 !important;
-  outline: 5px auto -webkit-focus-ring-color !important;
-  outline-offset: -2px;
 }
 .bootstrap-select.form-control {
   margin-bottom: 0;
@@ -64,9 +71,6 @@
 }
 .bootstrap-select.btn-group > .disabled {
   cursor: not-allowed;
-}
-.bootstrap-select.btn-group > .disabled:focus {
-  outline: none !important;
 }
 .bootstrap-select.btn-group .btn .filter-option {
   display: inline-block;
@@ -121,11 +125,31 @@
   cursor: not-allowed;
 }
 .bootstrap-select.btn-group .dropdown-menu li > a {
+  outline: none;
   cursor: pointer;
 }
 .bootstrap-select.btn-group .dropdown-menu li.selected a {
   background: $brand-primary;
   color: #fff;
+}
+.bootstrap-select.btn-group .btn-secondary ~ .dropdown-menu li.selected a {
+  background: $brand-secondary;
+}
+.bootstrap-select.btn-group .btn-success ~ .dropdown-menu li.selected a {
+  background: $brand-success;
+}
+.bootstrap-select.btn-group .btn-info ~ .dropdown-menu li.selected a {
+  background: $brand-info;
+}
+.bootstrap-select.btn-group .btn-warning ~ .dropdown-menu li.selected a {
+  background: $brand-warning;
+}
+.bootstrap-select.btn-group .btn-danger ~ .dropdown-menu li.selected a {
+  background: $brand-danger;
+}
+.bootstrap-select.btn-group .btn-inverse ~ .dropdown-menu li.selected a {
+  background: $gray-light;
+  color: $gray-dark;
 }
 .bootstrap-select.btn-group .dropdown-menu li > a.opt {
   position: relative;
@@ -236,7 +260,14 @@
 }
 .bootstrap-select-searchbox,
 .bootstrap-select .bs-actionsbox {
-  padding: 4px 8px;
+  padding: 0;
+  margin: -6px -1px 5px;
+
+  > i {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+  }
 }
 .bootstrap-select .bs-actionsbox {
   float: left;
@@ -255,6 +286,12 @@
 .bootstrap-select-searchbox .form-control {
   margin-bottom: 0;
   width: 100%;
+  padding-left: 45px;
+  height: 40px;
+
+  &:focus {
+    border-color: $input-border;
+  }
 }
 .mobile-device {
   position: absolute;

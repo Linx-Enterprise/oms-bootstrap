@@ -41,6 +41,7 @@ h6, .h6 {
     }
 
     .btn-link {
+        padding: $padding-base-vertical $padding-base-horizontal * 0.5;
         color: $gray;
 
         &:hover {
@@ -48,18 +49,14 @@ h6, .h6 {
         }
     }
 
-    .dropdown-menu {
-        @extend .dropdown-menu-right;
-        min-width: $page-header-dropdown-width;
-        max-height: $page-header-dropdown-max-height;
-        padding: 10px;
-        overflow: auto;
+    .bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: auto;
+    }
 
-        > li {
-            > a {
-                padding: 10px;
-            }
-        }
+    .bootstrap-select.btn-group:not(.input-group-btn),
+    .bootstrap-select.btn-group[class*="span"],
+    .bootstrap-select.btn-group[class*="col-"] {
+        margin: 0;
     }
 }
 

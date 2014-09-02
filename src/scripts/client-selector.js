@@ -7,7 +7,7 @@
 
 $(document)
     // set input focus when selector is opened
-    .on('click', '.client-selector > button', function() {
+    .on('click', '.client-selector > .btn', function() {
         $('.client-selector input').trigger('focus').select();
     })
 
