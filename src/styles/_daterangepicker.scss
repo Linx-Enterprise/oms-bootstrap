@@ -135,11 +135,13 @@
 }
 
 .daterangepicker td.available:hover, .daterangepicker th.available:hover {
-    background: $brand-primary-light;
+    background: $brand-primary;
+    border-radius: $border-radius-base;
+    color: #fff;
 }
 
 .daterangepicker td.in-range {
-    background: $brand-primary-light;
+    background: $gray-lighter;
 }
 
 .daterangepicker td.active, .daterangepicker td.active:hover {

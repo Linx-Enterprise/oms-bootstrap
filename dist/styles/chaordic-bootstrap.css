@@ -5720,10 +5720,12 @@ button.close {
   color: #a1a1a1; }
 
 .daterangepicker td.available:hover, .daterangepicker th.available:hover {
-  background: #993db7; }
+  background: #793091;
+  border-radius: 2px;
+  color: #fff; }
 
 .daterangepicker td.in-range {
-  background: #993db7; }
+  background: #f0f0f0; }
 
 .daterangepicker td.active, .daterangepicker td.active:hover {
   background-color: #793091;

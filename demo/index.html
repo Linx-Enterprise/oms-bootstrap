@@ -293,7 +293,7 @@
                     <hr>
                     <p>For customization reasons, the Daterangepicker is opt-in, meaning you must <a href="https://github.com/dangrossman/bootstrap-daterangepicker#usage" target="_blank">initialize it yourself</a>.</p>
                     <div class="btn btn-default daterangepicker">
-                        <i class="fa fa-calendar space-right"></i> <span id="selectedDateRange">18/03/2013 - 08/07/2015</span> <span class="fa fa-angle-down"></span>
+                        <i class="fa fa-calendar space-right"></i> <span id="selectedDateRange"></span> <span class="fa fa-angle-down"></span>
                     </div>
                     <div class="spacer"></div>
                     <h5>Tooltip and popovers</h5>
@@ -339,13 +339,25 @@
                     'Ontem': [todayStart.clone().subtract(1, 'days'), yesterdayEnd],
                     'Última semana': [todayStart.clone().subtract(7, 'days'), yesterdayEnd],
                     'Últimos 30 Dias': [todayStart.clone().subtract(30, 'days'), yesterdayEnd]
-                };
+                },
+                selectedDateRange = ranges['Última semana'];
+
+            var updateDaterangeLabel = function() {
+                $('#selectedDateRange').text(selectedDateRange[0].format('DD/MM/YYYY') + ' - ' + selectedDateRange[1].format('DD/MM/YYYY'));
+            };
+            updateDaterangeLabel();
 
             moment.locale('pt-br');
+
+            $('select').selectpicker();
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
 
             $('.daterangepicker').daterangepicker({
                 ranges: ranges,
                 maxDate: yesterdayEnd.clone().add(1, 'days'),
+                startDate: selectedDateRange[0],
+                endDate: selectedDateRange[1],
                 locale: {
                     applyLabel: 'Salvar',
                     cancelLabel: 'Cancelar',
@@ -354,12 +366,8 @@
                     customRangeLabel:'Outro intervalo'
                 }
             }, function(start, end) {
-                $('#selectedDateRange').text(start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY'))
+                selectedDateRange = [start, end];
             });
-
-            $('select').selectpicker();
-            $('[data-toggle="tooltip"]').tooltip();
-            $('[data-toggle="popover"]').popover();
         });
     </script>
 </body>
