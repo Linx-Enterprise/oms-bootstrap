@@ -316,3 +316,23 @@ $popover-title-color:                 #fff !default;
 $popover-title-bg:                    $table-header-bg !default;
 
 $popover-arrow-color:                 #fff !default;
+
+
+//== Pagination
+//
+//##
+
+$pagination-color:                     $gray !default;
+$pagination-bg:                        #fff !default;
+$pagination-border:                    $gray-light !default;
+
+$pagination-hover-color:               $gray-dark !default;
+$pagination-hover-border:              $pagination-border !default;
+
+$pagination-active-color:              $gray-dark !default;
+$pagination-active-bg:                 $gray-light !default;
+$pagination-active-border:             $pagination-border !default;
+
+$pagination-disabled-color:            $gray-light !default;
+$pagination-disabled-bg:               $pagination-bg !default;
+$pagination-disabled-border:           $pagination-border !default;

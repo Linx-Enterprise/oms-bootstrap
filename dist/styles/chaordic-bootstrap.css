@@ -3732,7 +3732,7 @@ tbody.collapse.in {
       padding: 6px 24px;
       line-height: 1.428571429;
       text-decoration: none;
-      color: #3498db;
+      color: #a1a1a1;
       background-color: white;
       border: 1px solid #dddddd;
       margin-left: -1px; }
@@ -3748,7 +3748,7 @@ tbody.collapse.in {
   .pagination > li > a:hover, .pagination > li > a:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
-    color: #2487c9;
+    color: #444444;
     background-color: #f0f0f0;
     border-color: #dddddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -3756,9 +3756,9 @@ tbody.collapse.in {
   .pagination > .active > span:hover,
   .pagination > .active > span:focus {
     z-index: 2;
-    color: white;
-    background-color: #793091;
-    border-color: #793091;
+    color: #444444;
+    background-color: #dddddd;
+    border-color: #dddddd;
     cursor: default; }
   .pagination > .disabled > span,
   .pagination > .disabled > span:hover,
@@ -5842,6 +5842,19 @@ button.close {
     border-bottom: 5px solid #793091; }
   .page-header + .nav-tabs > .btn {
     margin-top: 5px; }
+
+.pagination > li > a,
+.pagination > li > span {
+  padding: 6px 12px;
+  min-width: 34px;
+  text-align: center;
+  font-size: 12px; }
+  .pagination > li > a > i,
+  .pagination > li > span > i {
+    font-size: 14px; }
+.pagination > .active > a,
+.pagination > .active > span {
+  font-weight: 700; }
 
 .panel {
   border: none; }
