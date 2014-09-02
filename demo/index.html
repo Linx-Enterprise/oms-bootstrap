@@ -79,9 +79,9 @@
                     <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <div class="form-group has-feedback">
+                            <div class="form-group">
+                                <i class="fa fa-search"></i>
                                 <input type="text" class="form-control" placeholder="Busca">
-                                <span class="fa fa-search form-control-feedback"></span>
                             </div>
                         </li>
                         <li><a href="#">Casas Bahia</a></li>
@@ -197,22 +197,28 @@
                             <option>Ketchup</option>
                             <option>Relish</option>
                         </select>
-                        <select class="selectpicker">
+                        <select class="selectpicker" data-show-subtext="true">
                             <optgroup label="Picnic">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
+                                <option data-subtext="French's">Mustard</option>
+                                <option data-subtext="Heinz">Ketchup</option>
+                                <option data-subtext="Sweet">Relish</option>
+                                <option data-subtext="Miracle Whip">Mayonnaise</option>
                             </optgroup>
-                            <optgroup label="Camping">
-                                <option>Tent</option>
-                                <option disabled="disabled">Flashlight</option>
-                                <option>Toilet Paper</option>
+                            <optgroup label="Sauces">
+                                <option data-subtext="Honey">Barbecue Sauce</option>
+                                <option data-subtext="Ranch" disabled="disabled">Salad Dressing</option>
+                                <option data-subtext="Sweet &amp; Spicy">Tabasco</option>
+                                <option data-subtext="Chunky">Salsa</option>
                             </optgroup>
                         </select>
-                        <select class="selectpicker" multiple>
+                        <select class="selectpicker">
                             <option>Mustard</option>
                             <option>Ketchup</option>
                             <option>Relish</option>
+                            <option data-divider="true"></option>
+                            <option>Tent</option>
+                            <option disabled="disabled">Flashlight</option>
+                            <option>Toilet Paper</option>
                         </select>
                         <select class="selectpicker" data-live-search="true">
                             <option>Mustard</option>

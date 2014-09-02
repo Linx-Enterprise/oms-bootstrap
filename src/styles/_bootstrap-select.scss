@@ -8,6 +8,7 @@
   padding-right: 35px;
   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
+  &:hover,
   &:focus {
     text-decoration: none;
   }
@@ -112,12 +113,6 @@
 .bootstrap-select.btn-group .dropdown-menu li {
   position: relative;
 }
-.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:hover small,
-.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:focus small,
-.bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) > a small {
-  color: #64b1d8;
-  color: rgba(100, 177, 216, 0.4);
-}
 .bootstrap-select.btn-group .dropdown-menu li > dt small {
   font-weight: normal;
 }
@@ -138,7 +133,8 @@
 .bootstrap-select.btn-group .btn-success ~ .dropdown-menu li.selected a {
   background: $brand-success;
 }
-.bootstrap-select.btn-group .btn-info ~ .dropdown-menu li.selected a {
+.bootstrap-select.btn-group .btn-info ~ .dropdown-menu li.selected a,
+.bootstrap-select.btn-group .btn-link ~ .dropdown-menu li.selected a {
   background: $brand-info;
 }
 .bootstrap-select.btn-group .btn-warning ~ .dropdown-menu li.selected a {

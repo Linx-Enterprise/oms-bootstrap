@@ -1,22 +1,35 @@
-.dropdown-menu > li {
-    > a {
-        padding: 6px 15px;
+.dropdown-menu {
+    min-width: 220px;
 
-        > i:first-child {
-            margin-right: 8px;
+    > li {
+        > a {
+            padding: 6px 15px;
+
+            > i:first-child {
+                margin-right: 8px;
+            }
         }
-    }
 
-    > .form-group {
-        margin: -5px 0px 5px;
+        > .form-group {
+            margin: -5px 0px 5px;
 
-        > .form-control {
-            border-width: 0;
-            border-bottom-width: 1px;
-            border-radius: 0;
+            > i {
+                position: absolute;
+                top: 12px;
+                left: 15px;
+                color: $gray-light;
+            }
 
-            &:focus {
-                border-color: $input-border;
+            > .form-control {
+                padding-left: 45px;
+                border-width: 0;
+                border-bottom-width: 1px;
+                border-radius: 0;
+                height: 40px;
+
+                &:focus {
+                    border-color: $input-border;
+                }
             }
         }
     }

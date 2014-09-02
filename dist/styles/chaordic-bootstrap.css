@@ -5315,7 +5315,7 @@ button.close {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-  .bootstrap-select > .btn:focus {
+  .bootstrap-select > .btn:hover, .bootstrap-select > .btn:focus {
     text-decoration: none; }
 
 .bootstrap-select > .btn.btn-default {
@@ -5419,12 +5419,6 @@ button.close {
 .bootstrap-select.btn-group .dropdown-menu li {
   position: relative; }
 
-.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:hover small,
-.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:focus small,
-.bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) > a small {
-  color: #64b1d8;
-  color: rgba(100, 177, 216, 0.4); }
-
 .bootstrap-select.btn-group .dropdown-menu li > dt small {
   font-weight: normal; }
 
@@ -5445,7 +5439,8 @@ button.close {
 .bootstrap-select.btn-group .btn-success ~ .dropdown-menu li.selected a {
   background: #9aca40; }
 
-.bootstrap-select.btn-group .btn-info ~ .dropdown-menu li.selected a {
+.bootstrap-select.btn-group .btn-info ~ .dropdown-menu li.selected a,
+.bootstrap-select.btn-group .btn-link ~ .dropdown-menu li.selected a {
   background: #3498db; }
 
 .bootstrap-select.btn-group .btn-warning ~ .dropdown-menu li.selected a {
@@ -5814,18 +5809,27 @@ button.close {
   .daterangepicker button:last-child {
     margin-right: 0; }
 
-.dropdown-menu > li > a {
-  padding: 6px 15px; }
-  .dropdown-menu > li > a > i:first-child {
-    margin-right: 8px; }
-.dropdown-menu > li > .form-group {
-  margin: -5px 0px 5px; }
-  .dropdown-menu > li > .form-group > .form-control {
-    border-width: 0;
-    border-bottom-width: 1px;
-    border-radius: 0; }
-    .dropdown-menu > li > .form-group > .form-control:focus {
-      border-color: #dddddd; }
+.dropdown-menu {
+  min-width: 220px; }
+  .dropdown-menu > li > a {
+    padding: 6px 15px; }
+    .dropdown-menu > li > a > i:first-child {
+      margin-right: 8px; }
+  .dropdown-menu > li > .form-group {
+    margin: -5px 0px 5px; }
+    .dropdown-menu > li > .form-group > i {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+      color: #dddddd; }
+    .dropdown-menu > li > .form-group > .form-control {
+      padding-left: 45px;
+      border-width: 0;
+      border-bottom-width: 1px;
+      border-radius: 0;
+      height: 40px; }
+      .dropdown-menu > li > .form-group > .form-control:focus {
+        border-color: #dddddd; }
 
 .dropdown-submenu {
   position: relative; }
