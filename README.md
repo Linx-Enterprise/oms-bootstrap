@@ -106,7 +106,7 @@ Components
 ```html
 <div class="btn-group">
     <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">Ferramentas <i class="fa fa-angle-down"></i></a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu dropdown-menu-right">
         <li><a href="#"><i class="fa fa-bar-chart-o"></i>Analytics</a></li>
     </ul>
 </div>
@@ -117,7 +117,7 @@ Components
 ```html
 <div class="client-selector btn-group">
     <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu dropdown-menu-right">
         <li>
             <div class="form-group has-feedback">
                 <i class="fa fa-search"></i>
@@ -136,7 +136,7 @@ Components
 ```html
 <div class="user-area btn-group">
     <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu dropdown-menu-right">
         <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
         <li class="divider"></li>
         <li><a href="#"><i class="fa fa-sign-out"></i>Sair</a></li>
@@ -170,3 +170,5 @@ Components
 - Datepicker
 - Input group addon focus state
 - Tag input
+- Fix daterangepicker width
+- Fix user area position
