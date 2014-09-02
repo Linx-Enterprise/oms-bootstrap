@@ -199,6 +199,8 @@ $btn-danger-border:              $brand-danger !default;
 $table-cell-padding:            10px !default;
 $table-border-color:            $gray-light !default;
 
+$table-header-bg:               $gray-dark !default;
+
 
 //== Table list
 //
@@ -308,3 +310,16 @@ $alert-warning-border:        $state-warning-border !default;
 $alert-danger-bg:             $state-danger-bg !default;
 $alert-danger-text:           #fff !default;
 $alert-danger-border:         $state-danger-border !default;
+
+
+//== Popovers
+//
+//##
+
+$popover-border-color:                $table-header-bg !default;
+$popover-fallback-border-color:       $table-header-bg !default;
+
+$popover-title-color:                 #fff !default;
+$popover-title-bg:                    $table-header-bg !default;
+
+$popover-arrow-color:                 #fff !default;

@@ -1,7 +1,6 @@
 .sidebar {
     @extend .col-sm-3;
     @extend .col-lg-2;
-    z-index: 9999;
     padding: 0;
     background: $nav-sidebar-bg-color;
     font-size: $nav-sidebar-font-size;

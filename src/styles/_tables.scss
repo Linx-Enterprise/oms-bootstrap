@@ -1,10 +1,8 @@
-table {
-    font-size: $font-size-small;
-}
-
 .table {
+    font-size: $font-size-small;
+
     > thead {
-        border: 1px solid $gray-dark;
+        border: 1px solid $table-header-bg;
     }
 
     > tbody {
@@ -25,10 +23,41 @@ table {
 
     > thead > tr > th {
         padding: $table-cell-padding * 0.5 $table-cell-padding;
-        background-color: $gray-dark;
+        background-color: $table-header-bg;
+        font-size: 11px;
         color: #fff;
         font-weight: normal;
         text-transform: uppercase;
         border-bottom: none;
+    }
+}
+
+.table-sortable {
+    > thead > tr > th.sort-by {
+        cursor: pointer;
+
+        // copy .fa-fw
+        > .sort-icon {
+            width: (18em / 14);
+            text-align: center;
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        // fa-angle-up
+        &.sort-asc > .sort-icon:before {
+            content: "\f106";
+        }
+
+        // fa-angle-down
+        &.sort-desc > .sort-icon:before {
+            content: "\f107";
+        }
     }
 }
