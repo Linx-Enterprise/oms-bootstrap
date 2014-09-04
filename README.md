@@ -170,4 +170,3 @@ Components
 - Datepicker
 - Input group addon focus state
 - Tag input
-- Fix user area position
