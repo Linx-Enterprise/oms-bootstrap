@@ -119,7 +119,7 @@ Components
     <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span id="selectedClientName">Livrarias Saraiva</span> <i class="fa fa-angle-down"></i></a>
     <ul class="dropdown-menu dropdown-menu-right">
         <li>
-            <div class="form-group has-feedback">
+            <div class="form-group">
                 <i class="fa fa-search"></i>
                 <input type="text" class="form-control" placeholder="Busca">
             </div>
