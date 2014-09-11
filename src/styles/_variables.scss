@@ -51,7 +51,7 @@ $product-color:         $brand-primary !default;
 //
 //## Settings for some of the most global styles.
 
-$body-bg:               #f9f9f9 !default;
+$body-bg:               #fff !default;
 $link-color:            $brand-info !default;
 $link-hover-color:      $brand-info-dark !default;
 
@@ -150,13 +150,23 @@ $page-header-dropdown-max-height:   360px !default;
 //
 //##
 
-$panel-heading-padding:         15px 15px 0 !default;
-$panel-footer-padding:          0 15px 15px !default;
+$panel-inner-border:            $gray-light !default;
+$panel-footer-bg:               $gray-lighter !default;
 
-$panel-inner-border:            none !default;
-$panel-footer-bg:               none !default;
+$panel-default-text:            #fff !default;
+$panel-default-heading-bg:      $gray-dark !default;
 
-$panel-heading-font-size:       21px !default;
+$panel-secondary-text:          #fff !default;
+$panel-secondary-border:        $brand-secondary !default;
+$panel-secondary-heading-bg:    $brand-secondary !default;
+
+$panel-success-text:          #fff !default;
+
+$panel-info-text:          #fff !default;
+
+$panel-warning-text:          #fff !default;
+
+$panel-danger-text:          #fff !default;
 
 
 //== Buttons

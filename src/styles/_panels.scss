@@ -1,11 +1,3 @@
-.panel {
-    border: none;
-}
-
-.panel-heading {
-    font-size: $panel-heading-font-size;
-}
-
 .panel-featured {
     border-left: 5px solid $brand-primary;
     font-size: 36px;
@@ -29,4 +21,8 @@
             margin-top: -5px;
         }
     }
+}
+
+.panel-secondary {
+  @include panel-variant($panel-secondary-border, $panel-secondary-text, $panel-secondary-heading-bg, $panel-secondary-border);
 }
