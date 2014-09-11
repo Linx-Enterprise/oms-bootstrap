@@ -13,7 +13,8 @@
     }
 }
 
-.page-header + .nav-tabs {
+.page-header + .nav-tabs,
+.page-header-tabs {
     padding: $nav-tabs-padding;
     background-color: $page-header-bg;
     border-bottom: 1px solid $page-header-border-color;

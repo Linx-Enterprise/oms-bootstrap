@@ -214,13 +214,6 @@ $table-header-bg:               $gray-dark !default;
 $table-list-item-border:        $gray-lighter !default;
 
 
-//== Jumbotron
-//
-//##
-
-$jumbotron-bg:                  $gray-light !default;
-
-
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
@@ -246,7 +239,8 @@ $state-danger-border:            $brand-danger-dark !default;
 //
 //##
 
-$well-bg:                           $gray-light !default;
+$well-bg:                     $gray-lighter !default;
+$well-border:                 $gray-light !default;
 
 
 //== Forms

@@ -3922,7 +3922,7 @@ a.badge:hover, a.badge:focus {
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #dddddd; }
+  background-color: #f0f0f0; }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -3931,7 +3931,7 @@ a.badge:hover, a.badge:focus {
     font-size: 21px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #c4c4c4; }
+    border-top-color: #d6d6d6; }
   .container .jumbotron {
     border-radius: 2px; }
   .jumbotron .container {
@@ -4569,8 +4569,8 @@ a.list-group-item-danger {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #dddddd;
-  border: 1px solid #cbcbcb;
+  background-color: #f0f0f0;
+  border: 1px solid #dddddd;
   border-radius: 2px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
@@ -5879,21 +5879,28 @@ button.close {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   border-top: 3px solid #793091; }
 
-.page-header + .nav-tabs {
+.page-header + .nav-tabs,
+.page-header-tabs {
   padding: 4px 20px 0;
   background-color: white;
   border-bottom: 1px solid #dddddd; }
-  .page-header + .nav-tabs > li > a {
+  .page-header + .nav-tabs > li > a,
+  .page-header-tabs > li > a {
     border: none;
     border-bottom: 5px solid transparent; }
-    .page-header + .nav-tabs > li > a:hover {
+    .page-header + .nav-tabs > li > a:hover,
+    .page-header-tabs > li > a:hover {
       border: none; }
-  .page-header + .nav-tabs > li.active > a, .page-header + .nav-tabs > li.active > a:hover, .page-header + .nav-tabs > li.active > a:focus {
+  .page-header + .nav-tabs > li.active > a, .page-header + .nav-tabs > li.active > a:hover, .page-header + .nav-tabs > li.active > a:focus,
+  .page-header-tabs > li.active > a,
+  .page-header-tabs > li.active > a:hover,
+  .page-header-tabs > li.active > a:focus {
     font-weight: 500;
     background-color: transparent;
     border: none;
     border-bottom: 5px solid #793091; }
-  .page-header + .nav-tabs > .btn {
+  .page-header + .nav-tabs > .btn,
+  .page-header-tabs > .btn {
     margin-top: 5px; }
 
 .pagination > li > a,
