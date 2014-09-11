@@ -72,7 +72,7 @@ Components
 <div class="sidebar">
     <div class="btn-group sidebar-brand">
         <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
-        <ul>
+        <ul class="dropdown-menu">
             <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
             <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
             <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
