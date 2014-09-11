@@ -6223,6 +6223,9 @@ h6, .h6 {
   .page-header .bootstrap-select.btn-group[class*="span"],
   .page-header .bootstrap-select.btn-group[class*="col-"] {
     margin: 0; }
+  .page-header .dropdown-menu {
+    max-height: 500px;
+    overflow: auto; }
 
 .page-content {
   padding: 20px; }
