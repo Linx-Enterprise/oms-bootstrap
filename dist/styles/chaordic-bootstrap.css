@@ -5810,6 +5810,9 @@ button.close {
   .daterangepicker button:last-child {
     margin-right: 0; }
 
+.dropdown-toggle {
+  cursor: pointer; }
+
 .dropdown-menu {
   min-width: 220px; }
   .dropdown-menu > li > a {
