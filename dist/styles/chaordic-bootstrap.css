@@ -6086,34 +6086,34 @@ button.close {
   border: 1px solid #dddddd;
   padding: 0;
   font-size: 12px; }
-  .table-list > li > .row {
+  .table-list li > .row {
     margin: 0; }
-    .table-list > li > .row > * {
+    .table-list li > .row > * {
       padding: 10px; }
-    .table-list > li > .row.active {
+    .table-list li > .row.active {
       background-color: whitesmoke; }
 
-.table-list-striped > li:nth-child(odd) > .row {
+.table-list-striped li:nth-child(odd) > .row {
   background-color: #f9f9f9; }
 
-.table-list-hover > li > .row:hover {
+.table-list-hover li > .row:hover {
   background-color: whitesmoke; }
 
-.table-list > li.table-list-header > .row {
+.table-list li.table-list-header > .row {
   background-color: #444444;
   font-size: 11px;
   color: #fff;
   font-weight: normal;
   text-transform: uppercase;
   border-bottom: none; }
-  .table-list > li.table-list-header > .row > * {
+  .table-list li.table-list-header > .row > * {
     padding: 5px 10px; }
 
 .panel > .table-list {
   margin-bottom: 0; }
-  .panel > .table-list > li:last-child {
+  .panel > .table-list li:last-child {
     border-bottom: none; }
-    .panel > .table-list > li:last-child > .row.active {
+    .panel > .table-list li:last-child > .row.active {
       border-bottom: none; }
 
 .table {
@@ -6195,30 +6195,33 @@ input[type="checkbox"].toggle {
       background-position: 0 0;
       left: 41px; }
 
-.tree-list .tree .row.subtree {
-  padding: 0;
-  height: 0;
-  opacity: 0;
-  overflow: hidden; }
-  .tree-list .tree .row.subtree.open {
-    overflow: visible;
-    height: auto;
-    opacity: 1; }
-.tree-list .tree .tree-toggler {
-  cursor: pointer; }
-  .tree-list .tree .tree-toggler:before {
-    content: "\f147"; }
-  .tree-list .tree .tree-toggler.open:before {
-    content: "\f196"; }
-.tree-list .tree .tree-list .tree .row {
-  margin: 0 -15px; }
-@media (min-width: 768px) {
-  .tree-list .tree-list .indent {
-    padding-left: 30px; }
-  .tree-list .tree-list .tree-list .indent {
-    padding-left: 45px; }
-  .tree-list .tree-list .tree-list .tree-list .indent {
-    padding-left: 60px; } }
+.tree-list {
+  list-style: none;
+  padding: 0; }
+  .tree-list .tree .row.subtree {
+    padding: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden; }
+    .tree-list .tree .row.subtree > * {
+      padding: 0; }
+    .tree-list .tree .row.subtree.open {
+      overflow: visible;
+      height: auto;
+      opacity: 1; }
+  .tree-list .tree .tree-toggler {
+    cursor: pointer; }
+    .tree-list .tree .tree-toggler:before {
+      content: "\f147"; }
+    .tree-list .tree .tree-toggler.open:before {
+      content: "\f196"; }
+  @media (min-width: 768px) {
+    .tree-list .tree-list .indent {
+      padding-left: 30px; }
+    .tree-list .tree-list .tree-list .indent {
+      padding-left: 45px; }
+    .tree-list .tree-list .tree-list .tree-list .indent {
+      padding-left: 60px; } }
 
 .fa, .table-sortable > thead > tr > th.sort-by .sort-icon, .table-sortable > thead > tr > th.sort-by.sort-asc > .sort-icon, .table-sortable > thead > tr > th.sort-by.sort-desc > .sort-icon, .tree-list .tree .tree-toggler, .tree-list .tree .tree-toggler.open {
   width: 1.2857142857em;

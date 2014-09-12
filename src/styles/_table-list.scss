@@ -4,7 +4,7 @@
     padding: 0;
     font-size: $font-size-small;
 
-    > li > .row {
+    li > .row {
         margin: 0;
 
         > * {
@@ -17,15 +17,15 @@
     }
 }
 
-.table-list-striped > li:nth-child(odd) > .row {
+.table-list-striped li:nth-child(odd) > .row {
     background-color: $table-bg-accent;
 }
 
-.table-list-hover > li > .row:hover {
+.table-list-hover li > .row:hover {
     background-color: $table-bg-hover;
 }
 
-.table-list > li.table-list-header > .row {
+.table-list li.table-list-header > .row {
     background-color: $table-header-bg;
     font-size: 11px;
     color: #fff;
@@ -41,7 +41,7 @@
 .panel > .table-list {
     margin-bottom: 0;
 
-    > li:last-child {
+    li:last-child {
         border-bottom: none;
 
         > .row.active {

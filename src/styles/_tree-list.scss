@@ -1,4 +1,7 @@
 .tree-list {
+    list-style: none;
+    padding: 0;
+
     .tree {
         .row {
             &.subtree {
@@ -6,6 +9,10 @@
                 height: 0;
                 opacity: 0;
                 overflow: hidden;
+
+                > * {
+                    padding: 0;
+                }
 
                 &.open {
                     overflow: visible;
@@ -21,14 +28,6 @@
 
             &.open {
                 @include fa("\f196");
-            }
-        }
-
-        .tree-list {
-            .tree {
-                .row {
-                    margin: 0 -15px;
-                }
             }
         }
     }
