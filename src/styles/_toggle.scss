@@ -18,7 +18,7 @@ input[type="checkbox"].toggle {
             left: $toggle-padding;
             width: $toggle-thumb-width;
             height: $toggle-height - ($toggle-padding * 2);
-            content: ' ';
+            content: " ";
             background: #fff;
             transition: all .25s ease-in;
             border-radius: $border-radius-small * 0.5;

@@ -205,7 +205,7 @@
   z-index: 2051;
 }
 .bootstrap-select.show-menu-arrow .dropdown-toggle:before {
-  content: '';
+  content: " ";
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-bottom-width: 7px;
@@ -218,7 +218,7 @@
   display: none;
 }
 .bootstrap-select.show-menu-arrow .dropdown-toggle:after {
-  content: '';
+  content: " ";
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-bottom: 6px solid white;

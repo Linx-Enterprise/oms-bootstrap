@@ -27,7 +27,7 @@ h6, .h6 {
             &:after {
                 position: absolute;
                 display: inline-block;
-                content: '';
+                content: " ";
                 margin: 10px 0;
                 height: 14px;
                 border-right: 1px solid $gray-lighter;

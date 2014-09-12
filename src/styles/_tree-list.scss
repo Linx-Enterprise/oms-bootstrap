@@ -1,0 +1,53 @@
+.tree-list {
+    .tree {
+        .row {
+            &.subtree {
+                padding: 0;
+                height: 0;
+                opacity: 0;
+                overflow: hidden;
+
+                &.open {
+                    overflow: visible;
+                    height: auto;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .tree-toggler {
+            cursor: pointer;
+            @include fa("\f147");
+
+            &.open {
+                @include fa("\f196");
+            }
+        }
+
+        .tree-list {
+            .tree {
+                .row {
+                    margin: 0 -15px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .tree-list {
+            .indent {
+                padding-left: 30px;
+            }
+
+            .tree-list {
+                .indent {
+                    padding-left: 45px;
+                }
+
+                .tree-list .indent {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+}

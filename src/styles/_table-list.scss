@@ -1,8 +1,51 @@
-.table-list > li {
-    padding: 12px 15px;
-    border-bottom: 1px solid $table-list-item-border;
+.table-list {
+    list-style: none;
+    border: 1px solid $table-border-color;
+    padding: 0;
+    font-size: $font-size-small;
 
-    &:last-child {
+    > li > .row {
+        margin: 0;
+
+        > * {
+            padding: $table-cell-padding;
+        }
+
+        &.active {
+            background-color: $table-bg-active;
+        }
+    }
+}
+
+.table-list-striped > li:nth-child(odd) > .row {
+    background-color: $table-bg-accent;
+}
+
+.table-list-hover > li > .row:hover {
+    background-color: $table-bg-hover;
+}
+
+.table-list > li.table-list-header > .row {
+    background-color: $table-header-bg;
+    font-size: 11px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: none;
+
+    > * {
+        padding: $table-cell-padding * 0.5 $table-cell-padding;
+    }
+}
+
+.panel > .table-list {
+    margin-bottom: 0;
+
+    > li:last-child {
         border-bottom: none;
+
+        > .row.active {
+            border-bottom: none;
+        }
     }
 }

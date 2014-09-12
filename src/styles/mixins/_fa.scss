@@ -1,0 +1,19 @@
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: (18em / 14);
+    text-align: center;
+}
+
+@mixin fa($content) {
+    @extend .fa;
+
+    &:before {
+        content: $content;
+    }
+}

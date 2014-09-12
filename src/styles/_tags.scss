@@ -1,0 +1,94 @@
+.tag {
+    padding: $padding-base-vertical $padding-base-horizontal;
+    display: inline-block;
+}
+
+.tag-lg {
+    padding: $padding-large-vertical $padding-large-horizontal;
+}
+
+.tag-sm {
+    padding: $padding-small-vertical $padding-small-horizontal;
+}
+
+.tag-xs {
+    padding: $padding-xs-vertical $padding-xs-horizontal;
+    font-size:12px;
+}
+
+.tag-default {
+    color: $btn-default-color;
+    background-color: $btn-default-bg;
+    border: 1px solid $btn-default-border;
+}
+
+.tag-warning {
+    color: $btn-warning-color;
+    background-color: $btn-warning-bg;
+    border: 1px solid $btn-warning-border;
+}
+
+.tag .close, tags-input .tags .tag-item .remove-button {
+    float: none;
+    margin-left: 10px;
+    width: 20px;
+    font-size: inherit;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+tags-input {
+    display: block;
+
+    .host {
+        position: relative;
+    }
+
+    .tags {
+        @extend .form-control;
+        min-height: 34px;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+
+        .tag-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tag-item {
+            padding: ($padding-base-vertical - 4) ($padding-base-horizontal - 8) ($padding-base-vertical - 4) ($padding-base-horizontal - 6);
+            display: inline-block;
+            margin: 4px 3px 3px;
+            @extend .tag-default;
+            float: left;
+
+            .remove-button {
+                margin-left: 4px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+            }
+
+            &.selected {
+                @extend .tag-warning;
+            }
+        }
+
+        .input {
+            border: 0;
+            outline: none;
+            padding: 6px 12px;
+            background-color: transparent;
+            float: left;
+            padding-left: 8px;
+        }
+    }
+}

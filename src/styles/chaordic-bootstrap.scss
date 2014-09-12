@@ -2,33 +2,37 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300,400,700);
 
 // setup variables
-@import 'variables';
+@import "variables";
+
+// import mixins
+@import "mixins";
 
 // import 3rd party
-@import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-// imports
-@import 'alerts';
-@import 'bootstrap-select';
-@import 'buttons';
-@import 'client-selector';
-@import 'close';
-@import 'daterangepicker';
-@import 'dropdowns';
-@import 'forms';
-@import 'grid';
-@import 'input-groups';
-@import 'modals';
-@import 'navs';
-@import 'pagination';
-@import 'panels';
-@import 'popover';
-@import 'progress-bars';
-@import 'sidebar';
-@import 'table-list';
-@import 'tables';
-@import 'tags-input';
-@import 'toggle';
-@import 'tweaks';
-@import 'type';
-@import 'user-area';
+// import partials
+@import "alerts";
+@import "bootstrap-select";
+@import "buttons";
+@import "client-selector";
+@import "close";
+@import "daterangepicker";
+@import "dropdowns";
+@import "forms";
+@import "grid";
+@import "input-groups";
+@import "modals";
+@import "navs";
+@import "pagination";
+@import "panels";
+@import "popover";
+@import "progress-bars";
+@import "sidebar";
+@import "table-list";
+@import "tables";
+@import "tags-input";
+@import "toggle";
+@import "tree-list";
+@import "tweaks";
+@import "type";
+@import "user-area";
