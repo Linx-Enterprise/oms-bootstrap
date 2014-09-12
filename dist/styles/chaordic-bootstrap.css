@@ -6087,7 +6087,8 @@ button.close {
   padding: 0;
   font-size: 12px; }
   .table-list li > .row {
-    margin: 0; }
+    margin: 0;
+    background-color: #fff; }
     .table-list li > .row > * {
       padding: 10px; }
     .table-list li > .row.active {
