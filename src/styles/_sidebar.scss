@@ -110,9 +110,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            overflow: auto;
             -ms-overflow-style: none;
             overflow: -moz-scrollbars-none;
+            overflow: auto;
             padding-bottom: 30px;
 
             &::-webkit-scrollbar {
