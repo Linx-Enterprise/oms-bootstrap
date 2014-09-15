@@ -6265,15 +6265,17 @@ h6, .h6 {
     float: left; }
   .page-header > div {
     float: right; }
-    .page-header > div > *:after {
-      position: absolute;
-      display: inline-block;
-      content: " ";
-      margin: 10px 0;
-      height: 14px;
-      border-right: 1px solid #f0f0f0; }
-    .page-header > div > *:last-child:after {
-      display: none; }
+    .page-header > div > * {
+      display: inline-block; }
+      .page-header > div > *:after {
+        position: absolute;
+        display: inline-block;
+        content: " ";
+        margin: 10px 0;
+        height: 14px;
+        border-right: 1px solid #f0f0f0; }
+      .page-header > div > *:last-child:after {
+        display: none; }
   .page-header .btn-link {
     padding: 6px 12px;
     color: #a1a1a1; }

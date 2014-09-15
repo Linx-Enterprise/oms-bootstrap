@@ -22,9 +22,10 @@ h6, .h6 {
 
     > div {
         float: right;
-        display: inline-block;
 
         > * {
+            display: inline-block;
+
             &:after {
                 position: absolute;
                 display: inline-block;
