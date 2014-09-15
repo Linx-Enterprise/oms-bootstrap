@@ -47,13 +47,16 @@
     > a {
         display: block;
         height: $nav-sidebar-brand-height;
-        background: $nav-sidebar-brand-bg-color $nav-sidebar-logo no-repeat 20px;
-        padding: 0 15px;
+        padding: 0 20px;
         cursor: pointer;
         font-size: 16px;
         line-height: $nav-sidebar-brand-height;
-        text-align: right;
         color: $gray;
+
+        > i {
+            float: right;
+            margin-top: 25px;
+        }
     }
 
     > ul, ul {

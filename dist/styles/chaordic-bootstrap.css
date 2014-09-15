@@ -6029,13 +6029,14 @@ button.close {
   .sidebar-brand > a {
     display: block;
     height: 62px;
-    background: #2b2b2b url("../../demo/assets/logo-demo.png") no-repeat 20px;
-    padding: 0 15px;
+    padding: 0 20px;
     cursor: pointer;
     font-size: 16px;
     line-height: 62px;
-    text-align: right;
     color: #a1a1a1; }
+    .sidebar-brand > a > i {
+      float: right;
+      margin-top: 25px; }
   .sidebar-brand > ul, .sidebar-brand ul {
     margin: 0;
     padding: 0;

@@ -71,11 +71,11 @@ Components
 ```html
 <div class="sidebar">
     <div class="btn-group sidebar-brand">
-        <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
+        <a class="dropdown-toggle" data-toggle="dropdown"><img src="assets/logo-product.png" alt="Market"><i class="fa fa-angle-down"></i></a>
         <ul class="dropdown-menu">
-            <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
             <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
             <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
+            <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
             <li class="sidebar-header">Mais</li>
             <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
             <li><a href="#"><i class="fa fa-th-large"></i>Integração</a></li>
