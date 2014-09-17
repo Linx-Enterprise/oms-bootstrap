@@ -63,6 +63,31 @@ Basic Template
 </html>
 ```
 
+Without Sidebar
+---------------
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chaordic Market</title>
+        <link href="styles/chaordic-bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- see page header with product selector component -->
+        <!-- see tabs component -->
+        <div class="page-content">
+            <!-- page content goes inside -->
+        </div>
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/chaordic-bootstrap.min.js"></script>
+    </body>
+</html>
+```
+
 Components
 ----------
 
@@ -76,9 +101,13 @@ Components
             <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
             <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
             <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
-            <li class="sidebar-header">Mais</li>
-            <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
-            <li><a href="#"><i class="fa fa-th-large"></i>Integração</a></li>
+            <li class="dropdown-submenu">
+                <a href="#" class="sidebar-header">Mais</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
+                    <li><a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <ul class="nav">
@@ -93,6 +122,36 @@ Components
 
 ```html
 <div class="page-header">
+    <h1>Dashboard</h1>
+    <div>
+        <!-- see tool selector component -->
+        <!-- see client selector component -->
+        <!-- see user area component -->
+    </div>
+</div>
+```
+
+### Page header with product selector
+
+```html
+<div class="page-header">
+    <div class="product-selector">
+        <div class="btn-group">
+            <a class="dropdown-toggle" data-toggle="dropdown"><img src="assets/logo-product.png" alt="Market"><i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
+                <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
+                <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
+                <li class="dropdown-submenu">
+                    <a href="#" class="sidebar-header">Mais</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
+                        <li><a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <h1>Dashboard</h1>
     <div>
         <!-- see tool selector component -->

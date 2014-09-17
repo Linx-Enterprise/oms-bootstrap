@@ -62,7 +62,27 @@ h6, .h6 {
 
     .dropdown-menu {
         max-height: 500px;
-        overflow: auto;
+        overflow-y: auto;
+    }
+
+    > .product-selector {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 220px;
+
+        + h1 {
+            padding-left: 220px;
+        }
+
+        > *:after {
+            display: none;
+        }
+
+        .dropdown-menu {
+            max-height: none;
+            overflow-y: initial;
+        }
     }
 }
 

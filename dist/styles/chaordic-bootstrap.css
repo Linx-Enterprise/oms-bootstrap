@@ -6024,9 +6024,12 @@ button.close {
     color: #f0f0f0;
     cursor: default; }
 
-.sidebar-brand {
-  display: block; }
-  .sidebar-brand > a {
+.sidebar-brand,
+.product-selector > .btn-group {
+  display: block;
+  background: #333333; }
+  .sidebar-brand > a,
+  .product-selector > .btn-group > a {
     display: block;
     height: 62px;
     padding: 0 20px;
@@ -6034,10 +6037,12 @@ button.close {
     font-size: 16px;
     line-height: 62px;
     color: #a1a1a1; }
-    .sidebar-brand > a > i {
+    .sidebar-brand > a > i,
+    .product-selector > .btn-group > a > i {
       float: right;
       margin-top: 25px; }
-  .sidebar-brand > ul, .sidebar-brand ul {
+  .sidebar-brand ul,
+  .product-selector > .btn-group ul {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -6045,14 +6050,18 @@ button.close {
     border-top: 1px solid #333333;
     border-bottom: 1px solid #2b2b2b;
     background: #2b2b2b;
-    box-shadow: none; }
-    .sidebar-brand > ul > li > a, .sidebar-brand ul > li > a {
+    box-shadow: none;
+    border-radius: 0; }
+    .sidebar-brand ul > li > a,
+    .product-selector > .btn-group ul > li > a {
       padding: 12px 18px;
       color: #a1a1a1; }
-      .sidebar-brand > ul > li > a:hover, .sidebar-brand ul > li > a:hover {
+      .sidebar-brand ul > li > a:hover,
+      .product-selector > .btn-group ul > li > a:hover {
         background-color: #333333;
         color: #a1a1a1; }
-  .sidebar-brand .dropdown-submenu {
+  .sidebar-brand .dropdown-submenu,
+  .product-selector > .btn-group .dropdown-submenu {
     border-top: 1px solid #333333; }
 
 .sidebar-header {
@@ -6289,7 +6298,19 @@ h6, .h6 {
     margin: 0; }
   .page-header .dropdown-menu {
     max-height: 500px;
-    overflow: auto; }
+    overflow-y: auto; }
+  .page-header > .product-selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px; }
+    .page-header > .product-selector + h1 {
+      padding-left: 220px; }
+    .page-header > .product-selector > *:after {
+      display: none; }
+    .page-header > .product-selector .dropdown-menu {
+      max-height: none;
+      overflow-y: initial; }
 
 .page-content {
   padding: 20px; }
