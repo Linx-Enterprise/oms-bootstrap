@@ -6026,8 +6026,10 @@ button.close {
 
 .sidebar-brand,
 .product-selector > .btn-group {
-  display: block;
-  background: #333333; }
+  display: block; }
+  .sidebar-brand .open-logo,
+  .product-selector > .btn-group .open-logo {
+    display: none; }
   .sidebar-brand > a,
   .product-selector > .btn-group > a {
     display: block;
@@ -6063,6 +6065,13 @@ button.close {
   .sidebar-brand .dropdown-submenu,
   .product-selector > .btn-group .dropdown-submenu {
     border-top: 1px solid #333333; }
+
+.product-selector > .btn-group.open {
+  background: #333333; }
+  .product-selector > .btn-group.open .open-logo {
+    display: inline; }
+  .product-selector > .btn-group.open .closed-logo {
+    display: none; }
 
 .sidebar-header {
   padding: 18px 20px;

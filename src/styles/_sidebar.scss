@@ -44,7 +44,10 @@
 .sidebar-brand,
 .product-selector > .btn-group {
     display: block;
-    background: $nav-sidebar-bg-color;
+
+    .open-logo {
+        display: none;
+    }
 
     > a {
         display: block;
@@ -85,6 +88,18 @@
 
     .dropdown-submenu {
         border-top: 1px solid $gray-darker;
+    }
+}
+
+.product-selector > .btn-group.open {
+    background: $nav-sidebar-bg-color;
+
+    .open-logo {
+        display: inline;
+    }
+
+    .closed-logo {
+        display: none;
     }
 }
 
