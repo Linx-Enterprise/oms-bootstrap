@@ -2,7 +2,8 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     clean: {
-      dist: ['dist']
+      dist: ['dist'],
+      vendor: ['vendor']
     },
 
     sass: {
@@ -47,53 +48,58 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      styles: {
+        files: [
+          {
+            expand: true,
+            cwd: 'bower_components/bootstrap-sass-official/assets/stylesheets/',
+            src: ['**'],
+            dest: 'vendor/bootstrap/styles'
+          }
+        ]
+      }
+    },
+
     watch: {
       options: {
         livereload: true
       },
       gruntfile: {
-        files: [
-          'Gruntfile.js'
-        ],
-        tasks: [
-          'dist'
-        ]
+        files: ['Gruntfile.js'],
+        tasks: ['dist']
       },
       styles: {
-        files: [
-          'src/styles/*'
-        ],
-        tasks: [
-          'styles'
-        ]
+        files: ['src/styles/**/*'],
+        tasks: ['styles']
       },
       scripts: {
-        files: [
-          'src/scripts/*'
-        ],
-        tasks: [
-          'scripts'
-        ]
+        files: ['src/scripts/**/*'],
+        tasks: ['scripts']
+      },
+      vendor: {
+        files: ['bower_components/**/*'],
+        tasks: ['vendor']
       },
       demo: {
-        files: [
-          'demo/**/*'
-        ]
+        files: ['demo/**/*']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('styles', ['sass', 'cssmin']);
   grunt.registerTask('scripts', ['concat', 'uglify']);
+  grunt.registerTask('vendor', ['clean:vendor', 'copy']);
 
-  grunt.registerTask('dist', ['clean', 'styles', 'scripts']);
+  grunt.registerTask('dist', ['clean:dist', 'vendor', 'styles', 'scripts']);
 
   grunt.registerTask('default', 'dist');
 
