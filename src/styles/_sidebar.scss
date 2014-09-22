@@ -79,6 +79,10 @@
             padding: 12px 18px;
             color: $gray;
 
+            > span {
+                margin-left: 5px;
+            }
+
             &:hover {
                 background-color: $gray-darker;
                 color: $gray;
