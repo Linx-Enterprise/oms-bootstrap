@@ -98,9 +98,10 @@ Components
     <div class="btn-group sidebar-brand">
         <a class="dropdown-toggle" data-toggle="dropdown"><img src="assets/logo-product.png" alt="Market"><i class="fa fa-angle-down"></i></a>
         <ul class="dropdown-menu">
-            <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
-            <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
-            <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
+            <li><a href="#"><img src="assets/onsite-symbol.png">Onsite</a></li>
+            <li><a href="#"><img src="assets/mail-symbol.png">Mail</a></li>
+            <li><a href="#"><img src="assets/search-symbol.png">Search</a></li>
+            <li><a href="#"><img src="assets/market-symbol.png">Market</a></li>
             <li class="dropdown-submenu">
                 <a href="#" class="sidebar-header">Mais</a>
                 <ul class="dropdown-menu">
@@ -139,9 +140,10 @@ Components
         <div class="btn-group">
             <a class="dropdown-toggle" data-toggle="dropdown"><img class="closed-logo" src="assets/logo-chaordic-closed.png" alt="Market"><img class="open-logo" src="assets/logo-chaordic-open.png" alt="Market"><i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
-                <li><a href="#"><img src="assets/logo-product.png" alt="OnSite"></a></li>
-                <li><a href="#"><img src="assets/logo-product.png" alt="Mail"></a></li>
-                <li><a href="#"><img src="assets/logo-product.png" alt="Search"></a></li>
+                <li><a href="#"><img src="assets/onsite-symbol.png">Onsite</a></li>
+                <li><a href="#"><img src="assets/mail-symbol.png">Mail</a></li>
+                <li><a href="#"><img src="assets/search-symbol.png">Search</a></li>
+                <li><a href="#"><img src="assets/market-symbol.png">Market</a></li>
                 <li class="dropdown-submenu">
                     <a href="#" class="sidebar-header">Mais</a>
                     <ul class="dropdown-menu">
