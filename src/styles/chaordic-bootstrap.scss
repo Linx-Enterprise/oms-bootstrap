@@ -7,7 +7,6 @@
 // import mixins
 @import "mixins";
 
-// import 3rd party
 // Core variables and mixins
 @import "vendor/bootstrap/styles/bootstrap/variables";
 @import "vendor/bootstrap/styles/bootstrap/mixins";
@@ -57,9 +56,6 @@
 // Utility classes
 @import "vendor/bootstrap/styles/bootstrap/utilities";
 @import "vendor/bootstrap/styles/bootstrap/responsive-utilities";
-
-
-
 
 // import partials
 @import "alerts";
