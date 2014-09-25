@@ -5662,7 +5662,7 @@ h6, .h6 {
 
 .page-header {
   margin: 0;
-  padding: 14px 20px 13px;
+  padding: 14px 30px 13px;
   background-color: white; }
   .page-header > h1 {
     margin: 0;
@@ -5709,7 +5709,7 @@ h6, .h6 {
       overflow-y: initial; }
 
 .page-content {
-  padding: 20px; }
+  padding: 20px 30px; }
   .page-content > h2 {
     margin: 0 0 20px; }
 
