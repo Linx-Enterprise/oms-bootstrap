@@ -44,6 +44,7 @@
 .sidebar-brand,
 .product-selector > .btn-group {
     display: block;
+    background: $nav-sidebar-brand-bg-color;
 
     .open-logo {
         display: none;
@@ -95,15 +96,19 @@
     }
 }
 
-.product-selector > .btn-group.open {
-    background: $nav-sidebar-bg-color;
+.product-selector > .btn-group {
+    background: transparent;
 
-    .open-logo {
-        display: inline;
-    }
+    &.open {
+        background: $nav-sidebar-brand-bg-color;
 
-    .closed-logo {
-        display: none;
+        .open-logo {
+            display: inline;
+        }
+
+        .closed-logo {
+            display: none;
+        }
     }
 }
 
