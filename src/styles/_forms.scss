@@ -8,3 +8,7 @@
 .has-warning .form-control:focus, {
     @include box-shadow(none);
 }
+
+select.input-xs {
+    padding: 0;
+}
