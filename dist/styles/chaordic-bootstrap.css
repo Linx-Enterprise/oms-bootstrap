@@ -5533,9 +5533,10 @@ select.input-xs {
   font-size: 12px; }
   .table > thead {
     border: 1px solid #444444; }
+    .table > thead + tbody {
+      border-top: none; }
   .table > tbody {
-    border: 1px solid #dddddd;
-    border-top: none; }
+    border: 1px solid #dddddd; }
   .table > thead > tr > th,
   .table > thead > tr > td,
   .table > tbody > tr > th,
