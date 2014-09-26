@@ -5276,7 +5276,7 @@ button.close {
 
 .page-header + .nav-tabs,
 .page-header-tabs {
-  padding: 4px 20px 0;
+  padding: 4px 30px 0;
   background-color: white;
   border-bottom: 1px solid #dddddd; }
   .page-header + .nav-tabs > li > a,
