@@ -196,7 +196,7 @@ Components
 
 ```html
 <div class="user-area btn-group">
-    <img class="dropdown-toggle" data-toggle="dropdown" src="//www.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=32" alt="Guilherme Pacheco">
+    <img class="dropdown-toggle" data-toggle="dropdown" src="https://secure.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=34&d=mm" alt="Guilherme Pacheco">
     <ul class="dropdown-menu dropdown-menu-right">
         <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
         <li class="divider"></li>
