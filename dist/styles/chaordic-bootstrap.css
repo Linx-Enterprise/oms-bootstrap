@@ -5541,6 +5541,8 @@ select.input-xs {
     font-weight: normal;
     text-transform: uppercase;
     border-bottom: none; }
+    .table > thead > tr > th .tooltip {
+      text-transform: none; }
 
 .table-sortable > thead > tr > th.sort-by {
   cursor: pointer; }

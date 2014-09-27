@@ -32,6 +32,10 @@
         font-weight: normal;
         text-transform: uppercase;
         border-bottom: none;
+
+        .tooltip {
+            text-transform: none;
+        }
     }
 }
 
