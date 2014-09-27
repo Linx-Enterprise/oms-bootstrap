@@ -24,10 +24,15 @@
 
         .tree-toggler {
             cursor: pointer;
-            @include fa("\f147");
+            width: (18em / 14);
+            text-align: center;
 
-            &.open {
-                @include fa("\f196");
+            &:before {
+                content: "\f147";
+            }
+
+            &.open:before {
+                content: "\f196";
             }
         }
     }

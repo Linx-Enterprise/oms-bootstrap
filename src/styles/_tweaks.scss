@@ -1,13 +1,7 @@
 // use .fa-fw by default
-.fa {
+li > a > .fa {
     width: (18em / 14);
     text-align: center;
-}
-
-// user .fa-vw for variable width
-.fa-vw {
-    width: auto;
-    text-align: inherit;
 }
 
 // for styled select inline

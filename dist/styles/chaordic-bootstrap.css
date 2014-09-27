@@ -1,15 +1,4 @@
 @import url("//fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300,400,700");
-.fa, .table-sortable > thead > tr > th.sort-by .sort-icon, .table-sortable > thead > tr > th.sort-by.sort-asc > .sort-icon, .table-sortable > thead > tr > th.sort-by.sort-desc > .sort-icon, .tree-list .tree .tree-toggler, .tree-list .tree .tree-toggler.open {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 1.2857142857em;
-  text-align: center; }
-
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5555,8 +5544,9 @@ select.input-xs {
 
 .table-sortable > thead > tr > th.sort-by {
   cursor: pointer; }
-  .table-sortable > thead > tr > th.sort-by .sort-icon:before {
-    content: ""; }
+  .table-sortable > thead > tr > th.sort-by > .sort-icon {
+    width: 1.2857142857em;
+    text-align: center; }
   .table-sortable > thead > tr > th.sort-by.sort-asc > .sort-icon:before {
     content: "\f106"; }
   .table-sortable > thead > tr > th.sort-by.sort-desc > .sort-icon:before {
@@ -5624,7 +5614,9 @@ input[type="checkbox"].toggle {
       height: auto;
       opacity: 1; }
   .tree-list .tree .tree-toggler {
-    cursor: pointer; }
+    cursor: pointer;
+    width: 1.2857142857em;
+    text-align: center; }
     .tree-list .tree .tree-toggler:before {
       content: "\f147"; }
     .tree-list .tree .tree-toggler.open:before {
@@ -5637,13 +5629,9 @@ input[type="checkbox"].toggle {
     .tree-list .tree-list .tree-list .tree-list .indent {
       padding-left: 60px; } }
 
-.fa, .table-sortable > thead > tr > th.sort-by .sort-icon, .table-sortable > thead > tr > th.sort-by.sort-asc > .sort-icon, .table-sortable > thead > tr > th.sort-by.sort-desc > .sort-icon, .tree-list .tree .tree-toggler, .tree-list .tree .tree-toggler.open {
+li > a > .fa {
   width: 1.2857142857em;
   text-align: center; }
-
-.fa-vw {
-  width: auto;
-  text-align: inherit; }
 
 .form-control.inline {
   display: inline;

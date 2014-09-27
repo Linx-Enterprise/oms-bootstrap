@@ -39,18 +39,19 @@
     > thead > tr > th.sort-by {
         cursor: pointer;
 
-        .sort-icon {
-            @include fa("");
+        > .sort-icon {
+            width: (18em / 14);
+            text-align: center;
         }
 
         // fa-angle-up
-        &.sort-asc > .sort-icon {
-            @include fa("\f106");
+        &.sort-asc > .sort-icon:before {
+            content: "\f106";
         }
 
         // fa-angle-down
-        &.sort-desc > .sort-icon {
-            @include fa("\f107");
+        &.sort-desc > .sort-icon:before {
+            content: "\f107";
         }
     }
 }
