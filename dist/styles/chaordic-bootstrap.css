@@ -5365,6 +5365,18 @@ select.input-xs {
   .panel-secondary > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ff8336; }
 
+.panel > .panel-body + .table {
+  border-top: none; }
+
+.panel > .table > thead,
+.panel > .table > tbody {
+  border-left: none;
+  border-right: none; }
+.panel > .table > tbody:last-child {
+  border-bottom: none; }
+.panel > .table:last-child {
+  border-radius: 0; }
+
 .popover-title {
   color: white; }
 

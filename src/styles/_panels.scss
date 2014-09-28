@@ -26,3 +26,23 @@
 .panel-secondary {
   @include panel-variant($panel-secondary-border, $panel-secondary-text, $panel-secondary-heading-bg, $panel-secondary-border);
 }
+
+.panel > .panel-body + .table {
+    border-top: none;
+}
+
+.panel > .table {
+    > thead,
+    > tbody {
+        border-left: none;
+        border-right: none;
+    }
+
+    > tbody:last-child {
+        border-bottom: none;
+    }
+
+    &:last-child {
+        border-radius: 0;
+    }
+}
