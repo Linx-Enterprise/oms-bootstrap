@@ -102,13 +102,9 @@ Components
             <li><a href="#"><img src="assets/mail-symbol.png">Mail</a></li>
             <li><a href="#"><img src="assets/search-symbol.png">Search</a></li>
             <li><a href="#"><img src="assets/market-symbol.png">Market</a></li>
-            <li class="dropdown-submenu">
-                <a href="#" class="sidebar-header">Mais</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#"><i class="fa fa-th-large"></i>Hub</a></li>
-                    <li><a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a></li>
-                </ul>
-            </li>
+            <li class="sidebar-header">Mais</li>
+            <li><a href="#"><i class="fa fa-puzzle-piece"></i>Integração</a></li>
+            <li><a href="#"><i class="fa fa-th-large"></i>Chaordic Central</a></li>
         </ul>
     </div>
     <ul class="nav">
@@ -196,7 +192,10 @@ Components
 
 ```html
 <div class="user-area btn-group">
-    <img class="dropdown-toggle" data-toggle="dropdown" src="https://secure.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=34&d=mm" alt="Guilherme Pacheco">
+    <span class="dropdown-toggle" data-toggle="dropdown">
+        <img src="https://secure.gravatar.com/avatar/c7790195a496a869aad0103fe338658f?s=34&d=mm" alt="Guilherme Pacheco">
+        <i class="fa fa-angle-down"></i>
+    </span>
     <ul class="dropdown-menu dropdown-menu-right">
         <li><a href="#"><i class="fa fa-edit"></i>Editar perfil</a></li>
         <li class="divider"></li>
