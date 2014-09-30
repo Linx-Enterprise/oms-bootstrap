@@ -5439,7 +5439,6 @@ select.input-xs {
   .product-selector > .btn-group ul {
     margin: 0;
     padding: 0;
-    padding-bottom: 1500px;
     width: 100%;
     border: 0;
     border-top: 1px solid #333333;
@@ -5465,13 +5464,16 @@ select.input-xs {
   .product-selector > .btn-group .dropdown-submenu {
     border-top: 1px solid #333333; }
 
+.sidebar-brand ul {
+  padding-bottom: 1500px; }
+
 .product-selector > .btn-group {
   background: transparent; }
-  .product-selector > .btn-group.open {
+  .product-selector > .btn-group.open, .product-selector > .btn-group.animating {
     background: #2b2b2b; }
-    .product-selector > .btn-group.open .open-logo {
+    .product-selector > .btn-group.open .open-logo, .product-selector > .btn-group.animating .open-logo {
       display: inline; }
-    .product-selector > .btn-group.open .closed-logo {
+    .product-selector > .btn-group.open .closed-logo, .product-selector > .btn-group.animating .closed-logo {
       display: none; }
 
 .sidebar-header {

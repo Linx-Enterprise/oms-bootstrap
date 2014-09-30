@@ -68,7 +68,6 @@
     ul {
         margin: 0;
         padding: 0;
-        padding-bottom: 1500px;
         width: 100%;
         border: 0;
         border-top: 1px solid $gray-darker;
@@ -101,10 +100,14 @@
     }
 }
 
+.sidebar-brand ul {
+    padding-bottom: 1500px;
+}
+
 .product-selector > .btn-group {
     background: transparent;
 
-    &.open {
+    &.open, &.animating {
         background: $nav-sidebar-brand-bg-color;
 
         .open-logo {
