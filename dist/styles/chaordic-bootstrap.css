@@ -5196,6 +5196,9 @@ button.close {
 
 .dropdown-toggle {
   cursor: pointer; }
+  .dropdown-toggle > i {
+    width: 1.2857142857em;
+    text-align: center; }
 
 .dropdown-menu {
   min-width: 220px; }
