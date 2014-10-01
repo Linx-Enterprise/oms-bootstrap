@@ -1,4 +1,57 @@
-tags-input .tags ul li.tag-item {
-    background: #e6e9ed;
-    border: 1px solid #a1a1a1;
+tags-input {
+    display: block;
+
+    .host {
+        position: relative;
+    }
+
+    .tags {
+        @extend .form-control;
+        min-height: 34px;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+
+        .tag-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tag-item {
+            padding: ($padding-base-vertical - 4) ($padding-base-horizontal / 2) ($padding-base-vertical - 4) ($padding-base-horizontal / 2);
+            display: inline-block;
+            margin: 4px 3px 3px;
+            @extend .tag-default;
+            float: left;
+
+            .remove-button {
+                float: none;
+                margin-left: 4px;
+                width: 16px;
+                height: 16px;
+                font-size: inherit;
+                background-color: rgba(0, 0, 0, 0.1);
+                color: rgba(0, 0, 0, 0.3);
+                text-decoration: none;
+                border-radius: 50%;
+                display: inline-block;
+                text-align: center;
+                line-height: 16px;
+            }
+
+            &.selected {
+                @extend .tag-warning;
+            }
+        }
+
+        .input {
+            border: 0;
+            outline: none;
+            padding: 6px 12px;
+            background-color: transparent;
+            float: left;
+            padding-left: 8px;
+        }
+    }
 }
