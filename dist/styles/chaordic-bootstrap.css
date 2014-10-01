@@ -5665,7 +5665,7 @@ li > a > .fa {
 .panel-body > .table:last-child {
   margin-bottom: 0; }
 
-.btn > i {
+.btn > .fa {
   margin-top: 3px; }
 
 h5, .h5 {
