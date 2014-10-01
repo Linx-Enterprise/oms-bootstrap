@@ -5533,7 +5533,8 @@ select.input-xs {
   color: #fff;
   font-weight: normal;
   text-transform: uppercase;
-  border-bottom: none; }
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444; }
   .table-list li.table-list-header > .row > * {
     padding: 5px 10px; }
 
