@@ -5380,6 +5380,10 @@ select.input-xs {
 .panel > .table:last-child {
   border-radius: 0; }
 
+.panel > .table-list {
+  margin-bottom: 0;
+  border: none; }
+
 .popover-title {
   color: white; }
 
@@ -5532,13 +5536,6 @@ select.input-xs {
   border-bottom: none; }
   .table-list li.table-list-header > .row > * {
     padding: 5px 10px; }
-
-.panel > .table-list {
-  margin-bottom: 0; }
-  .panel > .table-list li:last-child {
-    border-bottom: none; }
-    .panel > .table-list li:last-child > .row.active {
-      border-bottom: none; }
 
 .table {
   font-size: 12px; }

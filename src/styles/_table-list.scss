@@ -38,15 +38,3 @@
         padding: $table-cell-padding * 0.5 $table-cell-padding;
     }
 }
-
-.panel > .table-list {
-    margin-bottom: 0;
-
-    li:last-child {
-        border-bottom: none;
-
-        > .row.active {
-            border-bottom: none;
-        }
-    }
-}
