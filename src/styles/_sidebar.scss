@@ -44,6 +44,7 @@
 .sidebar-brand,
 .product-selector > .btn-group {
     display: block;
+    z-index: 999;
     background: $nav-sidebar-brand-bg-color;
 
     .open-logo {

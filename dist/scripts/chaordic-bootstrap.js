@@ -4344,8 +4344,11 @@ $(document)
     })
 
     // Close dropdown on mouse leave
-    .on('mouseleave', '.sidebar-brand .dropdown-menu, .product-selector > .btn-group .dropdown-menu', function() {
-        $(this).dropdown('toggle');
+    .on('mouseleave', '.sidebar-brand, .product-selector > .btn-group', function() {
+        var jqThis = $(this);
+        if (jqThis.hasClass('open')) {
+            jqThis.find('[data-toggle="dropdown"]').dropdown('toggle');
+        }
     });
 
 /* ==================

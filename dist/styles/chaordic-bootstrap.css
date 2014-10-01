@@ -5418,6 +5418,7 @@ select.input-xs {
 .sidebar-brand,
 .product-selector > .btn-group {
   display: block;
+  z-index: 999;
   background: #2b2b2b; }
   .sidebar-brand .open-logo,
   .product-selector > .btn-group .open-logo {
