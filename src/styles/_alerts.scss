@@ -8,3 +8,9 @@
         @include opacity(.5);
     }
 }
+
+.alert a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
