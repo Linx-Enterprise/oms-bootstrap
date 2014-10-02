@@ -5577,6 +5577,8 @@ select.input-xs {
   border-bottom: 1px solid #444444; }
   .table-list li.table-list-header > .row > * {
     padding: 5px 10px; }
+  .table-list li.table-list-header > .row .tooltip {
+    text-transform: none; }
 
 .table {
   font-size: 12px; }
