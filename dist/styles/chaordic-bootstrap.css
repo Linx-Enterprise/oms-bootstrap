@@ -5489,6 +5489,7 @@ select.input-xs {
   .product-selector > .btn-group ul {
     margin: 0;
     padding: 0;
+    min-width: 0;
     width: 100%;
     border: 0;
     border-top: 1px solid #333333;
