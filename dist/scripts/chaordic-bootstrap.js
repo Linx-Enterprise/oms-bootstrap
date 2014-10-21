@@ -4105,6 +4105,12 @@ $(document)
                     row++;
                 }
                 calendar[row][col] = curDate.clone().hour(hour);
+
+                // daylight saving time workaround
+                while (calendar[row][col].date() !== curDate.date()) {
+                    calendar[row][col].add(1, 'hour');
+                }
+
                 curDate.hour(12);
             }
 
