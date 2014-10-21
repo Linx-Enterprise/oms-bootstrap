@@ -227,6 +227,5 @@ Components
 
 ## TODO
 
-- Datepicker
 - Input group addon focus state
 - Tag input
