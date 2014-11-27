@@ -15,6 +15,12 @@
     text-decoration: underline;
 }
 
-.alert-warning h4 small {
-    color: $gray-da;
+.alert-warning {
+    h4 small {
+        color: $gray-da;
+    }
+
+    a {
+        color: $gray-dark;
+    }
 }
