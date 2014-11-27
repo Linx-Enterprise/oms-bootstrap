@@ -139,6 +139,7 @@
 }
 .bootstrap-select.btn-group .btn-warning ~ .dropdown-menu li.selected a {
   background: $brand-warning;
+  color: $gray-dark;
 }
 .bootstrap-select.btn-group .btn-danger ~ .dropdown-menu li.selected a {
   background: $brand-danger;

@@ -2146,11 +2146,11 @@ tags-input .input-group-lg > select[multiple].tags,
     background-color: #fff; }
 
 .btn-warning {
-  color: #fff;
+  color: #444444;
   background-color: #ffce54;
   border-color: #ffce54; }
   .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
-    color: #fff;
+    color: #444444;
     background-color: #ffbf21;
     border-color: #ffbc17; }
   .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
@@ -2160,7 +2160,7 @@ tags-input .input-group-lg > select[multiple].tags,
     border-color: #ffce54; }
   .btn-warning .badge {
     color: #ffce54;
-    background-color: #fff; }
+    background-color: #444444; }
 
 .btn-danger {
   color: #fff;
@@ -3439,11 +3439,11 @@ a.thumbnail.active {
 .alert-warning {
   background-color: #ffce54;
   border-color: #ffce54;
-  color: #fff; }
+  color: #444444; }
   .alert-warning hr {
     border-top-color: #ffc73b; }
   .alert-warning .alert-link {
-    color: #e6e6e6; }
+    color: #2b2b2b; }
 
 .alert-danger {
   background-color: #d8192c;
@@ -3931,14 +3931,14 @@ a.list-group-item-danger {
 .panel-warning {
   border-color: #ffc432; }
   .panel-warning > .panel-heading {
-    color: #fff;
+    color: #444444;
     background-color: #ffce54;
     border-color: #ffc432; }
     .panel-warning > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #ffc432; }
     .panel-warning > .panel-heading .badge {
       color: #ffce54;
-      background-color: #fff; }
+      background-color: #444444; }
   .panel-warning > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ffc432; }
 
@@ -4721,6 +4721,9 @@ button.close {
   font-weight: bold;
   text-decoration: underline; }
 
+.alert-warning h4 small {
+  color: #888888; }
+
 .bootstrap-select {
   /*width: 220px\9; IE8 and below*/
   width: 220px \0;
@@ -4861,7 +4864,8 @@ button.close {
   background: #3498db; }
 
 .bootstrap-select.btn-group .btn-warning ~ .dropdown-menu li.selected a {
-  background: #ffce54; }
+  background: #ffce54;
+  color: #444444; }
 
 .bootstrap-select.btn-group .btn-danger ~ .dropdown-menu li.selected a {
   background: #d8192c; }
@@ -5292,6 +5296,9 @@ select.input-xs {
   font-size: 12px;
   font-weight: 700; }
 
+.label-warning {
+  color: #444444; }
+
 #loading-bar {
   pointer-events: none;
   -webkit-pointer-events: none;
@@ -5304,7 +5311,7 @@ select.input-xs {
     -moz-transition: width 350ms;
     -o-transition: width 350ms;
     transition: width 350ms;
-    background: #29d;
+    background: #793091;
     position: fixed;
     z-index: 10002;
     top: 0;
@@ -5320,10 +5327,10 @@ select.input-xs {
     top: 0;
     height: 2px;
     opacity: .45;
-    -moz-box-shadow: #29d 1px 0 6px 1px;
-    -ms-box-shadow: #29d 1px 0 6px 1px;
-    -webkit-box-shadow: #29d 1px 0 6px 1px;
-    box-shadow: #29d 1px 0 6px 1px;
+    -moz-box-shadow: #793091 1px 0 6px 1px;
+    -ms-box-shadow: #793091 1px 0 6px 1px;
+    -webkit-box-shadow: #793091 1px 0 6px 1px;
+    box-shadow: #793091 1px 0 6px 1px;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%; }
@@ -5682,7 +5689,7 @@ select.input-xs {
   border: 1px solid #a1a1a1; }
 
 .tag-warning, tags-input .tags .tag-item.selected {
-  color: #fff;
+  color: #444444;
   background-color: #ffce54;
   border: 1px solid #ffce54; }
 

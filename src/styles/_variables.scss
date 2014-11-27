@@ -162,39 +162,40 @@ $panel-secondary-text:          #fff !default;
 $panel-secondary-border:        $brand-secondary !default;
 $panel-secondary-heading-bg:    $brand-secondary !default;
 
-$panel-success-text:          #fff !default;
+$panel-success-text:            #fff !default;
 
-$panel-info-text:          #fff !default;
+$panel-info-text:               #fff !default;
 
-$panel-warning-text:          #fff !default;
+$panel-warning-text:            $gray-dark !default;
 
-$panel-danger-text:          #fff !default;
+$panel-danger-text:             #fff !default;
 
 
 //== Buttons
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-default-border:             $gray !default;
+$btn-default-border:            $gray !default;
 
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             $brand-primary !default;
+$btn-primary-bg:                $brand-primary !default;
+$btn-primary-border:            $brand-primary !default;
 
-$btn-secondary-color:            #fff !default;
-$btn-secondary-bg:               $brand-secondary !default;
-$btn-secondary-border:           $brand-secondary !default;
+$btn-secondary-color:           #fff !default;
+$btn-secondary-bg:              $brand-secondary !default;
+$btn-secondary-border:          $brand-secondary !default;
 
-$btn-success-bg:                 $brand-success !default;
-$btn-success-border:             $brand-success !default;
+$btn-success-bg:                $brand-success !default;
+$btn-success-border:            $brand-success !default;
 
-$btn-info-bg:                    $brand-info !default;
-$btn-info-border:                $brand-info !default;
+$btn-info-bg:                   $brand-info !default;
+$btn-info-border:               $brand-info !default;
 
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             $brand-warning !default;
+$btn-warning-color:             $gray-dark !default;
+$btn-warning-bg:                $brand-warning !default;
+$btn-warning-border:            $brand-warning !default;
 
-$btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              $brand-danger !default;
+$btn-danger-bg:                 $brand-danger !default;
+$btn-danger-border:             $brand-danger !default;
 
 
 //== Tables
@@ -296,7 +297,7 @@ $alert-info-text:             #fff !default;
 $alert-info-border:           $state-info-bg !default;
 
 $alert-warning-bg:            $state-warning-bg !default;
-$alert-warning-text:          #fff !default;
+$alert-warning-text:          $gray-dark !default;
 $alert-warning-border:        $state-warning-bg !default;
 
 $alert-danger-bg:             $state-danger-bg !default;
