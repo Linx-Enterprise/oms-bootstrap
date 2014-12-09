@@ -5288,6 +5288,15 @@ tags-input .has-warning .tags:focus {
 select.input-xs {
   padding: 0; }
 
+.form-control[disabled], tags-input [disabled].tags,
+tags-input [disabled].tags,
+fieldset[disabled] .form-control,
+fieldset[disabled] tags-input .tags,
+tags-input fieldset[disabled] .tags,
+fieldset[disabled] tags-input .tags,
+tags-input fieldset[disabled] .tags {
+  color: #dddddd; }
+
 .main-container {
   padding: 0;
   float: none; }

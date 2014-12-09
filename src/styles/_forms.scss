@@ -12,3 +12,11 @@
 select.input-xs {
     padding: 0;
 }
+
+.form-control[disabled],
+tags-input [disabled].tags,
+fieldset[disabled] .form-control,
+fieldset[disabled] tags-input .tags,
+tags-input fieldset[disabled] .tags {
+    color: $input-disabled-color;
+}
