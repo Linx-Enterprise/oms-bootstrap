@@ -5285,6 +5285,13 @@ tags-input .has-warning .tags:focus {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+.has-error .input-group-addon,
+.has-success .input-group-addon {
+  color: #fff; }
+
+.has-warning .input-group-addon {
+  color: #444444; }
+
 select.input-xs {
   padding: 0; }
 
