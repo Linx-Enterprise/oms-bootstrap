@@ -5,6 +5,14 @@
 
 //== Colors
 //
+//## Linx colors
+$orange:                    #DC5F3C !default;
+$purple-darker:             #311A45 !default;
+$purple-dark:               #402458 !default;
+$purple-bold:               #83758F !default;
+$purple:                    #533869 !default;
+$purple-light:              #8C7A9B !default;
+
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-darker:               #333333 !default;
@@ -105,25 +113,25 @@ $nav-link-hover-color:                      inherit !default;
 
 //== Sidebar
 $nav-sidebar-logo:                          url("../../demo/assets/logo-demo.png") !default;
-$nav-sidebar-bg-color:                      $gray-darker !default;
+$nav-sidebar-bg-color:                      $purple-dark !default;
 $nav-sidebar-border-color:                  #000 !default;
 $nav-sidebar-font-size:                     12px !default;
 
 $nav-sidebar-brand-height:                  62px !default;
 $nav-sidebar-brand-padding:                 21px 15px !default;
-$nav-sidebar-brand-bg-color:                #2b2b2b !default;
+$nav-sidebar-brand-bg-color:                $purple-darker !default;
 
-$nav-sidebar-link-color:                    $gray !default;
+$nav-sidebar-link-color:                    $purple-light !default;
 
 $nav-sidebar-link-hover-bg:                 $gray-dark !default;
-$nav-sidebar-link-hover-color:              $gray-lighter !default;
+$nav-sidebar-link-hover-color:              $orange!default;
 
 $nav-sidebar-active-link-bg:                $gray-dark !default;
-$nav-sidebar-active-link-color:             $gray-lighter !default;
+$nav-sidebar-active-link-color:             $orange !default;
 
 $nav-sidebar-header-padding:                18px 20px !default;
-$nav-sidebar-header-color:                  #666666 !default;
-$nav-sidebar-header-border-color:           $gray-dark !default;
+$nav-sidebar-header-color:                  #8C7A9B !default;
+$nav-sidebar-header-border-color:           $purple !default;
 
 //== Tabs
 $nav-tabs-active-link-hover-bg:             #fff !default;

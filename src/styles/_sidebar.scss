@@ -22,7 +22,6 @@
 
                 &:hover,
                 &:focus {
-                    background-color: $nav-sidebar-link-hover-bg;
                     color: $nav-sidebar-link-hover-color;
                 }
             }
@@ -31,8 +30,6 @@
                 &,
                 &:hover,
                 &:focus {
-                    border-left: 5px solid $product-color;
-                    background-color: $nav-sidebar-active-link-bg;
                     color: $nav-sidebar-active-link-color;
                     cursor: default;
                 }
@@ -72,15 +69,15 @@
         min-width: 0;
         width: 100%;
         border: 0;
-        border-top: 1px solid $gray-darker;
-        border-bottom: 1px solid $nav-sidebar-brand-bg-color;
+        border-top: 1px solid $nav-sidebar-header-border-color;
+        border-bottom: 1px solid $nav-sidebar-header-border-color;
         background: $nav-sidebar-brand-bg-color;
         box-shadow: none;
         border-radius: 0;
 
         > li > a {
             padding: 12px 18px;
-            color: $gray;
+            color: $purple-bold;
 
             > i:first-child {
                 margin-right: 15px;
@@ -91,8 +88,8 @@
             }
 
             &:hover {
-                background-color: $gray-darker;
-                color: $gray;
+                background: $nav-sidebar-brand-bg-color;
+                color: $nav-sidebar-link-hover-color;
             }
         }
     }
