@@ -5569,6 +5569,12 @@ tags-input fieldset[disabled] .tags {
       .product-selector > .btn-group ul > li > a:hover {
         background: #311A45;
         color: #DC5F3C; }
+    .sidebar-brand ul > li.product,
+    .product-selector > .btn-group ul > li.product {
+      font-family: Dosis;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 17px; }
   .sidebar-brand .dropdown-submenu,
   .product-selector > .btn-group .dropdown-submenu {
     border-top: 1px solid #333333; }
