@@ -6,12 +6,19 @@
 //== Colors
 //
 //## Linx colors
-$orange:                    #DC5F3C !default;
-$purple-darker:             #311A45 !default;
+$orange:                    #dc5f3c !default;
+$purple-darker:             #311a45 !default;
 $purple-dark:               #402458 !default;
-$purple-bold:               #83758F !default;
+$purple-bold:               #83758f !default;
 $purple:                    #533869 !default;
-$purple-light:              #8C7A9B !default;
+$purple-light:              #8c7a9b !default;
+
+$linx-primary:              #411e5a !default;
+$linx-primary-light:        #6e4b8c !default;
+
+$linx-success:              #96af5f !default;
+
+$linx-danger:               #df3b41 !default;
 
 //## Gray and brand colors for use across Bootstrap.
 
@@ -22,9 +29,9 @@ $gray:                      #a1a1a1 !default;
 $gray-light:                #dddddd !default;
 $gray-lighter:              #f0f0f0 !default;
 
-$brand-primary:             #793091 !default;
+$brand-primary:             $linx-primary !default;
 $brand-primary-dark:        #642878 !default;
-$brand-primary-light:       #993db7 !default;
+$brand-primary-light:       $linx-primary-light !default;
 $brand-primary-lighter:     #c284d6 !default;
 
 $brand-secondary:           #ff8336 !default;
@@ -32,7 +39,7 @@ $brand-secondary-dark:      #ff6e14 !default;
 $brand-secondary-light:     #ff8d47 !default;
 $brand-secondary-lighter:   #ffb78b !default;
 
-$brand-success:             #9aca40 !default;
+$brand-success:             $linx-success !default;
 $brand-success-dark:        #88b632 !default;
 $brand-success-light:       #a8d15b !default;
 $brand-success-lighter:     #cbe49d !default;
@@ -47,7 +54,7 @@ $brand-warning-dark:        #ffc432 !default;
 $brand-warning-light:       #ffd876 !default;
 $brand-warning-lighter:     #ffebba !default;
 
-$brand-danger:              #d8192c !default;
+$brand-danger:              $linx-danger !default;
 $brand-danger-dark:         #aa1423 !default;
 $brand-danger-light:        #e83c4d !default;
 $brand-danger-lighter:      #f5a6ae !default;
@@ -185,8 +192,8 @@ $panel-danger-text:             #fff !default;
 
 $btn-default-border:            $gray !default;
 
-$btn-primary-bg:                $brand-primary !default;
-$btn-primary-border:            $brand-primary !default;
+$btn-primary-bg:                $linx-primary !default;
+$btn-primary-border:            $linx-primary !default;
 
 $btn-secondary-color:           #fff !default;
 $btn-secondary-bg:              $brand-secondary !default;
