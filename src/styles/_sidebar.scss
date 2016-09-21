@@ -7,8 +7,6 @@
     overflow: hidden;
 
     > .nav {
-        margin-top: 12px;
-
         > li {
             > a {
                 border-left: 5px solid transparent;
@@ -96,7 +94,7 @@
                 }
             }
 
-            &.product {
+            &.product > a {
                 font-family: Dosis;
                 font-weight: bold;
                 text-transform: uppercase;
@@ -138,6 +136,7 @@
     text-transform: uppercase;
 
     &:first-child {
+        padding-top: 24px;
         border-top: 0;
     }
 }
