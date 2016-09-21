@@ -141,6 +141,10 @@
     }
 }
 
+.sidebar > .nav {
+    padding-bottom: 20px;
+}
+
 @media (min-width: $screen-sm) {
     .sidebar {
         position: fixed;
@@ -157,7 +161,6 @@
             -ms-overflow-style: none;
             overflow: -moz-scrollbars-none;
             overflow: auto;
-            padding-bottom: 30px;
 
             &::-webkit-scrollbar {
                 width: 0;
