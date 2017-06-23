@@ -1,4 +1,15 @@
 {
+  "name": "chaordic-bootstrap",
+  "version": "3.2.1",
+  "author": "Guilherme Pacheco <guilherme.pacheco@chaordicsystems.com>",
+  "description": "A modified version of bootstrap to be used in Chaordic projects",
+  "keywords": [
+    "bootstrap",
+    "chaordic"
+  ],
+  "license": "MIT",
+  "private": true,
+  "main": "dist/chaordic-bootstrap.css",
   "engines": {
     "node": ">= 0.10.0"
   },
