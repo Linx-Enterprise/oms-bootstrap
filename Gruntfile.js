@@ -101,6 +101,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dist', ['clean:dist', 'vendor', 'styles', 'scripts']);
 
-  grunt.registerTask('default', 'dist');
+  grunt.registerTask('default', 'dist', 'watch');
 
 };
