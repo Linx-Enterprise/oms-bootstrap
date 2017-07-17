@@ -13,7 +13,8 @@ module.exports = function(grunt) {
       },
       styles: {
         files: {
-          'dist/styles/chaordic-bootstrap.css': 'src/styles/chaordic-bootstrap.scss'
+          'dist/styles/chaordic-bootstrap.css': 'src/styles/chaordic-bootstrap.scss',
+          'dist/lnc-styles/lnc-bootstrap.css': 'src/lnc-styles/lnc-bootstrap.scss'
         }
       }
     },
@@ -24,7 +25,8 @@ module.exports = function(grunt) {
       },
       styles: {
         files: {
-          'dist/styles/chaordic-bootstrap.min.css': 'dist/styles/chaordic-bootstrap.css'
+          'dist/styles/chaordic-bootstrap.min.css': 'dist/styles/chaordic-bootstrap.css',
+          'dist/lnc-styles/lnc-bootstrap.min.css': 'dist/lnc-styles/lnc-bootstrap.css'
         }
       }
     },
@@ -70,7 +72,7 @@ module.exports = function(grunt) {
         tasks: ['dist']
       },
       styles: {
-        files: ['src/styles/**/*'],
+        files: ['src/*styles/**/*'],
         tasks: ['styles']
       },
       scripts: {
