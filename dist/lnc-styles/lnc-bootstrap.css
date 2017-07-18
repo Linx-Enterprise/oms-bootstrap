@@ -1,0 +1,51 @@
+.form-control:focus {
+  box-shadow: none; }
+
+.form-group .form-control:focus {
+  box-shadow: none; }
+
+.input-search {
+  position: relative; }
+  .input-search input {
+    width: 100%; }
+  .input-search div {
+    background: white;
+    position: absolute;
+    top: 7px;
+    right: 11px;
+    padding-left: 10px; }
+  .input-search .help-block {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: -10px; }
+
+.item-search-list {
+  background: #F0F0F0;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  padding: 0 22px; }
+  .item-search-list .items-container {
+    margin-top: 22px; }
+  .item-search-list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #E7E7E7;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    padding: 14px;
+    margin-bottom: 14px; }
+    .item-search-list .item .item-content {
+      width: 95%;
+      word-break: break-word; }
+    .item-search-list .item::after {
+      cursor: pointer;
+      content: "\f00d";
+      font-family: FontAwesome; }
+  .item-search-list .fa.fa-times {
+    cursor: pointer; }
+  .item-search-list .input-search {
+    margin-bottom: 22px; }
+
+/*# sourceMappingURL=lnc-bootstrap.css.map */

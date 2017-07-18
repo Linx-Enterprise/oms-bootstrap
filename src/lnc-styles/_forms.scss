@@ -1,0 +1,13 @@
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-group {
+    .form-control {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

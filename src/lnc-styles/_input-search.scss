@@ -1,0 +1,21 @@
+.input-search {
+    position: relative;
+
+    input {
+        width: 100%;
+    }
+
+    div {
+        background: white;
+        position: absolute;
+        top: 7px;
+        right: 11px;
+        padding-left: 10px;
+    }
+
+    .help-block {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+}
