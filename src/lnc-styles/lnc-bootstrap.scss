@@ -1,4 +1,8 @@
 
+// import FontAwesome icons
+$fa-font-path: "../../vendor/font-awesome/fonts";
+@import "../../vendor/font-awesome/scss/font-awesome.scss";
+
 // import partials
 @import "forms";
 @import "input-search";
