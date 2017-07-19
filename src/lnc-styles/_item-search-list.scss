@@ -18,7 +18,7 @@ $item-search-list-items-distance: 14px;
     .item {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         background-color: $item-search-list-item-background;
         border: 1px solid $item-search-list-border-color;

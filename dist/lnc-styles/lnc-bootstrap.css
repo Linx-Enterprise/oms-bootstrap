@@ -2354,7 +2354,7 @@
   .lnc-item-search-list .item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     background-color: #E7E7E7;
     border: 1px solid #CCCCCC;
