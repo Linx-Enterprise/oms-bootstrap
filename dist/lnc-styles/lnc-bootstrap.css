@@ -2370,7 +2370,7 @@
       font-family: FontAwesome; }
   .lnc-item-search-list .fa.fa-times {
     cursor: pointer; }
-  .lnc-item-search-list .input-search {
+  .lnc-item-search-list .lnc-input-search {
     margin-bottom: 22px; }
 
 /*# sourceMappingURL=lnc-bootstrap.css.map */

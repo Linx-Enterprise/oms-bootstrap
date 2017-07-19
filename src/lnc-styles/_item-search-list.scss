@@ -42,7 +42,7 @@ $item-search-list-items-distance: 14px;
         cursor: pointer;
     }
 
-    .input-search {
+    .#{$style-prefix}input-search {
         margin-bottom: $item-search-list-padding;
     }
 }
