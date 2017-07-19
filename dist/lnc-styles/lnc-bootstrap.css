@@ -2329,29 +2329,29 @@
 .form-group .form-control:focus {
   box-shadow: none; }
 
-.input-search {
+.lnc-input-search {
   position: relative; }
-  .input-search input {
+  .lnc-input-search input {
     width: 100%; }
-  .input-search div {
+  .lnc-input-search div {
     background: white;
     position: absolute;
     top: 7px;
     right: 11px;
     padding-left: 10px; }
-  .input-search .help-block {
+  .lnc-input-search .help-block {
     position: relative;
     margin-top: 10px;
     margin-bottom: -10px; }
 
-.item-search-list {
+.lnc-item-search-list {
   background: #F0F0F0;
   border: 1px solid #CCCCCC;
   border-radius: 3px;
   padding: 0 22px; }
-  .item-search-list .items-container {
+  .lnc-item-search-list .items-container {
     margin-top: 22px; }
-  .item-search-list .item {
+  .lnc-item-search-list .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2361,16 +2361,16 @@
     border-radius: 3px;
     padding: 14px;
     margin-bottom: 14px; }
-    .item-search-list .item .item-content {
+    .lnc-item-search-list .item .item-content {
       width: 95%;
       word-break: break-word; }
-    .item-search-list .item::after {
+    .lnc-item-search-list .item::after {
       cursor: pointer;
       content: "\f00d";
       font-family: FontAwesome; }
-  .item-search-list .fa.fa-times {
+  .lnc-item-search-list .fa.fa-times {
     cursor: pointer; }
-  .item-search-list .input-search {
+  .lnc-item-search-list .input-search {
     margin-bottom: 22px; }
 
 /*# sourceMappingURL=lnc-bootstrap.css.map */

@@ -5,7 +5,7 @@ $item-search-list-border-radius: 3px;
 $item-search-list-padding: 22px;
 $item-search-list-items-distance: 14px;
 
-.item-search-list {
+.#{$style-prefix}item-search-list {
     background: $item-search-list-background;
     border: 1px solid $item-search-list-border-color;
     border-radius: $item-search-list-border-radius;
