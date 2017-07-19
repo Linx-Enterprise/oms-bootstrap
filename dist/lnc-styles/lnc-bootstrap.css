@@ -2349,9 +2349,9 @@
   border: 1px solid #CCCCCC;
   border-radius: 3px;
   padding: 0 22px; }
-  .lnc-item-search-list .items-container {
+  .lnc-item-search-list .lnc-items-container {
     margin-top: 22px; }
-  .lnc-item-search-list .item {
+  .lnc-item-search-list .lnc-item {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -2361,15 +2361,13 @@
     border-radius: 3px;
     padding: 14px;
     margin-bottom: 14px; }
-    .lnc-item-search-list .item .item-content {
+    .lnc-item-search-list .lnc-item .lnc-item-content {
       width: 95%;
       word-break: break-word; }
-    .lnc-item-search-list .item::after {
+    .lnc-item-search-list .lnc-item .lnc-close-item::after {
       cursor: pointer;
       content: "\f00d";
       font-family: FontAwesome; }
-  .lnc-item-search-list .fa.fa-times {
-    cursor: pointer; }
   .lnc-item-search-list .lnc-input-search {
     margin-bottom: 22px; }
 

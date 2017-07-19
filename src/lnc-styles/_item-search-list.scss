@@ -11,11 +11,11 @@ $item-search-list-items-distance: 14px;
     border-radius: $item-search-list-border-radius;
     padding: 0 $item-search-list-padding;
 
-    .items-container {
+    .#{$style-prefix}items-container {
         margin-top: $item-search-list-padding;
     }
 
-    .item {
+    .#{$style-prefix}item {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -26,20 +26,18 @@ $item-search-list-items-distance: 14px;
         padding: $item-search-list-items-distance;
         margin-bottom: $item-search-list-items-distance;
 
-        .item-content {
+        .#{$style-prefix}item-content {
             width: 95%;
             word-break: break-word;
         }
 
-        &::after {
-            cursor: pointer;
-            content: "\f00d";
-            font-family: FontAwesome;
+        .#{$style-prefix}close-item {
+            &::after {
+                cursor: pointer;
+                content: "\f00d";
+                font-family: FontAwesome;
+            }
         }
-    }
-
-    .fa.fa-times {
-        cursor: pointer;
     }
 
     .#{$style-prefix}input-search {
