@@ -2323,6 +2323,18 @@
   overflow: visible;
   clip: auto; }
 
+.lnc-input-loading {
+  position: relative; }
+  .lnc-input-loading::after {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    text-align: center;
+    content: "\f110";
+    font-family: FontAwesome;
+    animation: fa-spin 1.3s infinite linear; }
+
 .form-control:focus {
   box-shadow: none; }
 

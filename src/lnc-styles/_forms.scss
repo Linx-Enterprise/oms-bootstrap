@@ -1,3 +1,21 @@
+
+.#{$style-prefix}input-loading {
+    position: relative;
+    &::after {
+        display: block;
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        text-align: center;
+
+        // properties copied from classes .fa-spin and .fa-spinner of
+        // FontAwesome
+        content: "\f110";
+        font-family: FontAwesome;
+        animation: fa-spin 1.3s infinite linear;
+    }
+}
+
 .form-control {
     &:focus {
         box-shadow: none;
