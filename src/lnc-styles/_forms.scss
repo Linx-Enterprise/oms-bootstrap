@@ -16,6 +16,30 @@
     }
 }
 
+.#{$style-prefix}input-error {
+    input {
+        border-color: $lnc-danger;
+        &:focus {
+            border-color: $lnc-danger-dark;
+        }
+    }
+
+    .#{$style-prefix}error-block {
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+}
+
+.#{$style-prefix}error-block {
+    color: $lnc-danger;
+    &::before {
+        // content copied from class .fa-exclamation-triangle of FontAwesome
+        content: "\f071";
+        font-family: FontAwesome;
+    }
+}
+
 .form-control {
     &:focus {
         box-shadow: none;

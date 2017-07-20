@@ -2335,6 +2335,20 @@
     font-family: FontAwesome;
     animation: fa-spin 1.3s infinite linear; }
 
+.lnc-input-error input {
+  border-color: #DF3B41; }
+  .lnc-input-error input:focus {
+    border-color: #AA1423; }
+.lnc-input-error .lnc-error-block {
+  margin-top: 10px;
+  margin-bottom: -10px; }
+
+.lnc-error-block {
+  color: #DF3B41; }
+  .lnc-error-block::before {
+    content: "\f071";
+    font-family: FontAwesome; }
+
 .form-control:focus {
   box-shadow: none; }
 

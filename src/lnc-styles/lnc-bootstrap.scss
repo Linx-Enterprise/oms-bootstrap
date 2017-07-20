@@ -6,6 +6,9 @@ $style-prefix: "lnc-";
 $fa-font-path: "../../vendor/font-awesome/fonts";
 @import "../../vendor/font-awesome/scss/font-awesome.scss";
 
+// import variables
+@import "variables";
+
 // import partials
 @import "forms";
 @import "input-search";
