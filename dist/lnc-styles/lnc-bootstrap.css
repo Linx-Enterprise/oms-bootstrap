@@ -4,11 +4,13 @@
     display: block;
     position: absolute;
     top: 7px;
-    right: 10px;
+    right: 11px;
+    height: 19px;
+    width: 19px;
     text-align: center;
-    content: "\f110";
+    content: "\f1ce";
     font-family: FontAwesome;
-    animation: fa-spin 1.3s infinite linear; }
+    animation: fa-spin 2.2s infinite linear; }
 
 .lnc-input-error input {
   border-color: #DF3B41; }
@@ -22,7 +24,8 @@
   color: #DF3B41; }
   .lnc-error-block::before {
     content: "\f071";
-    font-family: FontAwesome; }
+    font-family: FontAwesome;
+    margin-right: 5px; }
 
 .form-control:focus {
   box-shadow: none; }
