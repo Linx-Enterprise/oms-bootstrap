@@ -1,0 +1,39 @@
+.#{$style-prefix}select {
+
+    .dropdown {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        text-align: left;
+        padding: 7px 15px 8px;
+        color: #4A4A4A;
+        border: 1px solid #DDDDDD;
+        border-radius: 2px;
+
+        &:after {
+            content: "\f107";
+            font-family: FontAwesome;
+            position: absolute;
+            right: 14px;
+        }
+
+        ~ .dropdown-menu {
+            width: 100%;
+
+            .disabled {
+                a {
+                  color: #9B9B9B;
+                }
+            }
+
+            a {
+                &:hover {
+                  background: #3F1D5D;
+                  color: white;
+                }
+            }
+        }
+    }
+}

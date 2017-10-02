@@ -7,5 +7,9 @@ $style-prefix: "lnc-";
 
 // import partials
 @import "forms";
+@import "input";
 @import "input-search";
 @import "item-search-list";
+@import "select";
+@import "select-controls";
+@import "toggle";
