@@ -6,41 +6,137 @@ $item-search-list-padding: 22px;
 $item-search-list-items-distance: 14px;
 
 .#{$style-prefix}item-search-list {
-    background: $item-search-list-background;
-    border: 1px solid $item-search-list-border-color;
-    border-radius: $item-search-list-border-radius;
-    padding: 0 $item-search-list-padding;
 
-    .#{$style-prefix}items-container {
-        margin-top: $item-search-list-padding;
-    }
-
-    .#{$style-prefix}item {
+    .item-list {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        background-color: $item-search-list-item-background;
-        border: 1px solid $item-search-list-border-color;
-        border-radius: $item-search-list-border-radius;
-        padding: $item-search-list-items-distance;
-        margin-bottom: $item-search-list-items-distance;
+        background: #F4F4F4;
+        padding: 0;
+        margin-bottom: 22px;
 
-        .#{$style-prefix}item-content {
-            width: 95%;
-            word-break: break-word;
+        .item-container {
+            padding: 20px 23px;
+            width: 100%;
+            .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                padding: 10px 16px;
+                background-color: #E0E0E0;
+                border: 1px solid #C7C4CA;
+
+                .item-content {
+                    width: 95%;
+                    word-break: break-word;
+                }
+
+                .close-item {
+                    &::after {
+                        cursor: pointer;
+                        content: "\f00d";
+                        font-family: FontAwesome;
+                    }
+                }
+            }
         }
 
-        .#{$style-prefix}close-item {
+        .input-item {
+            width: 100%;
+            padding: 20px 23px;
+        }
+
+        .input-error {
+            position: relative;
+            input {
+                border-color: #AA1423;
+                background: #FFE9EB;
+                &:focus {
+                    border-color: #AA1423;
+                }
+            }
             &::after {
-                cursor: pointer;
-                content: "\f00d";
+                display: block;
+                position: absolute;
+                top: 27px;
+                right: 35px;
+                height: 19px;
+                width: 19px;
+                text-align: center;
+                color: #AA1423;
+                content: "\f071";
                 font-family: FontAwesome;
+            }
+        }
+
+        .input-loading {
+            position: relative;
+            &::after {
+                display: block;
+                position: absolute;
+                top: 27px;
+                right: 35px;
+                height: 19px;
+                width: 19px;
+                text-align: center;
+
+                // properties copied from classes .fa-spin and .fa-spinner of
+                // FontAwesome
+                content: "\f1ce";
+                font-family: FontAwesome;
+                animation: fa-spin 2.2s infinite linear;
+            }
+        }
+
+        .remove-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E0E0E0;
+            width: 34px;
+
+            &.active {
+                cursor: pointer;
+            }
+
+            i {
+                font-size: 18px;
             }
         }
     }
 
-    .#{$style-prefix}input-item {
-        margin-bottom: $item-search-list-padding;
+    .add-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 74px;
+        border: 1px dashed #E0E0E0;
+        cursor: pointer;
+
+        .plus-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .plus-circle {
+                display: flex;
+                align-items: center;
+                border: 2px solid #5B595D;
+                border-radius: 100px;
+                height: 38px;
+                width: 38px;
+
+                i {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            p {
+                margin: 0;
+                color: #5B595D;
+            }
+        }
+
     }
 }
