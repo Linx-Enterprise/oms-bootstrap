@@ -18,16 +18,17 @@ $item-search-list-items-distance: 14px;
         padding: 0;
 
         .item-container {
-            padding: 20px 23px;
+            padding: 20px;
             width: 100%;
             .item {
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-start;
+                align-items: center;
                 width: 100%;
                 padding: 10px 16px;
                 background-color: #E0E0E0;
                 border: 1px solid #C7C4CA;
+                border-radius: 2px;
 
                 .item-content {
                     width: 95%;

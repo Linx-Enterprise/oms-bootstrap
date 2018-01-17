@@ -122,16 +122,17 @@
     margin-bottom: 22px;
     padding: 0; }
     .lnc-item-search-list .item-list .item-container {
-      padding: 20px 23px;
+      padding: 20px;
       width: 100%; }
       .lnc-item-search-list .item-list .item-container .item {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         padding: 10px 16px;
         background-color: #E0E0E0;
-        border: 1px solid #C7C4CA; }
+        border: 1px solid #C7C4CA;
+        border-radius: 2px; }
         .lnc-item-search-list .item-list .item-container .item .item-content {
           width: 95%;
           word-break: break-word; }
@@ -280,9 +281,6 @@
     top: 3px;
     margin-left: 8px;
     font-weight: normal; }
-
-.lnc-switch {
-  margin-bottom: 20px; }
 
 input[type="checkbox"].lnc-toggle + label {
   height: 22px;
