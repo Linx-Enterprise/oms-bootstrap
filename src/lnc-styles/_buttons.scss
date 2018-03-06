@@ -1,0 +1,51 @@
+.btn-icon {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 14px;
+
+    .fa {
+        position: absolute;
+        left: 10px;
+        margin-right: 7px;
+    }
+}
+
+.btn-icon-right {
+    position: relative;
+    padding-left: 14px;
+    padding-right: 30px;
+
+    .fa {
+        position: absolute;
+        right: 10px;
+        margin-left: 7px;
+    }
+}
+
+.motor-group {
+    .btn {
+        width: 85px;
+    }
+}
+
+.btn-reverse {
+    &.btn-success {
+        background: white;
+        color: #98AF52;
+    }
+
+    &.btn-danger {
+        background: white;
+        color: #DF3F38;
+    }
+
+    &.btn-info {
+        background: white;
+        color: #3498DB;
+    }
+
+    &.btn-warning {
+        background: white;
+        color: #FFCE54;
+    }
+}

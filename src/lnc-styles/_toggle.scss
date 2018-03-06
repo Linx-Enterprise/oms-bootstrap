@@ -1,0 +1,27 @@
+input[type="checkbox"].#{$style-prefix}toggle + label {
+    height: 22px;
+    width: 50px;
+    background: #E43D3D;
+}
+
+input[type="checkbox"].#{$style-prefix}toggle:checked + label, input[type="checkbox"].#{$style-prefix}toggle:focus:checked + label {
+    background: #95B057;
+}
+
+input[type="checkbox"].#{$style-prefix}toggle + label:after, input[type="checkbox"].#{$style-prefix}toggle + label:hover:after {
+    height: 16px;
+    width: 16px;
+    background: #fff;
+    border-radius: 2px;
+    top: 3px;
+    left: 3px;
+}
+
+input[type="checkbox"].#{$style-prefix}toggle + label .off, input[type="checkbox"].#{$style-prefix}toggle + label .on {
+    line-height: 22px;
+    width: 30px;
+}
+
+input[type="checkbox"].#{$style-prefix}toggle:checked + label:after, input[type="checkbox"].#{$style-prefix}toggle:checked + label:hover:after, input[type="checkbox"].#{$style-prefix}toggle:focus:checked + label:after, input[type="checkbox"].#{$style-prefix}toggle:focus:checked + label:hover:after {
+    left: 31px;
+}

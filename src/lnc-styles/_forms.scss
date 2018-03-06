@@ -1,0 +1,58 @@
+
+.#{$style-prefix}input-loading {
+    position: relative;
+    &::after {
+        display: block;
+        position: absolute;
+        top: 7px;
+        right: 11px;
+        height: 19px;
+        width: 19px;
+        text-align: center;
+
+        // properties copied from classes .fa-spin and .fa-spinner of
+        // FontAwesome
+        content: "\f1ce";
+        font-family: FontAwesome;
+        animation: fa-spin 2.2s infinite linear;
+    }
+}
+
+.#{$style-prefix}input-error {
+    input {
+        border-color: $lnc-danger;
+        &:focus {
+            border-color: $lnc-danger-dark;
+        }
+    }
+
+    .#{$style-prefix}error-block {
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+}
+
+.#{$style-prefix}error-block {
+    color: $lnc-danger;
+    &::before {
+        // content copied from class .fa-exclamation-triangle of FontAwesome
+        content: "\f071";
+        font-family: FontAwesome;
+        margin-right: 5px;
+    }
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-group {
+    .form-control {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
