@@ -1,6 +1,6 @@
 {
   "name": "@chaordic/chaordic-bootstrap",
-  "version": "3.2.3-rc.0",
+  "version": "3.2.4-0",
   "author": "Guilherme Pacheco <guilherme.pacheco@chaordicsystems.com>",
   "description": "A modified version of bootstrap to be used in Chaordic projects",
   "keywords": [
