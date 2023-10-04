@@ -1,5 +1,5 @@
 {
-  "name": "chaordic-bootstrap",
+  "name": "@chaordic/chaordic-bootstrap",
   "version": "3.2.1",
   "author": "Guilherme Pacheco <guilherme.pacheco@chaordicsystems.com>",
   "description": "A modified version of bootstrap to be used in Chaordic projects",
@@ -8,7 +8,7 @@
     "chaordic"
   ],
   "license": "MIT",
-  "private": true,
+  "private": false,
   "main": "dist/chaordic-bootstrap.css",
   "engines": {
     "node": ">= 0.10.0"
@@ -23,5 +23,8 @@
     "grunt-contrib-concat": "^0.4.0",
     "grunt-contrib-uglify": "^0.5.0",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "publishConfig": {
+    "@chaordic:registry": "https://npm.pkg.github.com"
   }
 }
