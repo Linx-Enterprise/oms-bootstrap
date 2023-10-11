@@ -1,5 +1,5 @@
 {
-  "name": "chaordic-bootstrap",
+  "name": "@chaordic/chaordic-bootstrap",
   "version": "1.0.0",
   "engines": {
     "node": ">= 0.10.0"
@@ -14,5 +14,8 @@
     "grunt-contrib-concat": "^0.4.0",
     "grunt-contrib-uglify": "^0.5.0",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "publishConfig": {
+    "@chaordic:registry": "https://npm.pkg.github.com"
   }
 }

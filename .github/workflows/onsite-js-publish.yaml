@@ -1,0 +1,31 @@
+name: Bootstrap Publish
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+    publish:
+      name: Publish Package
+      runs-on: ubuntu-22.04
+      permissions:
+        packages: write
+        contents: read
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+            registry-url: https://npm.pkg.github.com/
+        - name: Define tag version
+          run: |
+            isLatestVersion=^v?[0-9]+\.[0-9]+\.[0-9]+$
+            if [[ $GITHUB_REF_NAME =~ $isLatestVersion ]]; then
+              tagType="latest"
+            else
+              tagType="rc"
+            fi
+            echo "tagType=$tagType" >> $GITHUB_ENV
+            printf "It is a $tagType version\n"
+        - run: npm publish --tag $tagType
+          env:
+            NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
