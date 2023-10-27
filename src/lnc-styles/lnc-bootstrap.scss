@@ -1,0 +1,16 @@
+
+// define style's prefix
+$style-prefix: "lnc-";
+
+// import variables
+@import "variables";
+
+// import partials
+@import "buttons";
+@import "forms";
+@import "input";
+@import "input-search";
+@import "item-search-list";
+@import "select";
+@import "select-controls";
+@import "toggle";

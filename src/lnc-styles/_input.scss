@@ -1,0 +1,39 @@
+.#{$style-prefix}edit-input {
+    display: flex;
+    padding: 0;
+    position: relative;
+    font-size: 16px;
+    border-bottom: 2px solid #F0F0F0;
+
+    div {
+        display: flex;
+        background: transparent;
+        z-index: 2;
+        padding-bottom: 16px;
+        overflow: hidden;
+    }
+
+    [contenteditable=true]:empty:before {
+        color: #BBBBBB;
+        content: attr(placeholder);
+        display: block; /* For Firefox */
+    }
+
+    &:after {
+        color: #BBBBBB;
+        content: "\f040";
+        font-family: FontAwesome;
+        margin-left: 16px;
+    }
+
+    .placeholder {
+        color: #BBBBBB;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+
+    .fa {
+        margin-left: 16px;
+    }
+}
